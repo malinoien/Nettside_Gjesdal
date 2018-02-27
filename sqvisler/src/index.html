@@ -1,0 +1,32 @@
+<!DOCTYPE>
+	<HTML>
+		<head>
+			<title> sgvizler </title>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+			<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+			<script type="text/javascript" src="http://mgskjaeveland.github.io/sgvizler/v/0.6/sgvizler.js"></script>
+			<script>
+				$(document).ready(
+						function () {sgvizler.containerDrawAll(); }
+				);
+			</script>
+			<meta  charset="utf-8">
+		</head>
+		<body>
+			<h1 style="color:lightpink"> Dette er de fire landene med flest mennesker i datasettet vårt </h1>
+			<div id="example"
+				data-sgvizler-endpoint="http://localhost:3030/mydataset/query"
+				data-sgvizler-query="PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+									PREFIX dbo: <http://dbpedia.org/ontology/>
+									SELECT ?navn ?populasjon
+									WHERE {
+									  ?land rdfs:label ?navn.
+									  ?land dbo:populationTotal ?populasjon.
+									}
+									ORDER BY DESC (?populasjon)
+									LIMIT 4"
+				data-sgvizler-chart="google.visualization.PieChart"
+    	 			style="width:800px; height:400px;">
+    	 		</div>
+		</body>
+	</HTML>
