@@ -1,0 +1,5 @@
+Grillplasser: https://opencom.no/dataset/d1a3a50b-0566-48c1-acc0-15049da971b3/resource/fd6dc8bc-5df7-469f-81ec-9df61b67179e/download/grillplasser-i-gjesdal-kommune.csv
+Barnehager: https://opencom.no/dataset/0612abbf-1b35-422c-971c-869c6f22214e/resource/18715fa2-67a1-44f2-aef2-54de08ccf89b/download/barnehager-gjesdal-kommune.csv
+Kirker: https://opencom.no/dataset/6adb0d93-6cb3-4e4b-861f-489f3b9bd9b2/resource/ced27296-d4ef-47b9-8210-5c84180c4fa0/download/kirker-i-gjesdal-kommune.csv
+Fiskeplasser: https://opencom.no/dataset/64a3f8ff-5ce8-40f7-bf9d-33e335d406ce/resource/eac99e21-33b4-4bf6-81d4-608b2a4de7f1/download/fiskeplasser-i-gjesdal-kommune.csv
+Badeplasser: https://opencom.no/dataset/12bf3448-ec94-4188-8a1f-c89255e6217c/resource/b4ee365c-b1e4-4e4b-8590-41ade09a6896/download/badeplasser-i-gjesdal-kommune.csv
