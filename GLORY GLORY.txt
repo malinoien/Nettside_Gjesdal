@@ -1,0 +1,6 @@
+Individual: @E*
+     Types: Church
+     Facts: hasLatitude @D* (xsd:float),
+                hasLongitude @C* (xsd:float)
+                hasName @E* (xsd:string),
+                hasAdress @F* (xsd:string)
