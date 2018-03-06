@@ -1,0 +1,577 @@
+Date: 2018-03-06 13:00:28
+Ontology source: /C:/Users/Malin/Documents/Project_Y/ontologi.owl
+Worksheet source: C:\Users\Malin\Documents\Project_Y\Datasett\Kirker.xlsx
+Transformation rules: C:\Users\Malin\Documents\Project_Y\Regler\3.json
+
+# Cell range: (kirker-i-gjesdal-kommune!D2:E+) Comment: ""
+# Individual: @E*
+# TYPES: Church
+# FACTS: hasLatitude @D* (xsd:float)
+
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLatitude 58.76860098  # Generated from value "58.76860098" located at cell 'kirker-i-gjesdal-kommune'!D2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLatitude 58.76914125  # Generated from value "58.76914125" located at cell 'kirker-i-gjesdal-kommune'!D3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLatitude 58.77354662  # Generated from value "58.77354662" located at cell 'kirker-i-gjesdal-kommune'!D4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLatitude 58.82559308  # Generated from value "58.82559308" located at cell 'kirker-i-gjesdal-kommune'!D5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLatitude 58.82725728  # Generated from value "58.82725728" located at cell 'kirker-i-gjesdal-kommune'!D6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLatitude 58.76355820  # Generated from value "58.76355820" located at cell 'kirker-i-gjesdal-kommune'!D7.
+   Types: Church
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLatitude 58.76860098  # Generated from value "58.76860098" located at cell 'kirker-i-gjesdal-kommune'!D2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLatitude 58.76914125  # Generated from value "58.76914125" located at cell 'kirker-i-gjesdal-kommune'!D3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLatitude 58.77354662  # Generated from value "58.77354662" located at cell 'kirker-i-gjesdal-kommune'!D4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLatitude 58.82559308  # Generated from value "58.82559308" located at cell 'kirker-i-gjesdal-kommune'!D5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLatitude 58.82725728  # Generated from value "58.82725728" located at cell 'kirker-i-gjesdal-kommune'!D6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLatitude 58.76355820  # Generated from value "58.76355820" located at cell 'kirker-i-gjesdal-kommune'!D7.
+   Types: Church
+
+# Cell range: (kirker-i-gjesdal-kommune!C2:E7) Comment: ""
+# Individual: @E*
+# TYPES: Church
+# FACTS: hasLongitude @C* (xsd:float)
+
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Church
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Church
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Church
+
+# Cell range: (kirker-i-gjesdal-kommune!C1:C1) Comment: ""
+# Class: @C1 SubClassOf: GeoLocation
+
+Class: Longitude  # Generated from value "Longitude" located at cell 'kirker-i-gjesdal-kommune'!C1.
+   SubClassOf: GeoLocation
+
+# Cell range: (kirker-i-gjesdal-kommune!C2:C7) Comment: ""
+# Individual: @C*
+# TYPES: @C1
+
+Individual: 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Longitude
+Individual: 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Longitude
+Individual: 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Longitude
+Individual: 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Longitude
+Individual: 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Longitude
+Individual: 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Longitude
+
+===========================================================================================================
+Date: 2018-03-06 13:01:43
+Ontology source: /C:/Users/Malin/Documents/Project_Y/ontologi.owl
+Worksheet source: C:\Users\Malin\Documents\Project_Y\Datasett\Kirker.xlsx
+Transformation rules: C:\Users\Malin\Documents\Project_Y\Regler\3.json
+
+# Cell range: (kirker-i-gjesdal-kommune!D2:E+) Comment: ""
+# Individual: @E*
+# TYPES: Church
+# FACTS: hasLatitude @D* (xsd:float)
+
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLatitude 58.76860098  # Generated from value "58.76860098" located at cell 'kirker-i-gjesdal-kommune'!D2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLatitude 58.76914125  # Generated from value "58.76914125" located at cell 'kirker-i-gjesdal-kommune'!D3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLatitude 58.77354662  # Generated from value "58.77354662" located at cell 'kirker-i-gjesdal-kommune'!D4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLatitude 58.82559308  # Generated from value "58.82559308" located at cell 'kirker-i-gjesdal-kommune'!D5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLatitude 58.82725728  # Generated from value "58.82725728" located at cell 'kirker-i-gjesdal-kommune'!D6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLatitude 58.76355820  # Generated from value "58.76355820" located at cell 'kirker-i-gjesdal-kommune'!D7.
+   Types: Church
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLatitude 58.76860098  # Generated from value "58.76860098" located at cell 'kirker-i-gjesdal-kommune'!D2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLatitude 58.76914125  # Generated from value "58.76914125" located at cell 'kirker-i-gjesdal-kommune'!D3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLatitude 58.77354662  # Generated from value "58.77354662" located at cell 'kirker-i-gjesdal-kommune'!D4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLatitude 58.82559308  # Generated from value "58.82559308" located at cell 'kirker-i-gjesdal-kommune'!D5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLatitude 58.82725728  # Generated from value "58.82725728" located at cell 'kirker-i-gjesdal-kommune'!D6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLatitude 58.76355820  # Generated from value "58.76355820" located at cell 'kirker-i-gjesdal-kommune'!D7.
+   Types: Church
+
+# Cell range: (kirker-i-gjesdal-kommune!C2:E7) Comment: ""
+# Individual: @E*
+# TYPES: Church
+# FACTS: hasLongitude @C* (xsd:float)
+
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Church
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Church
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Church
+
+# Cell range: (kirker-i-gjesdal-kommune!C1:C1) Comment: ""
+# Class: @C1 SubClassOf: GeoLocation
+
+Class: Longitude  # Generated from value "Longitude" located at cell 'kirker-i-gjesdal-kommune'!C1.
+   SubClassOf: GeoLocation
+
+# Cell range: (kirker-i-gjesdal-kommune!C2:C7) Comment: ""
+# Individual: @C*
+# TYPES: @C1
+
+Individual: 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Longitude
+Individual: 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Longitude
+Individual: 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Longitude
+Individual: 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Longitude
+Individual: 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Longitude
+Individual: 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Longitude
+
+===========================================================================================================
+Date: 2018-03-06 13:03:42
+Ontology source: /C:/Users/Malin/Documents/Project_Y/ontologi.owl
+Worksheet source: C:\Users\Malin\Documents\Project_Y\Datasett\Kirker.xlsx
+Transformation rules: C:\Users\Malin\Documents\Project_Y\Regler\3.json
+
+# Cell range: (kirker-i-gjesdal-kommune!D2:E+) Comment: ""
+# Individual: @E*
+# TYPES: Church
+# FACTS: hasLatitude @D* (xsd:float)
+
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLatitude 58.76860098  # Generated from value "58.76860098" located at cell 'kirker-i-gjesdal-kommune'!D2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLatitude 58.76914125  # Generated from value "58.76914125" located at cell 'kirker-i-gjesdal-kommune'!D3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLatitude 58.77354662  # Generated from value "58.77354662" located at cell 'kirker-i-gjesdal-kommune'!D4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLatitude 58.82559308  # Generated from value "58.82559308" located at cell 'kirker-i-gjesdal-kommune'!D5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLatitude 58.82725728  # Generated from value "58.82725728" located at cell 'kirker-i-gjesdal-kommune'!D6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLatitude 58.76355820  # Generated from value "58.76355820" located at cell 'kirker-i-gjesdal-kommune'!D7.
+   Types: Church
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLatitude 58.76860098  # Generated from value "58.76860098" located at cell 'kirker-i-gjesdal-kommune'!D2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLatitude 58.76914125  # Generated from value "58.76914125" located at cell 'kirker-i-gjesdal-kommune'!D3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLatitude 58.77354662  # Generated from value "58.77354662" located at cell 'kirker-i-gjesdal-kommune'!D4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLatitude 58.82559308  # Generated from value "58.82559308" located at cell 'kirker-i-gjesdal-kommune'!D5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLatitude 58.82725728  # Generated from value "58.82725728" located at cell 'kirker-i-gjesdal-kommune'!D6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLatitude 58.76355820  # Generated from value "58.76355820" located at cell 'kirker-i-gjesdal-kommune'!D7.
+   Types: Church
+
+# Cell range: (kirker-i-gjesdal-kommune!C2:E7) Comment: ""
+# Individual: @E*
+# TYPES: Church
+# FACTS: hasLongitude @C* (xsd:float)
+
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Church
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Church
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Church
+
+# Cell range: (kirker-i-gjesdal-kommune!C1:C1) Comment: ""
+# Class: @C1 SubClassOf: GeoLocation
+
+Class: Longitude  # Generated from value "Longitude" located at cell 'kirker-i-gjesdal-kommune'!C1.
+   SubClassOf: GeoLocation
+
+# Cell range: (kirker-i-gjesdal-kommune!C2:C7) Comment: ""
+# Individual: @C*
+# TYPES: @C1
+
+Individual: 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Longitude
+Individual: 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Longitude
+Individual: 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Longitude
+Individual: 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Longitude
+Individual: 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Longitude
+Individual: 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Longitude
+
+# Cell range: (kirker-i-gjesdal-kommune!A1:A+) Comment: ""
+# Class: @D1 SubClassOf: GeoLocation
+
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+
+===========================================================================================================
+Date: 2018-03-06 13:05:08
+Ontology source: /C:/Users/Malin/Documents/Project_Y/ontologi.owl
+Worksheet source: C:\Users\Malin\Documents\Project_Y\Datasett\Kirker.xlsx
+Transformation rules: C:\Users\Malin\Documents\Project_Y\Regler\3.json
+
+# Cell range: (kirker-i-gjesdal-kommune!D2:E+) Comment: ""
+# Individual: @E*
+# TYPES: Church
+# FACTS: hasLatitude @D* (xsd:float)
+
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLatitude 58.76860098  # Generated from value "58.76860098" located at cell 'kirker-i-gjesdal-kommune'!D2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLatitude 58.76914125  # Generated from value "58.76914125" located at cell 'kirker-i-gjesdal-kommune'!D3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLatitude 58.77354662  # Generated from value "58.77354662" located at cell 'kirker-i-gjesdal-kommune'!D4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLatitude 58.82559308  # Generated from value "58.82559308" located at cell 'kirker-i-gjesdal-kommune'!D5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLatitude 58.82725728  # Generated from value "58.82725728" located at cell 'kirker-i-gjesdal-kommune'!D6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLatitude 58.76355820  # Generated from value "58.76355820" located at cell 'kirker-i-gjesdal-kommune'!D7.
+   Types: Church
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLatitude 58.76860098  # Generated from value "58.76860098" located at cell 'kirker-i-gjesdal-kommune'!D2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLatitude 58.76914125  # Generated from value "58.76914125" located at cell 'kirker-i-gjesdal-kommune'!D3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLatitude 58.77354662  # Generated from value "58.77354662" located at cell 'kirker-i-gjesdal-kommune'!D4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLatitude 58.82559308  # Generated from value "58.82559308" located at cell 'kirker-i-gjesdal-kommune'!D5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLatitude 58.82725728  # Generated from value "58.82725728" located at cell 'kirker-i-gjesdal-kommune'!D6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLatitude 58.76355820  # Generated from value "58.76355820" located at cell 'kirker-i-gjesdal-kommune'!D7.
+   Types: Church
+
+# Cell range: (kirker-i-gjesdal-kommune!C2:E7) Comment: ""
+# Individual: @E*
+# TYPES: Church
+# FACTS: hasLongitude @C* (xsd:float)
+
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Church
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Church
+Individual: Ålgård kirke  # Generated from value "Ålgård kirke" located at cell 'kirker-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Church
+Individual: Ålgård gamle kirke   # Generated from value "Ålgård gamle kirke " located at cell 'kirker-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Church
+Individual: Gjesdal kyrkje  # Generated from value "Gjesdal kyrkje" located at cell 'kirker-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Church
+Individual: Oltedal kyrkje   # Generated from value "Oltedal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Church
+Individual: Dirdal kyrkje   # Generated from value "Dirdal kyrkje " located at cell 'kirker-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Church
+Individual: Ålgård Baptistkirke   # Generated from value "Ålgård Baptistkirke " located at cell 'kirker-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Church
+
+# Cell range: (kirker-i-gjesdal-kommune!C1:C1) Comment: ""
+# Class: @C1 SubClassOf: GeoLocation
+
+Class: Longitude  # Generated from value "Longitude" located at cell 'kirker-i-gjesdal-kommune'!C1.
+   SubClassOf: GeoLocation
+
+# Cell range: (kirker-i-gjesdal-kommune!C2:C7) Comment: ""
+# Individual: @C*
+# TYPES: @C1
+
+Individual: 5.84635219  # Generated from value "5.84635219" located at cell 'kirker-i-gjesdal-kommune'!C2.
+   Types: Longitude
+Individual: 5.84538371  # Generated from value "5.84538371" located at cell 'kirker-i-gjesdal-kommune'!C3.
+   Types: Longitude
+Individual: 5.94692099  # Generated from value "5.94692099" located at cell 'kirker-i-gjesdal-kommune'!C4.
+   Types: Longitude
+Individual: 6.03154364  # Generated from value "6.03154364" located at cell 'kirker-i-gjesdal-kommune'!C5.
+   Types: Longitude
+Individual: 6.19006935  # Generated from value "6.19006935" located at cell 'kirker-i-gjesdal-kommune'!C6.
+   Types: Longitude
+Individual: 5.85010893  # Generated from value "5.85010893" located at cell 'kirker-i-gjesdal-kommune'!C7.
+   Types: Longitude
+
+# Cell range: (kirker-i-gjesdal-kommune!A1:A+) Comment: ""
+# Class: @D1 SubClassOf: GeoLocation
+
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'kirker-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+
+# Cell range: (kirker-i-gjesdal-kommune!D2:D7) Comment: ""
+# Individual: @D*
+# Types: @D1
+
+Individual: 58.76860098  # Generated from value "58.76860098" located at cell 'kirker-i-gjesdal-kommune'!D2.
+   Types: Latitude
+Individual: 58.76914125  # Generated from value "58.76914125" located at cell 'kirker-i-gjesdal-kommune'!D3.
+   Types: Latitude
+Individual: 58.77354662  # Generated from value "58.77354662" located at cell 'kirker-i-gjesdal-kommune'!D4.
+   Types: Latitude
+Individual: 58.82559308  # Generated from value "58.82559308" located at cell 'kirker-i-gjesdal-kommune'!D5.
+   Types: Latitude
+Individual: 58.82725728  # Generated from value "58.82725728" located at cell 'kirker-i-gjesdal-kommune'!D6.
+   Types: Latitude
+Individual: 58.76355820  # Generated from value "58.76355820" located at cell 'kirker-i-gjesdal-kommune'!D7.
+   Types: Latitude
+
+===========================================================================================================

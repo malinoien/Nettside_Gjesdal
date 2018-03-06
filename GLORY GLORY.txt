@@ -1,6 +1,11 @@
 Individual: @E*
+     Types: GeoLocation
+     Facts: 
+           hasLatitude @D* (xsd:float),
+           hasLongitude @C* (xsd:float)
+    Types: Address
+     Facts:
+         hasStreetName @F* (xsd:string)
      Types: Church
-     Facts: hasLatitude @D* (xsd:float),
-                hasLongitude @C* (xsd:float)
-                hasName @E* (xsd:string),
-                hasAdress @F* (xsd:string)
+     Facts: 
+          hasName @E* (xsd:string)
