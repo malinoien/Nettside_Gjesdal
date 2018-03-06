@@ -17,7 +17,7 @@ public class LifterClass {
 		Model rdfModel = ModelFactory.createDefaultModel();
 		InfModel rdfsModel = ModelFactory.createRDFSModel(rdfModel);
 		
-		String grillplasser;
+		String grillplasser = "tom string";
 		
 		URL url;
 		try {
@@ -34,6 +34,11 @@ public class LifterClass {
 			}
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
+		}
+		System.out.println(grillplasser);
+		
+		for(int i = 0; i < grillplasser.length(); i++) {
+			
 		}
 		
 	}
