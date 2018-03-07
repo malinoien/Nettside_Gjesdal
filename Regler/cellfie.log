@@ -11813,3 +11813,523 @@ Individual: Hytterenovasjon Dirdal  # Generated from value "Hytterenovasjon Dird
    Types: RecyclingPoint
 
 ===========================================================================================================
+Date: 2018-03-07 15:02:55
+Ontology source: /C:/Users/Malin/Documents/Project_Y/ontologi.owl
+Worksheet source: C:\Users\Malin\Documents\Project_Y\Datasett\Overnatting.xlsx
+Transformation rules: C:\Users\Malin\Documents\Project_Y\Regler\Overnatting.json
+
+# Cell range: (overnatting-i-gjesdal-kommune!C1:C+) Comment: ""
+# Class: @C1 SubClassOf: GeoLocation
+
+Class: Longitude  # Generated from value "Longitude" located at cell 'overnatting-i-gjesdal-kommune'!C1.
+   SubClassOf: GeoLocation
+Class: Longitude  # Generated from value "Longitude" located at cell 'overnatting-i-gjesdal-kommune'!C1.
+   SubClassOf: GeoLocation
+Class: Longitude  # Generated from value "Longitude" located at cell 'overnatting-i-gjesdal-kommune'!C1.
+   SubClassOf: GeoLocation
+Class: Longitude  # Generated from value "Longitude" located at cell 'overnatting-i-gjesdal-kommune'!C1.
+   SubClassOf: GeoLocation
+Class: Longitude  # Generated from value "Longitude" located at cell 'overnatting-i-gjesdal-kommune'!C1.
+   SubClassOf: GeoLocation
+Class: Longitude  # Generated from value "Longitude" located at cell 'overnatting-i-gjesdal-kommune'!C1.
+   SubClassOf: GeoLocation
+Class: Longitude  # Generated from value "Longitude" located at cell 'overnatting-i-gjesdal-kommune'!C1.
+   SubClassOf: GeoLocation
+
+# Cell range: (overnatting-i-gjesdal-kommune!D1:D+) Comment: ""
+# Class: @D1 SubClassOf: GeoLocation
+
+Class: Latitude  # Generated from value "Latitude" located at cell 'overnatting-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'overnatting-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'overnatting-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'overnatting-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'overnatting-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'overnatting-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+Class: Latitude  # Generated from value "Latitude" located at cell 'overnatting-i-gjesdal-kommune'!D1.
+   SubClassOf: GeoLocation
+
+# Cell range: (overnatting-i-gjesdal-kommune!C2:J+) Comment: ""
+# Individual: @E*
+# TYPES: Accommodation
+# FACTS: hasLongitude @C* (xsd:float),
+#              hasLatitude @D* (xsd:float),
+#              hasStreetName @G* (xsd:string),
+#              hasStreetNumber @H* (xsd:integer),
+#              hasPostalCode @I* (xsd:integer),
+#              hasCity @J* (xsd:string),
+#              hasName @E* (xsd:string)
+
+Individual: Gjesdalgjestgiveri  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.83553461  # Generated from value "5.83553461" located at cell 'overnatting-i-gjesdal-kommune'!C2.,
+         hasLatitude 58.77832189  # Generated from value "58.77832189" located at cell 'overnatting-i-gjesdal-kommune'!D2.,
+         hasStreetName "Opstadveien"  # Generated from value "Opstadveien" located at cell 'overnatting-i-gjesdal-kommune'!G2.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H2.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I2.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J2.,
+         hasName "Gjesdalgjestgiveri"  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Types: Accommodation
+Individual: Byrkjedalstunet  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 6.31634885  # Generated from value "6.31634885" located at cell 'overnatting-i-gjesdal-kommune'!C3.,
+         hasLatitude 58.77985035  # Generated from value "58.77985035" located at cell 'overnatting-i-gjesdal-kommune'!D3.,
+         hasStreetName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!G3.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H3.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I3.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J3.,
+         hasName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Types: Accommodation
+Individual: Søya hytteutleie   # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.98428955  # Generated from value "5.98428955" located at cell 'overnatting-i-gjesdal-kommune'!C4.,
+         hasLatitude 58.68384730  # Generated from value "58.68384730" located at cell 'overnatting-i-gjesdal-kommune'!D4.,
+         hasStreetName "Søyland"  # Generated from value "Søyland" located at cell 'overnatting-i-gjesdal-kommune'!G4.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H4.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I4.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J4.,
+         hasName "Søya hytteutleie "  # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Types: Accommodation
+Individual: Kongeparken Camping  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C5.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D5.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G5.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H5.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I5.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J5.,
+         hasName "Kongeparken Camping"  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Types: Accommodation
+Individual: Kongeparken Camping   # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C6.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D6.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G6.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H6.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I6.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J6.,
+         hasName "Kongeparken Camping "  # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Types: Accommodation
+Individual: Giljastølen Camping   # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 6.25921738  # Generated from value "6.25921738" located at cell 'overnatting-i-gjesdal-kommune'!C7.,
+         hasLatitude 58.80619015  # Generated from value "58.80619015" located at cell 'overnatting-i-gjesdal-kommune'!D7.,
+         hasStreetName "Giljagarden"  # Generated from value "Giljagarden" located at cell 'overnatting-i-gjesdal-kommune'!G7.,
+         hasStreetNumber 1  # Generated from value "1" located at cell 'overnatting-i-gjesdal-kommune'!H7.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I7.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J7.,
+         hasName "Giljastølen Camping "  # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Types: Accommodation
+Individual: Gjesdalgjestgiveri  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.83553461  # Generated from value "5.83553461" located at cell 'overnatting-i-gjesdal-kommune'!C2.,
+         hasLatitude 58.77832189  # Generated from value "58.77832189" located at cell 'overnatting-i-gjesdal-kommune'!D2.,
+         hasStreetName "Opstadveien"  # Generated from value "Opstadveien" located at cell 'overnatting-i-gjesdal-kommune'!G2.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H2.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I2.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J2.,
+         hasName "Gjesdalgjestgiveri"  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Types: Accommodation
+Individual: Byrkjedalstunet  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 6.31634885  # Generated from value "6.31634885" located at cell 'overnatting-i-gjesdal-kommune'!C3.,
+         hasLatitude 58.77985035  # Generated from value "58.77985035" located at cell 'overnatting-i-gjesdal-kommune'!D3.,
+         hasStreetName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!G3.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H3.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I3.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J3.,
+         hasName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Types: Accommodation
+Individual: Søya hytteutleie   # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.98428955  # Generated from value "5.98428955" located at cell 'overnatting-i-gjesdal-kommune'!C4.,
+         hasLatitude 58.68384730  # Generated from value "58.68384730" located at cell 'overnatting-i-gjesdal-kommune'!D4.,
+         hasStreetName "Søyland"  # Generated from value "Søyland" located at cell 'overnatting-i-gjesdal-kommune'!G4.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H4.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I4.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J4.,
+         hasName "Søya hytteutleie "  # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Types: Accommodation
+Individual: Kongeparken Camping  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C5.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D5.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G5.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H5.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I5.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J5.,
+         hasName "Kongeparken Camping"  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Types: Accommodation
+Individual: Kongeparken Camping   # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C6.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D6.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G6.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H6.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I6.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J6.,
+         hasName "Kongeparken Camping "  # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Types: Accommodation
+Individual: Giljastølen Camping   # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 6.25921738  # Generated from value "6.25921738" located at cell 'overnatting-i-gjesdal-kommune'!C7.,
+         hasLatitude 58.80619015  # Generated from value "58.80619015" located at cell 'overnatting-i-gjesdal-kommune'!D7.,
+         hasStreetName "Giljagarden"  # Generated from value "Giljagarden" located at cell 'overnatting-i-gjesdal-kommune'!G7.,
+         hasStreetNumber 1  # Generated from value "1" located at cell 'overnatting-i-gjesdal-kommune'!H7.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I7.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J7.,
+         hasName "Giljastølen Camping "  # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Types: Accommodation
+Individual: Gjesdalgjestgiveri  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.83553461  # Generated from value "5.83553461" located at cell 'overnatting-i-gjesdal-kommune'!C2.,
+         hasLatitude 58.77832189  # Generated from value "58.77832189" located at cell 'overnatting-i-gjesdal-kommune'!D2.,
+         hasStreetName "Opstadveien"  # Generated from value "Opstadveien" located at cell 'overnatting-i-gjesdal-kommune'!G2.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H2.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I2.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J2.,
+         hasName "Gjesdalgjestgiveri"  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Types: Accommodation
+Individual: Byrkjedalstunet  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 6.31634885  # Generated from value "6.31634885" located at cell 'overnatting-i-gjesdal-kommune'!C3.,
+         hasLatitude 58.77985035  # Generated from value "58.77985035" located at cell 'overnatting-i-gjesdal-kommune'!D3.,
+         hasStreetName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!G3.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H3.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I3.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J3.,
+         hasName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Types: Accommodation
+Individual: Søya hytteutleie   # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.98428955  # Generated from value "5.98428955" located at cell 'overnatting-i-gjesdal-kommune'!C4.,
+         hasLatitude 58.68384730  # Generated from value "58.68384730" located at cell 'overnatting-i-gjesdal-kommune'!D4.,
+         hasStreetName "Søyland"  # Generated from value "Søyland" located at cell 'overnatting-i-gjesdal-kommune'!G4.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H4.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I4.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J4.,
+         hasName "Søya hytteutleie "  # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Types: Accommodation
+Individual: Kongeparken Camping  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C5.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D5.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G5.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H5.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I5.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J5.,
+         hasName "Kongeparken Camping"  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Types: Accommodation
+Individual: Kongeparken Camping   # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C6.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D6.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G6.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H6.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I6.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J6.,
+         hasName "Kongeparken Camping "  # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Types: Accommodation
+Individual: Giljastølen Camping   # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 6.25921738  # Generated from value "6.25921738" located at cell 'overnatting-i-gjesdal-kommune'!C7.,
+         hasLatitude 58.80619015  # Generated from value "58.80619015" located at cell 'overnatting-i-gjesdal-kommune'!D7.,
+         hasStreetName "Giljagarden"  # Generated from value "Giljagarden" located at cell 'overnatting-i-gjesdal-kommune'!G7.,
+         hasStreetNumber 1  # Generated from value "1" located at cell 'overnatting-i-gjesdal-kommune'!H7.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I7.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J7.,
+         hasName "Giljastølen Camping "  # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Types: Accommodation
+Individual: Gjesdalgjestgiveri  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.83553461  # Generated from value "5.83553461" located at cell 'overnatting-i-gjesdal-kommune'!C2.,
+         hasLatitude 58.77832189  # Generated from value "58.77832189" located at cell 'overnatting-i-gjesdal-kommune'!D2.,
+         hasStreetName "Opstadveien"  # Generated from value "Opstadveien" located at cell 'overnatting-i-gjesdal-kommune'!G2.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H2.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I2.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J2.,
+         hasName "Gjesdalgjestgiveri"  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Types: Accommodation
+Individual: Byrkjedalstunet  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 6.31634885  # Generated from value "6.31634885" located at cell 'overnatting-i-gjesdal-kommune'!C3.,
+         hasLatitude 58.77985035  # Generated from value "58.77985035" located at cell 'overnatting-i-gjesdal-kommune'!D3.,
+         hasStreetName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!G3.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H3.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I3.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J3.,
+         hasName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Types: Accommodation
+Individual: Søya hytteutleie   # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.98428955  # Generated from value "5.98428955" located at cell 'overnatting-i-gjesdal-kommune'!C4.,
+         hasLatitude 58.68384730  # Generated from value "58.68384730" located at cell 'overnatting-i-gjesdal-kommune'!D4.,
+         hasStreetName "Søyland"  # Generated from value "Søyland" located at cell 'overnatting-i-gjesdal-kommune'!G4.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H4.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I4.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J4.,
+         hasName "Søya hytteutleie "  # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Types: Accommodation
+Individual: Kongeparken Camping  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C5.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D5.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G5.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H5.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I5.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J5.,
+         hasName "Kongeparken Camping"  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Types: Accommodation
+Individual: Kongeparken Camping   # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C6.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D6.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G6.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H6.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I6.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J6.,
+         hasName "Kongeparken Camping "  # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Types: Accommodation
+Individual: Giljastølen Camping   # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 6.25921738  # Generated from value "6.25921738" located at cell 'overnatting-i-gjesdal-kommune'!C7.,
+         hasLatitude 58.80619015  # Generated from value "58.80619015" located at cell 'overnatting-i-gjesdal-kommune'!D7.,
+         hasStreetName "Giljagarden"  # Generated from value "Giljagarden" located at cell 'overnatting-i-gjesdal-kommune'!G7.,
+         hasStreetNumber 1  # Generated from value "1" located at cell 'overnatting-i-gjesdal-kommune'!H7.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I7.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J7.,
+         hasName "Giljastølen Camping "  # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Types: Accommodation
+Individual: Gjesdalgjestgiveri  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.83553461  # Generated from value "5.83553461" located at cell 'overnatting-i-gjesdal-kommune'!C2.,
+         hasLatitude 58.77832189  # Generated from value "58.77832189" located at cell 'overnatting-i-gjesdal-kommune'!D2.,
+         hasStreetName "Opstadveien"  # Generated from value "Opstadveien" located at cell 'overnatting-i-gjesdal-kommune'!G2.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H2.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I2.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J2.,
+         hasName "Gjesdalgjestgiveri"  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Types: Accommodation
+Individual: Byrkjedalstunet  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 6.31634885  # Generated from value "6.31634885" located at cell 'overnatting-i-gjesdal-kommune'!C3.,
+         hasLatitude 58.77985035  # Generated from value "58.77985035" located at cell 'overnatting-i-gjesdal-kommune'!D3.,
+         hasStreetName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!G3.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H3.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I3.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J3.,
+         hasName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Types: Accommodation
+Individual: Søya hytteutleie   # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.98428955  # Generated from value "5.98428955" located at cell 'overnatting-i-gjesdal-kommune'!C4.,
+         hasLatitude 58.68384730  # Generated from value "58.68384730" located at cell 'overnatting-i-gjesdal-kommune'!D4.,
+         hasStreetName "Søyland"  # Generated from value "Søyland" located at cell 'overnatting-i-gjesdal-kommune'!G4.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H4.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I4.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J4.,
+         hasName "Søya hytteutleie "  # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Types: Accommodation
+Individual: Kongeparken Camping  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C5.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D5.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G5.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H5.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I5.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J5.,
+         hasName "Kongeparken Camping"  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Types: Accommodation
+Individual: Kongeparken Camping   # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C6.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D6.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G6.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H6.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I6.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J6.,
+         hasName "Kongeparken Camping "  # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Types: Accommodation
+Individual: Giljastølen Camping   # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 6.25921738  # Generated from value "6.25921738" located at cell 'overnatting-i-gjesdal-kommune'!C7.,
+         hasLatitude 58.80619015  # Generated from value "58.80619015" located at cell 'overnatting-i-gjesdal-kommune'!D7.,
+         hasStreetName "Giljagarden"  # Generated from value "Giljagarden" located at cell 'overnatting-i-gjesdal-kommune'!G7.,
+         hasStreetNumber 1  # Generated from value "1" located at cell 'overnatting-i-gjesdal-kommune'!H7.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I7.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J7.,
+         hasName "Giljastølen Camping "  # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Types: Accommodation
+Individual: Gjesdalgjestgiveri  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.83553461  # Generated from value "5.83553461" located at cell 'overnatting-i-gjesdal-kommune'!C2.,
+         hasLatitude 58.77832189  # Generated from value "58.77832189" located at cell 'overnatting-i-gjesdal-kommune'!D2.,
+         hasStreetName "Opstadveien"  # Generated from value "Opstadveien" located at cell 'overnatting-i-gjesdal-kommune'!G2.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H2.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I2.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J2.,
+         hasName "Gjesdalgjestgiveri"  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Types: Accommodation
+Individual: Byrkjedalstunet  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 6.31634885  # Generated from value "6.31634885" located at cell 'overnatting-i-gjesdal-kommune'!C3.,
+         hasLatitude 58.77985035  # Generated from value "58.77985035" located at cell 'overnatting-i-gjesdal-kommune'!D3.,
+         hasStreetName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!G3.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H3.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I3.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J3.,
+         hasName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Types: Accommodation
+Individual: Søya hytteutleie   # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.98428955  # Generated from value "5.98428955" located at cell 'overnatting-i-gjesdal-kommune'!C4.,
+         hasLatitude 58.68384730  # Generated from value "58.68384730" located at cell 'overnatting-i-gjesdal-kommune'!D4.,
+         hasStreetName "Søyland"  # Generated from value "Søyland" located at cell 'overnatting-i-gjesdal-kommune'!G4.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H4.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I4.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J4.,
+         hasName "Søya hytteutleie "  # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Types: Accommodation
+Individual: Kongeparken Camping  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C5.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D5.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G5.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H5.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I5.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J5.,
+         hasName "Kongeparken Camping"  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Types: Accommodation
+Individual: Kongeparken Camping   # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C6.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D6.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G6.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H6.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I6.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J6.,
+         hasName "Kongeparken Camping "  # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Types: Accommodation
+Individual: Giljastølen Camping   # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 6.25921738  # Generated from value "6.25921738" located at cell 'overnatting-i-gjesdal-kommune'!C7.,
+         hasLatitude 58.80619015  # Generated from value "58.80619015" located at cell 'overnatting-i-gjesdal-kommune'!D7.,
+         hasStreetName "Giljagarden"  # Generated from value "Giljagarden" located at cell 'overnatting-i-gjesdal-kommune'!G7.,
+         hasStreetNumber 1  # Generated from value "1" located at cell 'overnatting-i-gjesdal-kommune'!H7.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I7.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J7.,
+         hasName "Giljastølen Camping "  # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Types: Accommodation
+Individual: Gjesdalgjestgiveri  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.83553461  # Generated from value "5.83553461" located at cell 'overnatting-i-gjesdal-kommune'!C2.,
+         hasLatitude 58.77832189  # Generated from value "58.77832189" located at cell 'overnatting-i-gjesdal-kommune'!D2.,
+         hasStreetName "Opstadveien"  # Generated from value "Opstadveien" located at cell 'overnatting-i-gjesdal-kommune'!G2.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H2.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I2.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J2.,
+         hasName "Gjesdalgjestgiveri"  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Types: Accommodation
+Individual: Byrkjedalstunet  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 6.31634885  # Generated from value "6.31634885" located at cell 'overnatting-i-gjesdal-kommune'!C3.,
+         hasLatitude 58.77985035  # Generated from value "58.77985035" located at cell 'overnatting-i-gjesdal-kommune'!D3.,
+         hasStreetName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!G3.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H3.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I3.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J3.,
+         hasName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Types: Accommodation
+Individual: Søya hytteutleie   # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.98428955  # Generated from value "5.98428955" located at cell 'overnatting-i-gjesdal-kommune'!C4.,
+         hasLatitude 58.68384730  # Generated from value "58.68384730" located at cell 'overnatting-i-gjesdal-kommune'!D4.,
+         hasStreetName "Søyland"  # Generated from value "Søyland" located at cell 'overnatting-i-gjesdal-kommune'!G4.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H4.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I4.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J4.,
+         hasName "Søya hytteutleie "  # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Types: Accommodation
+Individual: Kongeparken Camping  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C5.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D5.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G5.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H5.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I5.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J5.,
+         hasName "Kongeparken Camping"  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Types: Accommodation
+Individual: Kongeparken Camping   # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C6.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D6.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G6.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H6.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I6.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J6.,
+         hasName "Kongeparken Camping "  # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Types: Accommodation
+Individual: Giljastølen Camping   # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 6.25921738  # Generated from value "6.25921738" located at cell 'overnatting-i-gjesdal-kommune'!C7.,
+         hasLatitude 58.80619015  # Generated from value "58.80619015" located at cell 'overnatting-i-gjesdal-kommune'!D7.,
+         hasStreetName "Giljagarden"  # Generated from value "Giljagarden" located at cell 'overnatting-i-gjesdal-kommune'!G7.,
+         hasStreetNumber 1  # Generated from value "1" located at cell 'overnatting-i-gjesdal-kommune'!H7.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I7.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J7.,
+         hasName "Giljastølen Camping "  # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Types: Accommodation
+Individual: Gjesdalgjestgiveri  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Facts: hasLongitude 5.83553461  # Generated from value "5.83553461" located at cell 'overnatting-i-gjesdal-kommune'!C2.,
+         hasLatitude 58.77832189  # Generated from value "58.77832189" located at cell 'overnatting-i-gjesdal-kommune'!D2.,
+         hasStreetName "Opstadveien"  # Generated from value "Opstadveien" located at cell 'overnatting-i-gjesdal-kommune'!G2.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H2.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I2.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J2.,
+         hasName "Gjesdalgjestgiveri"  # Generated from value "Gjesdalgjestgiveri" located at cell 'overnatting-i-gjesdal-kommune'!E2.
+   Types: Accommodation
+Individual: Byrkjedalstunet  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Facts: hasLongitude 6.31634885  # Generated from value "6.31634885" located at cell 'overnatting-i-gjesdal-kommune'!C3.,
+         hasLatitude 58.77985035  # Generated from value "58.77985035" located at cell 'overnatting-i-gjesdal-kommune'!D3.,
+         hasStreetName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!G3.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H3.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I3.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J3.,
+         hasName "Byrkjedalstunet"  # Generated from value "Byrkjedalstunet" located at cell 'overnatting-i-gjesdal-kommune'!E3.
+   Types: Accommodation
+Individual: Søya hytteutleie   # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Facts: hasLongitude 5.98428955  # Generated from value "5.98428955" located at cell 'overnatting-i-gjesdal-kommune'!C4.,
+         hasLatitude 58.68384730  # Generated from value "58.68384730" located at cell 'overnatting-i-gjesdal-kommune'!D4.,
+         hasStreetName "Søyland"  # Generated from value "Søyland" located at cell 'overnatting-i-gjesdal-kommune'!G4.,
+         hasStreetNumber 0  # Generated from value "0" located at cell 'overnatting-i-gjesdal-kommune'!H4.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I4.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J4.,
+         hasName "Søya hytteutleie "  # Generated from value "Søya hytteutleie " located at cell 'overnatting-i-gjesdal-kommune'!E4.
+   Types: Accommodation
+Individual: Kongeparken Camping  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C5.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D5.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G5.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H5.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I5.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J5.,
+         hasName "Kongeparken Camping"  # Generated from value "Kongeparken Camping" located at cell 'overnatting-i-gjesdal-kommune'!E5.
+   Types: Accommodation
+Individual: Kongeparken Camping   # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Facts: hasLongitude 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C6.,
+         hasLatitude 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D6.,
+         hasStreetName "Ålgårdslåtten"  # Generated from value "Ålgårdslåtten" located at cell 'overnatting-i-gjesdal-kommune'!G6.,
+         hasStreetNumber 3  # Generated from value "3" located at cell 'overnatting-i-gjesdal-kommune'!H6.,
+         hasPostalCode 4330  # Generated from value "4330" located at cell 'overnatting-i-gjesdal-kommune'!I6.,
+         hasCity "ÅLGÅRD"  # Generated from value "ÅLGÅRD" located at cell 'overnatting-i-gjesdal-kommune'!J6.,
+         hasName "Kongeparken Camping "  # Generated from value "Kongeparken Camping " located at cell 'overnatting-i-gjesdal-kommune'!E6.
+   Types: Accommodation
+Individual: Giljastølen Camping   # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Facts: hasLongitude 6.25921738  # Generated from value "6.25921738" located at cell 'overnatting-i-gjesdal-kommune'!C7.,
+         hasLatitude 58.80619015  # Generated from value "58.80619015" located at cell 'overnatting-i-gjesdal-kommune'!D7.,
+         hasStreetName "Giljagarden"  # Generated from value "Giljagarden" located at cell 'overnatting-i-gjesdal-kommune'!G7.,
+         hasStreetNumber 1  # Generated from value "1" located at cell 'overnatting-i-gjesdal-kommune'!H7.,
+         hasPostalCode 4335  # Generated from value "4335" located at cell 'overnatting-i-gjesdal-kommune'!I7.,
+         hasCity "DIRDAL"  # Generated from value "DIRDAL" located at cell 'overnatting-i-gjesdal-kommune'!J7.,
+         hasName "Giljastølen Camping "  # Generated from value "Giljastølen Camping " located at cell 'overnatting-i-gjesdal-kommune'!E7.
+   Types: Accommodation
+
+# Cell range: (overnatting-i-gjesdal-kommune!K2:K+) Comment: ""
+# Individual: @D*
+# Types: @D1
+
+Individual: 58.77832189  # Generated from value "58.77832189" located at cell 'overnatting-i-gjesdal-kommune'!D2.
+   Types: Latitude
+Individual: 58.77985035  # Generated from value "58.77985035" located at cell 'overnatting-i-gjesdal-kommune'!D3.
+   Types: Latitude
+Individual: 58.68384730  # Generated from value "58.68384730" located at cell 'overnatting-i-gjesdal-kommune'!D4.
+   Types: Latitude
+Individual: 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D5.
+   Types: Latitude
+Individual: 58.77574580  # Generated from value "58.77574580" located at cell 'overnatting-i-gjesdal-kommune'!D6.
+   Types: Latitude
+Individual: 58.80619015  # Generated from value "58.80619015" located at cell 'overnatting-i-gjesdal-kommune'!D7.
+   Types: Latitude
+
+# Cell range: (overnatting-i-gjesdal-kommune!J2:J+) Comment: ""
+# Individual: @C*
+# TYPES: @C1
+
+Individual: 5.83553461  # Generated from value "5.83553461" located at cell 'overnatting-i-gjesdal-kommune'!C2.
+   Types: Longitude
+Individual: 6.31634885  # Generated from value "6.31634885" located at cell 'overnatting-i-gjesdal-kommune'!C3.
+   Types: Longitude
+Individual: 5.98428955  # Generated from value "5.98428955" located at cell 'overnatting-i-gjesdal-kommune'!C4.
+   Types: Longitude
+Individual: 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C5.
+   Types: Longitude
+Individual: 5.84555495  # Generated from value "5.84555495" located at cell 'overnatting-i-gjesdal-kommune'!C6.
+   Types: Longitude
+Individual: 6.25921738  # Generated from value "6.25921738" located at cell 'overnatting-i-gjesdal-kommune'!C7.
+   Types: Longitude
+
+===========================================================================================================

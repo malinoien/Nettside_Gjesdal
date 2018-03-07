@@ -19,10 +19,10 @@
         <NamedIndividual IRI="#58.77354662"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#5.85010893"/>
+        <ObjectProperty IRI="#hasPlace"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPlace"/>
+        <NamedIndividual IRI="#5.85010893"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#5.97555769"/>
@@ -37,10 +37,13 @@
         <NamedIndividual IRI="#6.19006935"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PostalCode"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#5.85343694"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PostalCode"/>
+        <NamedIndividual IRI="#Gjesdalgjestgiveri"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#58.81903283"/>
@@ -55,10 +58,16 @@
         <NamedIndividual IRI="#Flassavatnet"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Raudvigå"/>
+        <NamedIndividual IRI="#KongeparkenCamping"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#58.77832189"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#5.87224200"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Raudvigå"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DirdalKyrkje"/>
@@ -94,13 +103,16 @@
         <ObjectProperty IRI="#hasAdress"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#58.76183836"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#OltedalKyrkje"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#58.76183836"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#58.76860098"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#58.77574580"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasStreetNumber"/>
@@ -112,10 +124,10 @@
         <DataProperty IRI="#hasStreetName"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Latitude"/>
+        <NamedIndividual IRI="#58.82998423"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#58.82998423"/>
+        <Class IRI="#Latitude"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#58.76914125"/>
@@ -127,10 +139,22 @@
         <NamedIndividual IRI="#58.76355133"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Preschool"/>
+        <NamedIndividual IRI="#58.68384730"/>
     </Declaration>
     <Declaration>
         <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#6.31634885"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Preschool"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#58.77985035"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#58.80619015"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#5.84635219"/>
@@ -139,7 +163,7 @@
         <Class IRI="#RentalProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Acomondation"/>
+        <NamedIndividual IRI="#5.98428955"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Bar"/>
@@ -151,10 +175,22 @@
         <Class IRI="#Place"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Byrkjedalstunet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#6.25921738"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasLongitude"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GeoLocation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SøyaHytteutleie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5.83553461"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#6.07365238"/>
@@ -175,10 +211,10 @@
         <NamedIndividual IRI="#58.78273163"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#ÅlgårdBaptistkirke"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ÅlgårdBaptistkirke"/>
+        <DataProperty IRI="#hasDescription"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#58.82559308"/>
@@ -220,10 +256,16 @@
         <NamedIndividual IRI="#Edlandshagen-Perlå"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Accommodation"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ÅlgårdKirke"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Beach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5.84555495"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Church"/>
@@ -235,10 +277,13 @@
         <NamedIndividual IRI="#Uburhedlaren-Gapahuk"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#GiljastølenCamping"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Longitude"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Acomondation"/>
+        <Class IRI="#Accommodation"/>
         <Class IRI="#Place"/>
     </SubClassOf>
     <SubClassOf>
@@ -306,6 +351,10 @@
         <NamedIndividual IRI="#Brekko"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Accommodation"/>
+        <NamedIndividual IRI="#Byrkjedalstunet"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Church"/>
         <NamedIndividual IRI="#DirdalKyrkje"/>
     </ClassAssertion>
@@ -326,8 +375,20 @@
         <NamedIndividual IRI="#GapahukVedStoreForetjørn"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Accommodation"/>
+        <NamedIndividual IRI="#GiljastølenCamping"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Church"/>
         <NamedIndividual IRI="#GjesdalKyrkje"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Accommodation"/>
+        <NamedIndividual IRI="#Gjesdalgjestgiveri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Accommodation"/>
+        <NamedIndividual IRI="#KongeparkenCamping"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#BarbequeArea"/>
@@ -348,6 +409,10 @@
     <ClassAssertion>
         <Class IRI="#Beach"/>
         <NamedIndividual IRI="#Raudvigå"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Accommodation"/>
+        <NamedIndividual IRI="#SøyaHytteutleie"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#BarbequeArea"/>
@@ -375,7 +440,15 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Longitude"/>
+        <NamedIndividual IRI="#5.83553461"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Longitude"/>
         <NamedIndividual IRI="#5.84538371"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Longitude"/>
+        <NamedIndividual IRI="#5.84555495"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Longitude"/>
@@ -400,6 +473,14 @@
     <ClassAssertion>
         <Class IRI="#Longitude"/>
         <NamedIndividual IRI="#5.97555769"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Longitude"/>
+        <NamedIndividual IRI="#5.98428955"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Latitude"/>
+        <NamedIndividual IRI="#58.68384730"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Latitude"/>
@@ -443,7 +524,23 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Latitude"/>
+        <NamedIndividual IRI="#58.77574580"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Latitude"/>
+        <NamedIndividual IRI="#58.77832189"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Latitude"/>
+        <NamedIndividual IRI="#58.77985035"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Latitude"/>
         <NamedIndividual IRI="#58.78273163"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Latitude"/>
+        <NamedIndividual IRI="#58.80619015"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Latitude"/>
@@ -489,6 +586,14 @@
         <Class IRI="#Longitude"/>
         <NamedIndividual IRI="#6.19006935"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Longitude"/>
+        <NamedIndividual IRI="#6.25921738"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Longitude"/>
+        <NamedIndividual IRI="#6.31634885"/>
+    </ClassAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLatitude"/>
         <NamedIndividual IRI="#Brekko"/>
@@ -498,6 +603,41 @@
         <DataProperty IRI="#hasLongitude"/>
         <NamedIndividual IRI="#Brekko"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0736523</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Byrkjedalstunet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DIRDAL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Byrkjedalstunet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">58.77985</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Byrkjedalstunet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.316349</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Byrkjedalstunet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPostalCode"/>
+        <NamedIndividual IRI="#Byrkjedalstunet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4335</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStreetName"/>
+        <NamedIndividual IRI="#Byrkjedalstunet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStreetNumber"/>
+        <NamedIndividual IRI="#Byrkjedalstunet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLatitude"/>
@@ -545,6 +685,41 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0644565</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#GiljastølenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DIRDAL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#GiljastølenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">58.80619</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#GiljastølenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.2592173</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#GiljastølenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Giljastølen Camping </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPostalCode"/>
+        <NamedIndividual IRI="#GiljastølenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4335</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStreetName"/>
+        <NamedIndividual IRI="#GiljastølenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Giljagarden</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStreetNumber"/>
+        <NamedIndividual IRI="#GiljastølenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#hasLatitude"/>
         <NamedIndividual IRI="#GjesdalKyrkje"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">58.77355</Literal>
@@ -558,6 +733,81 @@
         <DataProperty IRI="#hasName"/>
         <NamedIndividual IRI="#GjesdalKyrkje"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Gjesdal kyrkje</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Gjesdalgjestgiveri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ÅLGÅRD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Gjesdalgjestgiveri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">58.77832</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Gjesdalgjestgiveri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.8355346</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Gjesdalgjestgiveri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Gjesdalgjestgiveri</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPostalCode"/>
+        <NamedIndividual IRI="#Gjesdalgjestgiveri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4330</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStreetName"/>
+        <NamedIndividual IRI="#Gjesdalgjestgiveri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Opstadveien</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStreetNumber"/>
+        <NamedIndividual IRI="#Gjesdalgjestgiveri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#KongeparkenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ÅLGÅRD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#KongeparkenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">58.775745</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#KongeparkenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.845555</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#KongeparkenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Kongeparken Camping</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#KongeparkenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Kongeparken Camping </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPostalCode"/>
+        <NamedIndividual IRI="#KongeparkenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4330</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStreetName"/>
+        <NamedIndividual IRI="#KongeparkenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Ålgårdslåtten</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStreetNumber"/>
+        <NamedIndividual IRI="#KongeparkenCamping"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLatitude"/>
@@ -603,6 +853,41 @@
         <DataProperty IRI="#hasLongitude"/>
         <NamedIndividual IRI="#Raudvigå"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.832188</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#SøyaHytteutleie"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ÅLGÅRD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#SøyaHytteutleie"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">58.683846</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#SøyaHytteutleie"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.9842896</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#SøyaHytteutleie"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Søya hytteutleie </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPostalCode"/>
+        <NamedIndividual IRI="#SøyaHytteutleie"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4330</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStreetName"/>
+        <NamedIndividual IRI="#SøyaHytteutleie"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Søyland</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStreetNumber"/>
+        <NamedIndividual IRI="#SøyaHytteutleie"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLatitude"/>
