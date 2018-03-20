@@ -15,7 +15,7 @@ public class Model {
 
 	public static void main(String[] args) {
 		OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
-		String base = "onto.owl";
+		String base = "..\\Gjesdalkommune\\src\\prosjekt\\onto.owl";
 
 		try {
 			FileInputStream input = new FileInputStream(base);
