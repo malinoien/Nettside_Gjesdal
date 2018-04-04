@@ -10,7 +10,9 @@ import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.ontology.Ontology;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.update.UpdateAction;
 import org.apache.jena.util.iterator.ExtendedIterator;
+import org.apache.jena.vocabulary.OWL;
 import org.omg.CORBA.portable.InputStream;
 
 public class Model {
@@ -35,14 +37,25 @@ public class Model {
 			//if(i.hasSuperClass()) System.out.println(i.getSuperClass());
 
 		}
+		
+	       String prefixes = ""
+	           + "PREFIX ex: <" + base + "> "
+	           + "PREFIX owl: <" + OWL.getURI() + "> "
+	           + "PREFIX geo:<http://www.w3.org/2003/01/geo/wgs84_pos#>";
+		
+		UpdateAction.parseExecute(prefixes
+		            + "INSERT DATA {"
+		            + "    ex:hasLongitude owl:sameAs geo:lon . "
+		            + "    ex:hasLatitude owl:sameAs geo:lat . "
+		            + "}", model);
 		System.out.println();
 		
 		model.write(System.out, "TURTLE");
 		
-		try {
-            model.write(new FileOutputStream("Gjesdal.ttl"), "TURTLE");
-        } catch (Exception e) {
+	//	try {
+      //      model.write(new FileOutputStream("Gjesdal.ttl"), "TURTLE");
+       // } catch (Exception e) {
             // TODO: handle exception
-        }
+       // }
 	}
 }
