@@ -19,7 +19,7 @@ public class Model {
 
 	public static void main(String[] args) {
 		OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
-		String base = "../Gjesdalkommune/src/prosjekt/onto.owl";
+		String base = "../Gjesdalkommune/src/prosjekt/ny_onto.owl";
 		
 
 		try {
@@ -30,32 +30,33 @@ public class Model {
 			System.out.println(e.getMessage());
 		}
 
-		ExtendedIterator<Individual> itInd = model.listIndividuals();
-		ExtendedIterator<OntClass> itCla = model.listClasses();
-		while (itCla.hasNext()) {
-			OntClass i = itCla.next();
-			//if(i.hasSuperClass()) System.out.println(i.getSuperClass());
-
-		}
+//		ExtendedIterator<Individual> itInd = model.listIndividuals();
+//		ExtendedIterator<OntClass> itCla = model.listClasses();
+//		while (itCla.hasNext()) {
+//			OntClass i = itCla.next();
+//			//if(i.hasSuperClass()) System.out.println(i.getSuperClass());
+//
+//		}
 		
-	       String prefixes = ""
-	           + "PREFIX ex: <" + base + "> "
-	           + "PREFIX owl: <" + OWL.getURI() + "> "
-	           + "PREFIX geo:<http://www.w3.org/2003/01/geo/wgs84_pos#>";
-		
-		UpdateAction.parseExecute(prefixes
-		            + "INSERT DATA {"
-		            + "    ex:hasLongitude owl:sameAs geo:lon . "
-		            + "    ex:hasLatitude owl:sameAs geo:lat . "
-		            + "}", model);
-		System.out.println();
+//	       String prefixes = ""
+//	           + "PREFIX ex: <" + base + "> "
+//	           + "PREFIX owl: <" + OWL.getURI() + "> "
+//	           + "PREFIX geo:<http://www.w3.org/2003/01/geo/wgs84_pos#>";
+//		
+//		UpdateAction.parseExecute(prefixes
+//		            + "INSERT DATA {"
+//		            + "    ex:hasLongitude owl:sameAs geo:lon . "
+//		            + "    ex:hasLatitude owl:sameAs geo:lat . "
+//		            + "}", model);
+//		System.out.println();
 		
 		model.write(System.out, "TURTLE");
 		
-	//	try {
-      //      model.write(new FileOutputStream("Gjesdal.ttl"), "TURTLE");
-       // } catch (Exception e) {
-            // TODO: handle exception
-       // }
+		try {
+            model.write(new FileOutputStream("Gjesdal_ny.ttl"), "TURTLE");
+            System.out.println("yup");
+        } catch (Exception e) {
+           //  TODO: handle exception
+        }
 	}
 }

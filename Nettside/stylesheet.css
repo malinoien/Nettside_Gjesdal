@@ -1,0 +1,22 @@
+body{
+
+}
+
+h1{
+  font-family: "Arial";
+}
+
+p{
+  font-family: "Arial";
+}
+
+#flexcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f4f4f4;
+}

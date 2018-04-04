@@ -43,18 +43,27 @@ gjesdalontology:58.78273163
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:Byrkjedalstunet
-        a                              owl:NamedIndividual , gjesdalontology:Accommodation , gjesdalontology:Bar ;
-        gjesdalontology:hasCity        "DIRDAL" ;
-        gjesdalontology:hasLatitude    "58.77985"^^xsd:float , "58.7799"^^xsd:float ;
-        gjesdalontology:hasLongitude   "6.316345"^^xsd:float , "6.316349"^^xsd:float ;
-        gjesdalontology:hasName        "Byrkjedalstunet" ;
-        gjesdalontology:hasPostalCode  4335 ;
-        gjesdalontology:hasStreetName  "Byrkjedalstunet" ;
+        a                               owl:NamedIndividual , gjesdalontology:Accommodation , gjesdalontology:Bar ;
+        gjesdalontology:hasCity         "DIRDAL" ;
+        gjesdalontology:hasDescription  "Hotell" ;
+        gjesdalontology:hasLatitude     "58.77985"^^xsd:float , "58.7799"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.316345"^^xsd:float , "6.316349"^^xsd:float ;
+        gjesdalontology:hasName         "Byrkjedalstunet" ;
+        gjesdalontology:hasPostalCode   4335 ;
+        gjesdalontology:hasStreetName   "Byrkjedalstunet" ;
         gjesdalontology:hasStreetNumber
                 0 .
 
 gjesdalontology:58.72202530
         a       gjesdalontology:Latitude , owl:NamedIndividual .
+
+gjesdalontology:Sikvalandsvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.694893"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.8897552"^^xsd:float ;
+        gjesdalontology:hasName         "Sikvalandsvatnet " ;
+        gjesdalontology:hasStreetName   "Sikvalandsvatnet " .
 
 gjesdalontology:5.833600
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -68,10 +77,18 @@ gjesdalontology:GiljaBarnehage
         gjesdalontology:hasPostalCode  4335 ;
         gjesdalontology:hasStreetName  "Kroveien" ;
         gjesdalontology:hasStreetNumber
-                "4" .
+                4 .
 
 gjesdalontology:58.778422
         a       gjesdalontology:Latitude , owl:NamedIndividual .
+
+gjesdalontology:Lauvnesvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.828983"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.2439713"^^xsd:float ;
+        gjesdalontology:hasName         "Lauvnesvatnet" ;
+        gjesdalontology:hasStreetName   "Lauvnesvatnet" .
 
 gjesdalontology:6.07365238
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -82,7 +99,9 @@ gjesdalontology:GjesdalSkytterhus
         gjesdalontology:hasLatitude     "58.74606"^^xsd:float ;
         gjesdalontology:hasLongitude    "5.9226832"^^xsd:float ;
         gjesdalontology:hasName         "Gjesdal skytterhus " ;
-        gjesdalontology:hasStreetName   "Skurvebakkane 6" .
+        gjesdalontology:hasStreetName   "Skurvebakkane" ;
+        gjesdalontology:hasStreetNumber
+                6 .
 
 gjesdalontology:58.72190656
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -92,14 +111,26 @@ gjesdalontology:58.770545105961
 
 gjesdalontology:SolåsSkole
         a                              gjesdalontology:School , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "ÅLGÅRD" ;
         gjesdalontology:hasLatitude    "58.773304"^^xsd:float ;
         gjesdalontology:hasLongitude   "5.8642173"^^xsd:float ;
         gjesdalontology:hasName        "Solås skole" ;
-        gjesdalontology:hasStreetName  "Åfaret 4 4330 ÅLGÅRD" .
+        gjesdalontology:hasPostalCode  4330 ;
+        gjesdalontology:hasStreetName  "Åfaret" ;
+        gjesdalontology:hasStreetNumber
+                4 .
 
 gjesdalontology:FishingSpot
         a                owl:Class ;
         rdfs:subClassOf  gjesdalontology:Place .
+
+gjesdalontology:Valevatn
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Salg av fiskekort " ;
+        gjesdalontology:hasLatitude     "58.87823"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.299615"^^xsd:float ;
+        gjesdalontology:hasName         "Valevatn" ;
+        gjesdalontology:hasStreetName   "Valevatn" .
 
 gjesdalontology:58.80619015
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -114,8 +145,8 @@ gjesdalontology:Grovika
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Ålgård" ;
         gjesdalontology:hasDescription  "Ligger ved lagerbygget til Gjesdal kommune" ;
-        gjesdalontology:hasLatitude     "5.895614"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.764317"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.764317"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.895614"^^xsd:float ;
         gjesdalontology:hasName         "Grovika" ;
         gjesdalontology:hasPostalCode   4330 ;
         gjesdalontology:hasStreetName   "Øvre Kluge" .
@@ -130,9 +161,12 @@ gjesdalontology:5.98548499
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:Oltedalsvatnet
-        a                             gjesdalontology:Beach , owl:NamedIndividual ;
-        gjesdalontology:hasLatitude   "58.819035"^^xsd:float ;
-        gjesdalontology:hasLongitude  "6.0331554"^^xsd:float .
+        a                               gjesdalontology:FishingSpot , gjesdalontology:Beach , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Privat " , "Fritt fiske langs grunn tilhørende gården Rage. For øvrig kan fiske skje etter avtale med grunneier " ;
+        gjesdalontology:hasLatitude     "58.819035"^^xsd:float , "58.815342"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.01369"^^xsd:float , "6.0331554"^^xsd:float ;
+        gjesdalontology:hasName         "Oltedalsvatnet" ;
+        gjesdalontology:hasStreetName   "Oltedalsvatnet" .
 
 gjesdalontology:hasName
         a            owl:DatatypeProperty ;
@@ -154,29 +188,50 @@ gjesdalontology:NesjaneBarnehage
         gjesdalontology:hasPostalCode  4330 ;
         gjesdalontology:hasStreetName  "Ånundskaret" ;
         gjesdalontology:hasStreetNumber
-                "98" .
+                98 .
 
 gjesdalontology:6.25381705706305
         a       gjesdalontology:Longitude , owl:NamedIndividual .
+
+gjesdalontology:Edlandsvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Fritt fiske langs grunn tilhørende Lima gårdene. Langs vannet for øvrig kan fiske skje etter avtale med grunneier " ;
+        gjesdalontology:hasLatitude     "58.761562"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.8737516"^^xsd:float ;
+        gjesdalontology:hasName         "Edlandsvatnet" ;
+        gjesdalontology:hasStreetName   "Edlandsvatnet" .
 
 gjesdalontology:5.88559275
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:DirdalKyrkje
-        a                             gjesdalontology:Church , owl:NamedIndividual ;
-        gjesdalontology:hasLatitude   "58.82726"^^xsd:float ;
-        gjesdalontology:hasLongitude  "6.190069"^^xsd:float ;
-        gjesdalontology:hasName       "Dirdal kyrkje " .
+        a                              gjesdalontology:Church , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "Dirdal" ;
+        gjesdalontology:hasLatitude    "58.82726"^^xsd:float ;
+        gjesdalontology:hasLongitude   "6.190069"^^xsd:float ;
+        gjesdalontology:hasName        "Dirdal kyrkje " ;
+        gjesdalontology:hasPostalCode  4335 ;
+        gjesdalontology:hasStreetName  "Hunnedalsvegen" ;
+        gjesdalontology:hasStreetNumber
+                2270 .
 
 gjesdalontology:HytterenovasjonHunnedalenVedRødekorsHytta
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "Ved parkeringsplassen rett overfor Rødekors hytten" ;
-        gjesdalontology:hasLatitude     "6.56312"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.86542"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.86542"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.56312"^^xsd:float ;
         gjesdalontology:hasName         "Hytterenovasjon Hunnedalen ved Rødekors hytta" ;
         gjesdalontology:hasPostalCode   4335 ;
         gjesdalontology:hasStreetName   "FV45" .
+
+gjesdalontology:Baualivatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.711346"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.019982"^^xsd:float ;
+        gjesdalontology:hasName         "Baualivatnet " ;
+        gjesdalontology:hasStreetName   "Baualivatnet " .
 
 gjesdalontology:6.44710550
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -198,28 +253,36 @@ gjesdalontology:VærtshusetÅlgård
 gjesdalontology:6.345492
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
+gjesdalontology:Bastlitjørna
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.702156"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.8937244"^^xsd:float ;
+        gjesdalontology:hasName         "Bastlitjørna " ;
+        gjesdalontology:hasStreetName   "Bastlitjørna " .
+
 gjesdalontology:5.86421713083804
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:5.82635590
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
-gjesdalontology:58.82998423
-        a       gjesdalontology:Latitude , owl:NamedIndividual .
+gjesdalontology:DjupavatnetOgDjupatjørn
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Fritt fiske med stang fra land " ;
+        gjesdalontology:hasLatitude     "58.782215"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.2384825"^^xsd:float ;
+        gjesdalontology:hasName         "Djupavatnet og Djupatjørn" ;
+        gjesdalontology:hasStreetName   "Djupavatnet og Djupatjørn" .
 
 gjesdalontology:58.86512055
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
+gjesdalontology:58.82998423
+        a       gjesdalontology:Latitude , owl:NamedIndividual .
+
 gjesdalontology:6.11545704
         a       gjesdalontology:Longitude , owl:NamedIndividual .
-
-gjesdalontology:Bjerkreimvassdraget
-        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
-        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
-        gjesdalontology:hasLatitude     "58.679092"^^xsd:float ;
-        gjesdalontology:hasLongitude    "5.985485"^^xsd:float ;
-        gjesdalontology:hasName         "Bjerkreimvassdraget" ;
-        gjesdalontology:hasStreetName   "Ytre Kydlandsvatnet " .
 
 gjesdalontology:58.77518742
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -228,8 +291,8 @@ gjesdalontology:Giljastølen
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "Står ved veien på FV281" , "Ved øverste parkeringsplass på Giljastølen" ;
-        gjesdalontology:hasLatitude     "6.279245"^^xsd:float , "6.280437"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.832066"^^xsd:float , "58.82723"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.82723"^^xsd:float , "58.832066"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.280437"^^xsd:float , "6.279245"^^xsd:float ;
         gjesdalontology:hasName         "Giljastølen" ;
         gjesdalontology:hasPostalCode   4335 ;
         gjesdalontology:hasStreetName   "Giljastølveien" .
@@ -243,12 +306,20 @@ gjesdalontology:5.83036068
 gjesdalontology:6.07599431
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
+gjesdalontology:StoreForetjørn
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Fritt fiske langs grunn tilhørende Jæren friluftsråd. For øvrig kan fiske skje etter avtale med grunneier " ;
+        gjesdalontology:hasLatitude     "58.75969"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.066733"^^xsd:float ;
+        gjesdalontology:hasName         "Store Foretjørn" ;
+        gjesdalontology:hasStreetName   "Store Foretjørn" .
+
 gjesdalontology:KryssFrafjord
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "I kryss mot sjøen X Øyren" ;
-        gjesdalontology:hasLatitude     "6.288612"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.8444"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.8444"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.288612"^^xsd:float ;
         gjesdalontology:hasName         "Kryss Frafjord" ;
         gjesdalontology:hasPostalCode   4335 .
 
@@ -256,10 +327,15 @@ gjesdalontology:6.02071666
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:OltedalKyrkje
-        a                             gjesdalontology:Church , owl:NamedIndividual ;
-        gjesdalontology:hasLatitude   "58.825592"^^xsd:float ;
-        gjesdalontology:hasLongitude  "6.0315437"^^xsd:float ;
-        gjesdalontology:hasName       "Oltedal kyrkje " .
+        a                              gjesdalontology:Church , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "Oltedal" ;
+        gjesdalontology:hasLatitude    "58.825592"^^xsd:float ;
+        gjesdalontology:hasLongitude   "6.0315437"^^xsd:float ;
+        gjesdalontology:hasName        "Oltedal kyrkje " ;
+        gjesdalontology:hasPostalCode  4333 ;
+        gjesdalontology:hasStreetName  "Bygdaveien" ;
+        gjesdalontology:hasStreetNumber
+                30 .
 
 gjesdalontology:5.86527562
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -270,6 +346,30 @@ gjesdalontology:58.76195740
 gjesdalontology:5.85343694
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
+gjesdalontology:Mjåvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.77469"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.0945854"^^xsd:float ;
+        gjesdalontology:hasName         "Mjåvatnet" ;
+        gjesdalontology:hasStreetName   "Mjåvatnet" .
+
+gjesdalontology:Grasdalvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.721905"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.0293045"^^xsd:float ;
+        gjesdalontology:hasName         "Grasdalvatnet " ;
+        gjesdalontology:hasStreetName   "Grasdalvatnet " .
+
+gjesdalontology:Hellradalsvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.890877"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.3788524"^^xsd:float ;
+        gjesdalontology:hasName         "Hellradalsvatnet " ;
+        gjesdalontology:hasStreetName   "Hellradalsvatnet " .
+
 gjesdalontology:6.19006935
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
@@ -278,6 +378,14 @@ gjesdalontology:6.02415453
 
 gjesdalontology:6.281778
         a       gjesdalontology:Longitude , owl:NamedIndividual .
+
+gjesdalontology:Austdaltjørn
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.783924"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.371262"^^xsd:float ;
+        gjesdalontology:hasName         "Austdaltjørn" ;
+        gjesdalontology:hasStreetName   "Austdaltjørn" .
 
 gjesdalontology:6.23848227
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -291,7 +399,7 @@ gjesdalontology:FiskebekkBarnehage
         gjesdalontology:hasPostalCode  4330 ;
         gjesdalontology:hasStreetName  "Fiskebekkveien" ;
         gjesdalontology:hasStreetNumber
-                "30" .
+                30 .
 
 gjesdalontology:hasCoordinates
         a              owl:ObjectProperty ;
@@ -306,15 +414,30 @@ gjesdalontology:BarbequeArea
 gjesdalontology:5.84635219
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
+gjesdalontology:Madlandsvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.779808"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.074409"^^xsd:float ;
+        gjesdalontology:hasName         "Madlandsvatnet" ;
+        gjesdalontology:hasStreetName   "Madlandsvatnet" .
+
 gjesdalontology:6.26345362
+        a       gjesdalontology:Longitude , owl:NamedIndividual .
+
+gjesdalontology:6.10723733
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:OltedalSkole
         a                              gjesdalontology:School , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "OLTEDAL" ;
         gjesdalontology:hasLatitude    "58.82639"^^xsd:float ;
         gjesdalontology:hasLongitude   "6.0348134"^^xsd:float ;
         gjesdalontology:hasName        "Oltedal skole" ;
-        gjesdalontology:hasStreetName  "Bygdaveien 56 4333 OLTEDAL" .
+        gjesdalontology:hasPostalCode  4333 ;
+        gjesdalontology:hasStreetName  "Bygdaveien" ;
+        gjesdalontology:hasStreetNumber
+                56 .
 
 gjesdalontology:58.77829650
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -322,8 +445,13 @@ gjesdalontology:58.77829650
 gjesdalontology:5.981664
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
-gjesdalontology:6.10723733
-        a       gjesdalontology:Longitude , owl:NamedIndividual .
+gjesdalontology:Kyrkjestadvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Fritt fiske langs grunn tilhørende Jæren friluftsråd. For øvrig kan fiske skje etter avtale med grunneier " ;
+        gjesdalontology:hasLatitude     "58.81495"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.103309"^^xsd:float ;
+        gjesdalontology:hasName         "Kyrkjestadvatnet" ;
+        gjesdalontology:hasStreetName   "Kyrkjestadvatnet" .
 
 gjesdalontology:58.89087846
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -333,14 +461,6 @@ gjesdalontology:5.87375173
 
 gjesdalontology:58.83795677
         a       gjesdalontology:Latitude , owl:NamedIndividual .
-
-gjesdalontology:Håvassdraget
-        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
-        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
-        gjesdalontology:hasLatitude     "58.694893"^^xsd:float , "58.702156"^^xsd:float , "58.69514"^^xsd:float ;
-        gjesdalontology:hasLongitude    "5.8897552"^^xsd:float , "5.9110436"^^xsd:float , "5.8937244"^^xsd:float ;
-        gjesdalontology:hasName         "Håvassdraget " ;
-        gjesdalontology:hasStreetName   "Holmaholvatnet " , "Bastlitjørna " , "Sikvalandsvatnet " .
 
 gjesdalontology:58.68384730
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -361,19 +481,40 @@ gjesdalontology:5.84044222
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "Parkeringsplass til Månafossen" ;
-        gjesdalontology:hasLatitude     "6.379386"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.859768"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.859768"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.379386"^^xsd:float ;
         gjesdalontology:hasName         "Frafjord, Mån" ;
         gjesdalontology:hasPostalCode   4335 .
+
+gjesdalontology:Holmaholvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.69514"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.9110436"^^xsd:float ;
+        gjesdalontology:hasName         "Holmaholvatnet " ;
+        gjesdalontology:hasStreetName   "Holmaholvatnet " .
 
 gjesdalontology:58.7772223716781
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:GjesdalKyrkje
-        a                             gjesdalontology:Church , owl:NamedIndividual ;
-        gjesdalontology:hasLatitude   "58.77355"^^xsd:float ;
-        gjesdalontology:hasLongitude  "5.946921"^^xsd:float ;
-        gjesdalontology:hasName       "Gjesdal kyrkje" .
+        a                              gjesdalontology:Church , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "Ålgård" ;
+        gjesdalontology:hasLatitude    "58.77355"^^xsd:float ;
+        gjesdalontology:hasLongitude   "5.946921"^^xsd:float ;
+        gjesdalontology:hasName        "Gjesdal kyrkje" ;
+        gjesdalontology:hasPostalCode  4330 ;
+        gjesdalontology:hasStreetName  "Gjesdalvegen" ;
+        gjesdalontology:hasStreetNumber
+                400 .
+
+gjesdalontology:Kringlelitjørn
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.71673"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.926845"^^xsd:float ;
+        gjesdalontology:hasName         "Kringlelitjørn" ;
+        gjesdalontology:hasStreetName   "Kringlelitjørn" .
 
 gjesdalontology:hasPlace
         a            owl:ObjectProperty ;
@@ -413,28 +554,41 @@ gjesdalontology:ØygardsvatnetBarnehage
         gjesdalontology:hasPostalCode  4330 ;
         gjesdalontology:hasStreetName  "Ånundskaret" ;
         gjesdalontology:hasStreetNumber
-                "96" .
+                96 .
 
 gjesdalontology:Bar  a   owl:Class ;
         rdfs:subClassOf  gjesdalontology:Place .
 
 gjesdalontology:Uburhedlaren-Gapahuk
-        a                             gjesdalontology:BarbequeArea , owl:NamedIndividual ;
+        a                             gjesdalontology:Beach , owl:NamedIndividual ;
         gjesdalontology:hasLatitude   "58.829983"^^xsd:float ;
-        gjesdalontology:hasLongitude  "6.0759945"^^xsd:float .
+        gjesdalontology:hasLongitude  "6.0759945"^^xsd:float ;
+        gjesdalontology:hasName       "Uburhedlaren - gapahuk" .
 
 gjesdalontology:58.89582390
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:ÅlgårdSkole
         a                              gjesdalontology:School , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "ÅLGÅRD" ;
         gjesdalontology:hasLatitude    "58.764645"^^xsd:float ;
         gjesdalontology:hasLongitude   "5.8574724"^^xsd:float ;
         gjesdalontology:hasName        "Ålgård skole" ;
-        gjesdalontology:hasStreetName  "Rettedalen 13 4330 ÅLGÅRD" .
+        gjesdalontology:hasPostalCode  4330 ;
+        gjesdalontology:hasStreetName  "Rettedalen" ;
+        gjesdalontology:hasStreetNumber
+                13 .
 
 gjesdalontology:58.8333583023131
         a       gjesdalontology:Latitude , owl:NamedIndividual .
+
+gjesdalontology:Giljastølsvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.82878"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.294688"^^xsd:float ;
+        gjesdalontology:hasName         "Giljastølsvatnet" ;
+        gjesdalontology:hasStreetName   "Giljastølsvatnet" .
 
 gjesdalontology:58.77334579
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -464,20 +618,12 @@ gjesdalontology:Preschool
 gjesdalontology:58.7687898828773
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
-gjesdalontology:Frafjordvassdraget
-        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
-        gjesdalontology:hasDescription  "Ta kontakt med grunneier " , "Fritt fiske langs grunn tilhørende Jæren friluftsråd. For øvrig kan fiske skje etter avtale med grunneier " , "Salg av fiskekort " ;
-        gjesdalontology:hasLatitude     "58.890877"^^xsd:float , "58.895664"^^xsd:float , "58.86275"^^xsd:float , "58.87535"^^xsd:float , "58.880394"^^xsd:float , "58.82878"^^xsd:float , "58.879215"^^xsd:float , "58.876816"^^xsd:float , "58.87628"^^xsd:float , "58.895824"^^xsd:float , "58.86512"^^xsd:float , "58.87823"^^xsd:float , "58.884724"^^xsd:float ;
-        gjesdalontology:hasLongitude    "6.3835807"^^xsd:float , "6.3989944"^^xsd:float , "6.331251"^^xsd:float , "6.3788524"^^xsd:float , "6.4471054"^^xsd:float , "6.294688"^^xsd:float , "6.366997"^^xsd:float , "6.3447447"^^xsd:float , "6.3747463"^^xsd:float , "6.3229227"^^xsd:float , "6.299615"^^xsd:float , "6.2768083"^^xsd:float , "6.413716"^^xsd:float ;
-        gjesdalontology:hasName         "Frafjordvassdraget " ;
-        gjesdalontology:hasStreetName   "Holmavatnet" , "Gottvaldstjørn" , "Giljastølsvatnet" , "Fidjavatnet " , "Stølsvatn" , "Valevatn" , "Hellradalsvatnet " , "Øyavatnet" , "Fodnastølvatn" , "Hellravatnet" , "Sliravatnet" , "Månavatnet " , "Dybingen " .
-
 gjesdalontology:Giljabakkene
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "Denne ligge midt i en sving. 3 sving fra Gilja sentrum" ;
-        gjesdalontology:hasLatitude     "6.279306"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.809242"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.809242"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.279306"^^xsd:float ;
         gjesdalontology:hasName         "Giljabakkene" ;
         gjesdalontology:hasPostalCode   4335 .
 
@@ -485,9 +631,10 @@ gjesdalontology:58.82404233
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:GapahukVedStoreForetjørn
-        a                             gjesdalontology:BarbequeArea , owl:NamedIndividual ;
+        a                             gjesdalontology:Beach , owl:NamedIndividual ;
         gjesdalontology:hasLatitude   "58.761837"^^xsd:float ;
-        gjesdalontology:hasLongitude  "6.0644565"^^xsd:float .
+        gjesdalontology:hasLongitude  "6.0644565"^^xsd:float ;
+        gjesdalontology:hasName       "Gapahuk ved store Foretjørn" .
 
 gjesdalontology:5.91104341
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -510,7 +657,7 @@ gjesdalontology:RishagenRUSBarnehage
         gjesdalontology:hasPostalCode  4330 ;
         gjesdalontology:hasStreetName  "Fiolveien" ;
         gjesdalontology:hasStreetNumber
-                "1" .
+                1 .
 
 gjesdalontology:KodlidalenBarnehage
         a                              gjesdalontology:Preschool , owl:NamedIndividual ;
@@ -521,7 +668,7 @@ gjesdalontology:KodlidalenBarnehage
         gjesdalontology:hasPostalCode  4330 ;
         gjesdalontology:hasStreetName  "Åfaret" ;
         gjesdalontology:hasStreetNumber
-                "33" .
+                33 .
 
 gjesdalontology:Latitude
         a                owl:Class ;
@@ -539,15 +686,17 @@ gjesdalontology:Oltedalbo-ogAktivitetssenter
         gjesdalontology:hasLatitude     "58.82731"^^xsd:float ;
         gjesdalontology:hasLongitude    "6.0354204"^^xsd:float ;
         gjesdalontology:hasName         "Oltedal bo-og aktivitetssenter " ;
-        gjesdalontology:hasStreetName   "Øvre Ustigbakken 2" .
+        gjesdalontology:hasStreetName   "Øvre Ustigbakken" ;
+        gjesdalontology:hasStreetNumber
+                2 .
 
-gjesdalontology:Orrevassdraget
+gjesdalontology:Fidjavatnet
         a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
-        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
-        gjesdalontology:hasLatitude     "58.763577"^^xsd:float ;
-        gjesdalontology:hasLongitude    "5.830361"^^xsd:float ;
-        gjesdalontology:hasName         "Orrevassdraget" ;
-        gjesdalontology:hasStreetName   "Øygardsvatnet " .
+        gjesdalontology:hasDescription  "Fritt fiske langs grunn tilhørende Jæren friluftsråd. For øvrig kan fiske skje etter avtale med grunneier " ;
+        gjesdalontology:hasLatitude     "58.895664"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.4471054"^^xsd:float ;
+        gjesdalontology:hasName         "Fidjavatnet " ;
+        gjesdalontology:hasStreetName   "Fidjavatnet " .
 
 gjesdalontology:58.75702507
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -565,13 +714,14 @@ gjesdalontology:58.72199594
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:SøyaHytteutleie
-        a                              gjesdalontology:Accommodation , owl:NamedIndividual ;
-        gjesdalontology:hasCity        "ÅLGÅRD" ;
-        gjesdalontology:hasLatitude    "58.683846"^^xsd:float ;
-        gjesdalontology:hasLongitude   "5.9842896"^^xsd:float ;
-        gjesdalontology:hasName        "Søya hytteutleie " ;
-        gjesdalontology:hasPostalCode  4330 ;
-        gjesdalontology:hasStreetName  "Søyland" ;
+        a                               gjesdalontology:Accommodation , owl:NamedIndividual ;
+        gjesdalontology:hasCity         "ÅLGÅRD" ;
+        gjesdalontology:hasDescription  "Hytteutleie " ;
+        gjesdalontology:hasLatitude     "58.683846"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.9842896"^^xsd:float ;
+        gjesdalontology:hasName         "Søya hytteutleie " ;
+        gjesdalontology:hasPostalCode   4330 ;
+        gjesdalontology:hasStreetName   "Søyland" ;
         gjesdalontology:hasStreetNumber
                 0 .
 
@@ -585,8 +735,8 @@ gjesdalontology:FrafjordBedehus
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "Ved Frafjord Bedehus" ;
-        gjesdalontology:hasLatitude     "6.345492"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.8415"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.8415"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.345492"^^xsd:float ;
         gjesdalontology:hasName         "Frafjord Bedehus" ;
         gjesdalontology:hasPostalCode   4335 .
 
@@ -599,7 +749,12 @@ gjesdalontology:Stamphuset
         gjesdalontology:hasLatitude     "58.765602"^^xsd:float ;
         gjesdalontology:hasLongitude    "5.854689"^^xsd:float ;
         gjesdalontology:hasName         "Stamphuset " ;
-        gjesdalontology:hasStreetName   "Rettedalen 2" .
+        gjesdalontology:hasStreetName   "Rettedalen" ;
+        gjesdalontology:hasStreetNumber
+                2 .
+
+gjesdalontology:58.841623
+        a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:58.76367899
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -607,8 +762,13 @@ gjesdalontology:58.76367899
 gjesdalontology:5.83879467
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
-gjesdalontology:58.841623
-        a       gjesdalontology:Latitude , owl:NamedIndividual .
+gjesdalontology:Hellravatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.895824"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.3989944"^^xsd:float ;
+        gjesdalontology:hasName         "Hellravatnet" ;
+        gjesdalontology:hasStreetName   "Hellravatnet" .
 
 gjesdalontology:5.86719216489615
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -617,8 +777,8 @@ gjesdalontology:FrafjordKai
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "Ved naustene på kaien" ;
-        gjesdalontology:hasLatitude     "6.281778"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.84058"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.84058"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.281778"^^xsd:float ;
         gjesdalontology:hasName         "Frafjord kai" ;
         gjesdalontology:hasPostalCode   4335 .
 
@@ -646,8 +806,8 @@ gjesdalontology:Maudalsbrekka
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "Ligger på veien over til Maudal" ;
-        gjesdalontology:hasLatitude     "6.333236"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.778423"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.778423"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.333236"^^xsd:float ;
         gjesdalontology:hasName         "Maudalsbrekka" ;
         gjesdalontology:hasPostalCode   4335 .
 
@@ -660,18 +820,27 @@ gjesdalontology:58.82725728
 gjesdalontology:5.84969799
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
+gjesdalontology:Fodnastølvatn
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.876816"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.3229227"^^xsd:float ;
+        gjesdalontology:hasName         "Fodnastølvatn" ;
+        gjesdalontology:hasStreetName   "Fodnastølvatn" .
+
 gjesdalontology:Beach
         a                owl:Class ;
         rdfs:subClassOf  gjesdalontology:Place .
 
 gjesdalontology:Gjesdalgjestgiveri
-        a                              gjesdalontology:Accommodation , owl:NamedIndividual ;
-        gjesdalontology:hasCity        "ÅLGÅRD" ;
-        gjesdalontology:hasLatitude    "58.77832"^^xsd:float ;
-        gjesdalontology:hasLongitude   "5.8355346"^^xsd:float ;
-        gjesdalontology:hasName        "Gjesdalgjestgiveri" ;
-        gjesdalontology:hasPostalCode  4330 ;
-        gjesdalontology:hasStreetName  "Opstadveien" ;
+        a                               owl:NamedIndividual , gjesdalontology:Accommodation ;
+        gjesdalontology:hasCity         "ÅLGÅRD" ;
+        gjesdalontology:hasDescription  "Hotell" ;
+        gjesdalontology:hasLatitude     "58.77832"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.8355346"^^xsd:float ;
+        gjesdalontology:hasName         "Gjesdalgjestgiveri" ;
+        gjesdalontology:hasPostalCode   4330 ;
+        gjesdalontology:hasStreetName   "Opstadveien" ;
         gjesdalontology:hasStreetNumber
                 3 .
 
@@ -683,6 +852,14 @@ gjesdalontology:6.379386
 
 gjesdalontology:GeoLocation
         a       owl:Class .
+
+gjesdalontology:Ned.Bergsvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Fritt fiske langs grunn som hører til gården Berge. For øvrig kan fiske skje etter avtale med grunneier " ;
+        gjesdalontology:hasLatitude     "58.797123"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.955335"^^xsd:float ;
+        gjesdalontology:hasName         "Ned. Bergsvatnet" ;
+        gjesdalontology:hasStreetName   "Ned. Bergsvatnet" .
 
 gjesdalontology:5.84538371
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -710,8 +887,8 @@ gjesdalontology:HunnedalenParkeringsplass
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "På parkeringsplass" ;
-        gjesdalontology:hasLatitude     "6.597521"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.87709"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.87709"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.597521"^^xsd:float ;
         gjesdalontology:hasName         "Hunnedalen Parkeringsplass" ;
         gjesdalontology:hasPostalCode   4335 ;
         gjesdalontology:hasStreetName   "FV45" .
@@ -722,6 +899,22 @@ gjesdalontology:6.333236
 gjesdalontology:58.822380
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
+gjesdalontology:Månavatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Fritt fiske langs grunn tilhørende Jæren friluftsråd. For øvrig kan fiske skje etter avtale med grunneier " ;
+        gjesdalontology:hasLatitude     "58.87535"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.413716"^^xsd:float ;
+        gjesdalontology:hasName         "Månavatnet " ;
+        gjesdalontology:hasStreetName   "Månavatnet " .
+
+gjesdalontology:Gloppevatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.769062"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.1072373"^^xsd:float ;
+        gjesdalontology:hasName         "Gloppevatnet" ;
+        gjesdalontology:hasStreetName   "Gloppevatnet" .
+
 gjesdalontology:5.97555769
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
@@ -731,13 +924,23 @@ gjesdalontology:6.34474467
 gjesdalontology:6.01369013
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
+gjesdalontology:Gottvaldstjørn
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.880394"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.3835807"^^xsd:float ;
+        gjesdalontology:hasName         "Gottvaldstjørn" ;
+        gjesdalontology:hasStreetName   "Gottvaldstjørn" .
+
 gjesdalontology:BærlandGrendahus
         a                               gjesdalontology:RentalProperty , owl:NamedIndividual ;
         gjesdalontology:hasDescription  "Kommunalt" ;
         gjesdalontology:hasLatitude     "58.77576"^^xsd:float ;
         gjesdalontology:hasLongitude    "5.826271"^^xsd:float ;
         gjesdalontology:hasName         "Bærland grendahus " ;
-        gjesdalontology:hasStreetName   "Bekkeleia 10" .
+        gjesdalontology:hasStreetName   "Bekkeleia" ;
+        gjesdalontology:hasStreetNumber
+                10 .
 
 gjesdalontology:FrafjordSpa
         a                              gjesdalontology:Bar , owl:NamedIndividual ;
@@ -752,6 +955,22 @@ gjesdalontology:FrafjordSpa
 
 gjesdalontology:6.07440902
         a       gjesdalontology:Longitude , owl:NamedIndividual .
+
+gjesdalontology:Stølsvatn
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Salg av fiskekort " ;
+        gjesdalontology:hasLatitude     "58.86512"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.331251"^^xsd:float ;
+        gjesdalontology:hasName         "Stølsvatn" ;
+        gjesdalontology:hasStreetName   "Stølsvatn" .
+
+gjesdalontology:Homslandsvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.725258"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.885593"^^xsd:float ;
+        gjesdalontology:hasName         "Homslandsvatnet" ;
+        gjesdalontology:hasStreetName   "Homslandsvatnet" .
 
 gjesdalontology:58.78433285
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -774,16 +993,18 @@ gjesdalontology:SolåsBarnehage
         gjesdalontology:hasPostalCode  4330 ;
         gjesdalontology:hasStreetName  "Solåsveien" ;
         gjesdalontology:hasStreetNumber
-                "49" .
+                49 .
 
 gjesdalontology:StreetName
         a                owl:Class ;
         rdfs:subClassOf  gjesdalontology:Address .
 
 gjesdalontology:Edlandshagen-Perlå
-        a                             gjesdalontology:Beach , gjesdalontology:BarbequeArea , owl:NamedIndividual ;
-        gjesdalontology:hasLatitude   "58.76355"^^xsd:float ;
-        gjesdalontology:hasLongitude  "5.853437"^^xsd:float .
+        a                               gjesdalontology:Beach , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Offentlig" ;
+        gjesdalontology:hasLatitude     "58.76355"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.853437"^^xsd:float ;
+        gjesdalontology:hasName         "Edlandshagen - Perlå" .
 
 gjesdalontology:58.81601486
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -797,7 +1018,7 @@ gjesdalontology:BamseboBarnehage
         gjesdalontology:hasPostalCode  4330 ;
         gjesdalontology:hasStreetName  "Skogveien" ;
         gjesdalontology:hasStreetNumber
-                "4C" .
+                "4C"^^xsd:integer .
 
 gjesdalontology:58.7656023104864
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -808,8 +1029,15 @@ gjesdalontology:58.854272
 gjesdalontology:58.88472238
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( gjesdalontology:Accommodation gjesdalontology:Bar gjesdalontology:BarbequeArea gjesdalontology:Beach gjesdalontology:Church gjesdalontology:FishingSpot gjesdalontology:Preschool gjesdalontology:RecyclingPoint gjesdalontology:RentalProperty gjesdalontology:School )
+] .
+
 gjesdalontology:58.78221345
         a       gjesdalontology:Latitude , owl:NamedIndividual .
+
+gjesdalontology:6.03315530
+        a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:Kongeparken
         a                              gjesdalontology:Bar , owl:NamedIndividual ;
@@ -821,9 +1049,6 @@ gjesdalontology:Kongeparken
         gjesdalontology:hasStreetName  "Kongsgata" ;
         gjesdalontology:hasStreetNumber
                 20 .
-
-gjesdalontology:6.03315530
-        a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:58.70215547
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -838,6 +1063,14 @@ gjesdalontology:6.32292293
 gjesdalontology:5.84697391523617
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
+gjesdalontology:Øystrevatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.73502"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.90277"^^xsd:float ;
+        gjesdalontology:hasName         "Øystrevatnet " ;
+        gjesdalontology:hasStreetName   "Øystrevatnet " .
+
 gjesdalontology:HusafjellBarnehage
         a                               gjesdalontology:Preschool , owl:NamedIndividual ;
         gjesdalontology:hasCity         "ÅLGÅRD" ;
@@ -848,14 +1081,14 @@ gjesdalontology:HusafjellBarnehage
         gjesdalontology:hasPostalCode   4330 ;
         gjesdalontology:hasStreetName   "Åfaret" ;
         gjesdalontology:hasStreetNumber
-                "6" .
+                6 .
 
 gjesdalontology:HytterenovasjonHunnedalenVedTverrånå
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "Står på parkeringsplassen ved Tverrånå. Grensen mellom Rogaland og Vest-Agder" ;
-        gjesdalontology:hasLatitude     "6.605116"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.880066"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.880066"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.605116"^^xsd:float ;
         gjesdalontology:hasName         "Hytterenovasjon Hunnedalen ved Tverrånå" ;
         gjesdalontology:hasPostalCode   4335 ;
         gjesdalontology:hasStreetName   "FV45" .
@@ -864,9 +1097,18 @@ gjesdalontology:6.014329
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:Brekko
-        a                             gjesdalontology:BarbequeArea , owl:NamedIndividual ;
+        a                             gjesdalontology:Beach , owl:NamedIndividual ;
         gjesdalontology:hasLatitude   "58.77399"^^xsd:float ;
-        gjesdalontology:hasLongitude  "6.0736523"^^xsd:float .
+        gjesdalontology:hasLongitude  "6.0736523"^^xsd:float ;
+        gjesdalontology:hasName       "Brekko " .
+
+gjesdalontology:Husavatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.722027"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.981445"^^xsd:float ;
+        gjesdalontology:hasName         "Husavatnet " ;
+        gjesdalontology:hasStreetName   "Husavatnet " .
 
 gjesdalontology:58.77114636
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -881,6 +1123,14 @@ gjesdalontology:Jegerklubben
         gjesdalontology:hasStreetName  "Skurvebakkane" ;
         gjesdalontology:hasStreetNumber
                 16 .
+
+gjesdalontology:Sliravatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Salg av fiskekort " ;
+        gjesdalontology:hasLatitude     "58.879215"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.3447447"^^xsd:float ;
+        gjesdalontology:hasName         "Sliravatnet" ;
+        gjesdalontology:hasStreetName   "Sliravatnet" .
 
 gjesdalontology:Place
         a       owl:Class .
@@ -904,18 +1154,26 @@ gjesdalontology:58.77731111
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:ÅlgårdKirke
-        a                             gjesdalontology:Church , owl:NamedIndividual ;
-        gjesdalontology:hasLatitude   "58.7686"^^xsd:float ;
-        gjesdalontology:hasLongitude  "5.846352"^^xsd:float ;
-        gjesdalontology:hasName       "Ålgård kirke" .
+        a                              gjesdalontology:Church , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "Ålgård" ;
+        gjesdalontology:hasLatitude    "58.7686"^^xsd:float ;
+        gjesdalontology:hasLongitude   "5.846352"^^xsd:float ;
+        gjesdalontology:hasName        "Ålgård kirke" ;
+        gjesdalontology:hasPostalCode  4330 ;
+        gjesdalontology:hasStreetName  "Kyrkjeveien" ;
+        gjesdalontology:hasStreetNumber
+                21 .
 
 gjesdalontology:5.83714644
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:Flassavatnet
-        a                             gjesdalontology:Beach , owl:NamedIndividual ;
-        gjesdalontology:hasLatitude   "58.78273"^^xsd:float ;
-        gjesdalontology:hasLongitude  "5.872242"^^xsd:float .
+        a                               owl:NamedIndividual , gjesdalontology:Beach , gjesdalontology:FishingSpot ;
+        gjesdalontology:hasDescription  "Fritt fiske langs grunn som hører til gårdene på Ytre Lima. For øvrig kan fiske skje etter avtale med grunneier " , "Privat " ;
+        gjesdalontology:hasLatitude     "58.78273"^^xsd:float , "58.78978"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.872242"^^xsd:float , "5.868987"^^xsd:float ;
+        gjesdalontology:hasName         "Flassavatnet" ;
+        gjesdalontology:hasStreetName   "Flassavatnet" .
 
 gjesdalontology:6.21801125
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -952,14 +1210,14 @@ gjesdalontology:Kongeparken-GjesdalKonserthus
         gjesdalontology:hasStreetNumber
                 20 .
 
+gjesdalontology:58.87823162
+        a       gjesdalontology:Latitude , owl:NamedIndividual .
+
 gjesdalontology:58.82898295
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:5.89688779048941
         a       gjesdalontology:Longitude , owl:NamedIndividual .
-
-gjesdalontology:58.87823162
-        a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:58.75968797
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -989,8 +1247,8 @@ gjesdalontology:SøylandVedYtreKydlandvannet
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Ålgård" ;
         gjesdalontology:hasDescription  "Ligger på Rasteplass/parkeringsplass ved E39" ;
-        gjesdalontology:hasLatitude     "5.981664"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.677326"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.677326"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.981664"^^xsd:float ;
         gjesdalontology:hasName         "Søyland  ved Ytre Kydlandvannet" ;
         gjesdalontology:hasPostalCode   4330 ;
         gjesdalontology:hasStreetName   "E 39" .
@@ -999,9 +1257,11 @@ gjesdalontology:58.7460606594616
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:Raudvigå
-        a                             gjesdalontology:Beach , owl:NamedIndividual ;
-        gjesdalontology:hasLatitude   "58.76833"^^xsd:float ;
-        gjesdalontology:hasLongitude  "5.832188"^^xsd:float .
+        a                               gjesdalontology:Beach , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Privat " ;
+        gjesdalontology:hasLatitude     "58.76833"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.832188"^^xsd:float ;
+        gjesdalontology:hasName         "Raudvigå" .
 
 gjesdalontology:5.89335963635906
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -1015,15 +1275,7 @@ gjesdalontology:OltedalBarnehage
         gjesdalontology:hasPostalCode  4333 ;
         gjesdalontology:hasStreetName  "Bygdaveien" ;
         gjesdalontology:hasStreetNumber
-                "54" .
-
-gjesdalontology:Dirdalvassdraget
-        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
-        gjesdalontology:hasDescription  "Fritt fiske med stang fra land " , "Ta kontakt med grunneier " ;
-        gjesdalontology:hasLatitude     "58.783924"^^xsd:float , "58.782215"^^xsd:float , "58.829117"^^xsd:float , "58.784332"^^xsd:float , "58.828983"^^xsd:float ;
-        gjesdalontology:hasLongitude    "6.3035903"^^xsd:float , "6.371262"^^xsd:float , "6.2439713"^^xsd:float , "6.2384825"^^xsd:float , "6.2634535"^^xsd:float ;
-        gjesdalontology:hasName         "Dirdalvassdraget " ;
-        gjesdalontology:hasStreetName   "Djupavatnet og Djupatjørn" , "Austdaltjørn" , "Lauvnesvatnet" , "Byrkjedalslonå" , "Råssavatnet" .
+                54 .
 
 gjesdalontology:TheGreatWall
         a                              gjesdalontology:Bar , owl:NamedIndividual ;
@@ -1047,16 +1299,28 @@ gjesdalontology:6.01998209
 
 gjesdalontology:GjesdalUngdomsskole
         a                              gjesdalontology:School , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "ÅLGÅRD" ;
         gjesdalontology:hasLatitude    "58.76879"^^xsd:float ;
         gjesdalontology:hasLongitude   "5.8671923"^^xsd:float ;
         gjesdalontology:hasName        "Gjesdal ungdomsskole" ;
-        gjesdalontology:hasStreetName  "Solåsveien 33 4330 ÅLGÅRD" .
+        gjesdalontology:hasPostalCode  4330 ;
+        gjesdalontology:hasStreetName  "Solåsveien" ;
+        gjesdalontology:hasStreetNumber
+                33 .
 
 gjesdalontology:58.76860098
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:6.279245
         a       gjesdalontology:Longitude , owl:NamedIndividual .
+
+gjesdalontology:Dybingen
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.86275"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.2768083"^^xsd:float ;
+        gjesdalontology:hasName         "Dybingen " ;
+        gjesdalontology:hasStreetName   "Dybingen " .
 
 :       a       owl:Ontology .
 
@@ -1080,7 +1344,7 @@ gjesdalontology:Lafthuset
         gjesdalontology:hasLongitude    "6.0550895"^^xsd:float , "6.055014"^^xsd:float ;
         gjesdalontology:hasName         "Lafthuset" ;
         gjesdalontology:hasPostalCode   4333 ;
-        gjesdalontology:hasStreetName   "Bygdaveien 186" , "Bygdaveien" ;
+        gjesdalontology:hasStreetName   "Bygdaveien" ;
         gjesdalontology:hasStreetNumber
                 186 .
 
@@ -1090,7 +1354,9 @@ gjesdalontology:Giljabo-OgAktivitetssenter
         gjesdalontology:hasLatitude     "58.80705"^^xsd:float ;
         gjesdalontology:hasLongitude    "6.253817"^^xsd:float ;
         gjesdalontology:hasName         "Gilja bo- og aktivitetssenter " ;
-        gjesdalontology:hasStreetName   "Kroveien 4" .
+        gjesdalontology:hasStreetName   "Kroveien" ;
+        gjesdalontology:hasStreetNumber
+                4 .
 
 gjesdalontology:6.31634885
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -1104,7 +1370,7 @@ gjesdalontology:FlassabekkenBarnehage
         gjesdalontology:hasPostalCode  4330 ;
         gjesdalontology:hasStreetName  "Flassabekkveien" ;
         gjesdalontology:hasStreetNumber
-                "2" .
+                2 .
 
 gjesdalontology:6.03542057861965
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -1126,13 +1392,25 @@ gjesdalontology:6.06445630
 
 gjesdalontology:DirdalSkole
         a                              gjesdalontology:School , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "OLTEDAL" ;
         gjesdalontology:hasLatitude    "58.815697"^^xsd:float ;
         gjesdalontology:hasLongitude   "6.218093"^^xsd:float ;
         gjesdalontology:hasName        "Dirdal skole" ;
-        gjesdalontology:hasStreetName  "Krovegen 270 4333 OLTEDAL" .
+        gjesdalontology:hasPostalCode  4333 ;
+        gjesdalontology:hasStreetName  "Krovegen" ;
+        gjesdalontology:hasStreetNumber
+                270 .
 
 gjesdalontology:5.86326494
         a       gjesdalontology:Longitude , owl:NamedIndividual .
+
+gjesdalontology:Råssavatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.829117"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.2634535"^^xsd:float ;
+        gjesdalontology:hasName         "Råssavatnet" ;
+        gjesdalontology:hasStreetName   "Råssavatnet" .
 
 gjesdalontology:5.92684488
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -1171,6 +1449,14 @@ gjesdalontology:58.69489297
 gjesdalontology:58.8333953549151
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
+gjesdalontology:Limavatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Fritt fiske langs grunn tilhørende Ytre Lima gårdene. Langs vannet for øvrig kan fiske skje etter avtale med grunneier " ;
+        gjesdalontology:hasLatitude     "58.779694"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.9270697"^^xsd:float ;
+        gjesdalontology:hasName         "Limavatnet" ;
+        gjesdalontology:hasStreetName   "Limavatnet" .
+
 gjesdalontology:StreetNumber
         a                owl:Class ;
         rdfs:subClassOf  gjesdalontology:Address .
@@ -1179,8 +1465,8 @@ gjesdalontology:HunnedalenParkeringsplassVedGaudøynå
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "Hunnedalen Parkeringsplass ovenfor Gaudøynå" ;
-        gjesdalontology:hasLatitude     "6.536638"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.85427"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.85427"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.536638"^^xsd:float ;
         gjesdalontology:hasName         "Hunnedalen Parkeringsplass ved Gaudøynå" ;
         gjesdalontology:hasPostalCode   4335 ;
         gjesdalontology:hasStreetName   "FV45" .
@@ -1194,6 +1480,14 @@ gjesdalontology:58.78977833
 gjesdalontology:58.7647900682971
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
+gjesdalontology:Hedlesvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.731884"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.9686065"^^xsd:float ;
+        gjesdalontology:hasName         "Hedlesvatnet " ;
+        gjesdalontology:hasStreetName   "Hedlesvatnet " .
+
 gjesdalontology:5.85327748021651
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
@@ -1206,48 +1500,60 @@ gjesdalontology:58.76355133
 gjesdalontology:6.39899450
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
-gjesdalontology:58.76833406
+gjesdalontology:58.841498
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
-gjesdalontology:58.841498
+gjesdalontology:58.76833406
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:5.95533517
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:TeltplassLilleForetjørn
-        a                             gjesdalontology:BarbequeArea , owl:NamedIndividual ;
+        a                             gjesdalontology:Beach , owl:NamedIndividual ;
         gjesdalontology:hasLatitude   "58.76196"^^xsd:float ;
-        gjesdalontology:hasLongitude  "6.0715227"^^xsd:float .
+        gjesdalontology:hasLongitude  "6.0715227"^^xsd:float ;
+        gjesdalontology:hasName       "Teltplass lille Foretjørn " .
 
 gjesdalontology:6.280437
         a       gjesdalontology:Longitude , owl:NamedIndividual .
+
+gjesdalontology:YtreKydlandsvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.679092"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.985485"^^xsd:float ;
+        gjesdalontology:hasName         "Ytre Kydlandsvatnet " ;
+        gjesdalontology:hasStreetName   "Ytre Kydlandsvatnet " .
 
 gjesdalontology:6.279306
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:GiljastølenCamping
-        a                               gjesdalontology:Accommodation , gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
-        gjesdalontology:hasCity         "DIRDAL" , "Dirdal" ;
+        a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
+        gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "Giljastølen Campingplass" ;
-        gjesdalontology:hasLatitude     "58.80619"^^xsd:float , "6.284303"^^xsd:float ;
-        gjesdalontology:hasLongitude    "6.2592173"^^xsd:float , "58.82238"^^xsd:float ;
-        gjesdalontology:hasName         "Giljastølen Camping " , "Giljastølen Camping" ;
-        gjesdalontology:hasPostalCode   4335 ;
-        gjesdalontology:hasStreetName   "Giljagarden" ;
-        gjesdalontology:hasStreetNumber
-                1 .
+        gjesdalontology:hasLatitude     "58.82238"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.284303"^^xsd:float ;
+        gjesdalontology:hasName         "Giljastølen Camping" ;
+        gjesdalontology:hasPostalCode   4335 .
 
 gjesdalontology:6.563120
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
-gjesdalontology:Oltedalvassdraget
+gjesdalontology:Øygardsvatnet
         a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
-        gjesdalontology:hasDescription  "Ta kontakt med grunneier " , "Fritt fiske langs grunn tilhørende gården Rage. For øvrig kan fiske skje etter avtale med grunneier " , "Fritt fiske langs grunn tilhørende Jæren friluftsråd. For øvrig kan fiske skje etter avtale med grunneier " ;
-        gjesdalontology:hasLatitude     "58.769062"^^xsd:float , "58.837955"^^xsd:float , "58.76368"^^xsd:float , "58.779808"^^xsd:float , "58.77469"^^xsd:float , "58.75969"^^xsd:float , "58.81495"^^xsd:float , "58.815342"^^xsd:float ;
-        gjesdalontology:hasLongitude    "6.1072373"^^xsd:float , "6.01369"^^xsd:float , "6.074409"^^xsd:float , "6.066733"^^xsd:float , "6.074745"^^xsd:float , "6.115457"^^xsd:float , "6.103309"^^xsd:float , "6.0945854"^^xsd:float ;
-        gjesdalontology:hasName         "Oltedalvassdraget " ;
-        gjesdalontology:hasStreetName   "Mjåvatnet" , "Kyrkjestadvatnet" , "Madlandsvatnet" , "Store Foretjørn" , "Litle Foretjørn " , "Oltedalsvatnet" , "Ragsvatnet " , "Gloppevatnet" .
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.763577"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.830361"^^xsd:float ;
+        gjesdalontology:hasName         "Øygardsvatnet " ;
+        gjesdalontology:hasStreetName   "Øygardsvatnet " .
+
+gjesdalontology:58.87627988
+        a       gjesdalontology:Latitude , owl:NamedIndividual .
+
+gjesdalontology:58.71672702
+        a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:KollbergeFamiliebarnehage
         a                              gjesdalontology:Preschool , owl:NamedIndividual ;
@@ -1258,20 +1564,14 @@ gjesdalontology:KollbergeFamiliebarnehage
         gjesdalontology:hasPostalCode  4330 ;
         gjesdalontology:hasStreetName  "Skurvegarden" ;
         gjesdalontology:hasStreetNumber
-                "67" .
-
-gjesdalontology:58.71672702
-        a       gjesdalontology:Latitude , owl:NamedIndividual .
-
-gjesdalontology:58.87627988
-        a       gjesdalontology:Latitude , owl:NamedIndividual .
+                67 .
 
 gjesdalontology:HytterenovasjonDirdal
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "Står på parkeringsplassen til Dirdal Kapell" ;
-        gjesdalontology:hasLatitude     "6.19176"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.828037"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.828037"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.19176"^^xsd:float ;
         gjesdalontology:hasName         "Hytterenovasjon Dirdal" ;
         gjesdalontology:hasPostalCode   4335 ;
         gjesdalontology:hasStreetName   "FV45" .
@@ -1323,7 +1623,9 @@ gjesdalontology:SamhaldOltedal
         gjesdalontology:hasLatitude     "58.833397"^^xsd:float ;
         gjesdalontology:hasLongitude    "6.056634"^^xsd:float ;
         gjesdalontology:hasName         "Samhald  Oltedal" ;
-        gjesdalontology:hasStreetName   "Bygdaveien 179" .
+        gjesdalontology:hasStreetName   "Bygdaveien" ;
+        gjesdalontology:hasStreetNumber
+                179 .
 
 gjesdalontology:Westernbyen
         a                               owl:NamedIndividual , gjesdalontology:Bar , gjesdalontology:RentalProperty ;
@@ -1333,7 +1635,7 @@ gjesdalontology:Westernbyen
         gjesdalontology:hasLongitude    "5.847018"^^xsd:float , "5.846974"^^xsd:float ;
         gjesdalontology:hasName         "Westernbyen" , "Westernbyen " ;
         gjesdalontology:hasPostalCode   4330 ;
-        gjesdalontology:hasStreetName   "Ålgårdslåtten 12" , "Ålgårdslåtten" ;
+        gjesdalontology:hasStreetName   "Ålgårdslåtten" ;
         gjesdalontology:hasStreetNumber
                 12 .
 
@@ -1342,10 +1644,14 @@ gjesdalontology:58.77832189
 
 gjesdalontology:BærlandSkole
         a                              gjesdalontology:School , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "ÅLGÅRD" ;
         gjesdalontology:hasLatitude    "58.776028"^^xsd:float ;
         gjesdalontology:hasLongitude   "5.8282695"^^xsd:float ;
         gjesdalontology:hasName        "Bærland skole" ;
-        gjesdalontology:hasStreetName  "Barliveien 5 4330 ÅLGÅRD" .
+        gjesdalontology:hasPostalCode  4330 ;
+        gjesdalontology:hasStreetName  "Barliveien" ;
+        gjesdalontology:hasStreetNumber
+                5 .
 
 gjesdalontology:hasPostalCode
         a            owl:DatatypeProperty ;
@@ -1359,10 +1665,15 @@ gjesdalontology:6.03154364
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:ÅlgårdGamleKirke
-        a                             gjesdalontology:Church , owl:NamedIndividual ;
-        gjesdalontology:hasLatitude   "58.769142"^^xsd:float ;
-        gjesdalontology:hasLongitude  "5.8453836"^^xsd:float ;
-        gjesdalontology:hasName       "Ålgård gamle kirke " .
+        a                              gjesdalontology:Church , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "Ålgård" ;
+        gjesdalontology:hasLatitude    "58.769142"^^xsd:float ;
+        gjesdalontology:hasLongitude   "5.8453836"^^xsd:float ;
+        gjesdalontology:hasName        "Ålgård gamle kirke " ;
+        gjesdalontology:hasPostalCode  4330 ;
+        gjesdalontology:hasStreetName  "Kyrkjeveien" ;
+        gjesdalontology:hasStreetNumber
+                36 .
 
 gjesdalontology:58.82878275
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -1389,9 +1700,11 @@ gjesdalontology:City  a  owl:Class ;
         rdfs:subClassOf  gjesdalontology:Address .
 
 gjesdalontology:KyllingstadBadeplass
-        a                             gjesdalontology:Beach , gjesdalontology:BarbequeArea , owl:NamedIndividual ;
-        gjesdalontology:hasLatitude   "58.724133"^^xsd:float ;
-        gjesdalontology:hasLongitude  "5.975558"^^xsd:float .
+        a                               gjesdalontology:Beach , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Offentlig" ;
+        gjesdalontology:hasLatitude     "58.724133"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.975558"^^xsd:float ;
+        gjesdalontology:hasName         "Kyllingstad badeplass" .
 
 gjesdalontology:Longitude
         a                owl:Class ;
@@ -1425,7 +1738,7 @@ gjesdalontology:BruhammarenFUSBarnehage
         gjesdalontology:hasPostalCode  4330 ;
         gjesdalontology:hasStreetName  "Bruhammaren" ;
         gjesdalontology:hasStreetNumber
-                "4" .
+                4 .
 
 gjesdalontology:6.318134
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -1433,7 +1746,7 @@ gjesdalontology:6.318134
 gjesdalontology:6.597521
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
-gjesdalontology:58.81494953
+gjesdalontology:58.87535078
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:hasDescription
@@ -1441,7 +1754,7 @@ gjesdalontology:hasDescription
         rdfs:domain  gjesdalontology:Place ;
         rdfs:range   xsd:string .
 
-gjesdalontology:58.87535078
+gjesdalontology:58.81494953
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:58.69513994
@@ -1450,16 +1763,16 @@ gjesdalontology:58.69513994
 gjesdalontology:5.8546892032774
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
-gjesdalontology:Figgjovassdraget
-        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
-        gjesdalontology:hasDescription  "Ta kontakt med grunneier " , "Fritt fiske langs grunn tilhørende Lima gårdene. Langs vannet for øvrig kan fiske skje etter avtale med grunneier " , "Fritt fiske langs grunn som hører til gårdene på Ytre Lima. For øvrig kan fiske skje etter avtale med grunneier " , "Fritt fiske langs grunn tilhørende Ytre Lima gårdene. Langs vannet for øvrig kan fiske skje etter avtale med grunneier " , "Fritt fiske langs grunn som hører til gården Berge. For øvrig kan fiske skje etter avtale med grunneier " ;
-        gjesdalontology:hasLatitude     "58.71673"^^xsd:float , "58.761562"^^xsd:float , "58.722027"^^xsd:float , "58.721996"^^xsd:float , "58.731884"^^xsd:float , "58.797123"^^xsd:float , "58.711346"^^xsd:float , "58.757027"^^xsd:float , "58.70841"^^xsd:float , "58.78978"^^xsd:float , "58.721905"^^xsd:float , "58.725258"^^xsd:float , "58.73502"^^xsd:float , "58.779694"^^xsd:float ;
-        gjesdalontology:hasLongitude    "6.019982"^^xsd:float , "5.9270697"^^xsd:float , "5.9686065"^^xsd:float , "5.868987"^^xsd:float , "5.885593"^^xsd:float , "5.9164996"^^xsd:float , "5.926845"^^xsd:float , "5.955335"^^xsd:float , "6.0207167"^^xsd:float , "5.938923"^^xsd:float , "5.90277"^^xsd:float , "6.0293045"^^xsd:float , "5.981445"^^xsd:float , "5.8737516"^^xsd:float ;
-        gjesdalontology:hasName         "Figgjovassdraget " ;
-        gjesdalontology:hasStreetName   "Limavatnet" , "Ned. Bergsvatnet" , "Baualivatnet " , "Edlandsvatnet" , "Husavatnet " , "Grasdalvatnet " , "Nordåsvatnet " , "Hedlesvatnet " , "Øystrevatnet " , "Kringlelitjørn" , "Homslandsvatnet" , "Flassavatnet" , "Errevatnet" , "Klugevatnet" .
-
 gjesdalontology:58.773415751891
         a       gjesdalontology:Latitude , owl:NamedIndividual .
+
+gjesdalontology:Errevatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.721996"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.938923"^^xsd:float ;
+        gjesdalontology:hasName         "Errevatnet" ;
+        gjesdalontology:hasStreetName   "Errevatnet" .
 
 gjesdalontology:58.81903283
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -1480,10 +1793,15 @@ gjesdalontology:58.8156972959712
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:ÅlgårdBaptistkirke
-        a                             gjesdalontology:Church , owl:NamedIndividual ;
-        gjesdalontology:hasLatitude   "58.763557"^^xsd:float ;
-        gjesdalontology:hasLongitude  "5.850109"^^xsd:float ;
-        gjesdalontology:hasName       "Ålgård Baptistkirke " .
+        a                              gjesdalontology:Church , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "Ålgård" ;
+        gjesdalontology:hasLatitude    "58.763557"^^xsd:float ;
+        gjesdalontology:hasLongitude   "5.850109"^^xsd:float ;
+        gjesdalontology:hasName        "Ålgård Baptistkirke " ;
+        gjesdalontology:hasPostalCode  4330 ;
+        gjesdalontology:hasStreetName  "Emmausveien" ;
+        gjesdalontology:hasStreetNumber
+                1 .
 
 gjesdalontology:5.90277023
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -1501,14 +1819,14 @@ gjesdalontology:BærlandBarnehage
         gjesdalontology:hasPostalCode   4330 ;
         gjesdalontology:hasStreetName   "Djupedalsveien" ;
         gjesdalontology:hasStreetNumber
-                "6" .
+                6 .
 
 gjesdalontology:Frafjord
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
         gjesdalontology:hasDescription  "Ved Engelskhuset" ;
-        gjesdalontology:hasLatitude     "6.318134"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.84162"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.84162"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.318134"^^xsd:float ;
         gjesdalontology:hasName         "Frafjord" ;
         gjesdalontology:hasPostalCode   4335 .
 
@@ -1519,8 +1837,8 @@ gjesdalontology:Nevland
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Ålgård" ;
         gjesdalontology:hasDescription  "Likker i krysset ved FV286 og veien opp til Nevland" ;
-        gjesdalontology:hasLatitude     "6.014329"^^xsd:float ;
-        gjesdalontology:hasLongitude    "58.783424"^^xsd:float ;
+        gjesdalontology:hasLatitude     "58.783424"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.014329"^^xsd:float ;
         gjesdalontology:hasName         "Nevland" ;
         gjesdalontology:hasPostalCode   4330 ;
         gjesdalontology:hasStreetName   "FV286" .
@@ -1537,6 +1855,14 @@ gjesdalontology:hasStreetName
         rdfs:domain  gjesdalontology:StreetName ;
         rdfs:range   xsd:string .
 
+gjesdalontology:Holmavatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.884724"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.3747463"^^xsd:float ;
+        gjesdalontology:hasName         "Holmavatnet" ;
+        gjesdalontology:hasStreetName   "Holmavatnet" .
+
 gjesdalontology:5.83218832
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
@@ -1550,15 +1876,24 @@ gjesdalontology:6.536638
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:KongeparkenCamping
-        a                              gjesdalontology:Accommodation , owl:NamedIndividual ;
-        gjesdalontology:hasCity        "ÅLGÅRD" ;
-        gjesdalontology:hasLatitude    "58.775745"^^xsd:float ;
-        gjesdalontology:hasLongitude   "5.845555"^^xsd:float ;
-        gjesdalontology:hasName        "Kongeparken Camping " , "Kongeparken Camping" ;
-        gjesdalontology:hasPostalCode  4330 ;
-        gjesdalontology:hasStreetName  "Ålgårdslåtten" ;
+        a                               gjesdalontology:Accommodation , owl:NamedIndividual ;
+        gjesdalontology:hasCity         "ÅLGÅRD" ;
+        gjesdalontology:hasDescription  "Hytteutleie " , "Camping" ;
+        gjesdalontology:hasLatitude     "58.775745"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.845555"^^xsd:float ;
+        gjesdalontology:hasName         "Kongeparken Camping " , "Kongeparken Camping" ;
+        gjesdalontology:hasPostalCode   4330 ;
+        gjesdalontology:hasStreetName   "Ålgårdslåtten" ;
         gjesdalontology:hasStreetNumber
                 3 .
+
+gjesdalontology:Klugevatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.757027"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.9164996"^^xsd:float ;
+        gjesdalontology:hasName         "Klugevatnet" ;
+        gjesdalontology:hasStreetName   "Klugevatnet" .
 
 gjesdalontology:Ålgårdbo-OgAktivitetssenter
         a                               gjesdalontology:RentalProperty , owl:NamedIndividual ;
@@ -1566,7 +1901,9 @@ gjesdalontology:Ålgårdbo-OgAktivitetssenter
         gjesdalontology:hasLatitude     "58.767696"^^xsd:float ;
         gjesdalontology:hasLongitude    "5.847877"^^xsd:float ;
         gjesdalontology:hasName         "Ålgård bo- og aktivitetssenter " ;
-        gjesdalontology:hasStreetName   "Ole Nielsens vei 20" .
+        gjesdalontology:hasStreetName   "Ole Nielsens vei" ;
+        gjesdalontology:hasStreetNumber
+                20 .
 
 gjesdalontology:6.07474519
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -1575,6 +1912,14 @@ gjesdalontology:hasCity
         a            owl:DatatypeProperty ;
         rdfs:domain  gjesdalontology:City ;
         rdfs:range   xsd:string .
+
+gjesdalontology:Ragsvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Fritt fiske langs grunn tilhørende gården Rage. For øvrig kan fiske skje etter avtale med grunneier " ;
+        gjesdalontology:hasLatitude     "58.837955"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.115457"^^xsd:float ;
+        gjesdalontology:hasName         "Ragsvatnet " ;
+        gjesdalontology:hasStreetName   "Ragsvatnet " .
 
 gjesdalontology:DirdalBarnehage
         a                              gjesdalontology:Preschool , owl:NamedIndividual ;
@@ -1585,10 +1930,26 @@ gjesdalontology:DirdalBarnehage
         gjesdalontology:hasPostalCode  4335 ;
         gjesdalontology:hasStreetName  "Kroveien" ;
         gjesdalontology:hasStreetNumber
-                "270" .
+                270 .
 
 gjesdalontology:5.83553461
         a       gjesdalontology:Longitude , owl:NamedIndividual .
+
+gjesdalontology:Øyavatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.87628"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.366997"^^xsd:float ;
+        gjesdalontology:hasName         "Øyavatnet" ;
+        gjesdalontology:hasStreetName   "Øyavatnet" .
+
+gjesdalontology:Nordåsvatnet
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.70841"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.0207167"^^xsd:float ;
+        gjesdalontology:hasName         "Nordåsvatnet " ;
+        gjesdalontology:hasStreetName   "Nordåsvatnet " .
 
 gjesdalontology:58.79712355
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -1598,6 +1959,14 @@ gjesdalontology:58.832064
 
 gjesdalontology:58.783423
         a       gjesdalontology:Latitude , owl:NamedIndividual .
+
+gjesdalontology:Byrkjedalslonå
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
+        gjesdalontology:hasLatitude     "58.784332"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.3035903"^^xsd:float ;
+        gjesdalontology:hasName         "Byrkjedalslonå" ;
+        gjesdalontology:hasStreetName   "Byrkjedalslonå" .
 
 gjesdalontology:6.27680830
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -1625,15 +1994,23 @@ gjesdalontology:GjesdalGjestgiveri
 gjesdalontology:58.7523185522319
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
+gjesdalontology:Accommodation
+        a                owl:Class ;
+        rdfs:subClassOf  gjesdalontology:Place .
+
 gjesdalontology:58.7676957404636
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:58.82559308
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
-gjesdalontology:Accommodation
-        a                owl:Class ;
-        rdfs:subClassOf  gjesdalontology:Place .
+gjesdalontology:LitleForetjørn
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Fritt fiske langs grunn tilhørende Jæren friluftsråd. For øvrig kan fiske skje etter avtale med grunneier " ;
+        gjesdalontology:hasLatitude     "58.76368"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.074745"^^xsd:float ;
+        gjesdalontology:hasName         "Litle Foretjørn " ;
+        gjesdalontology:hasStreetName   "Litle Foretjørn " .
 
 gjesdalontology:58.76785966
         a       gjesdalontology:Latitude , owl:NamedIndividual .

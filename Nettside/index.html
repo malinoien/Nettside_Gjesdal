@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title> Eksempel </title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="http://mgskjaeveland.github.io/sgvizler/v/0.6/sgvizler.js"></script>
+  <script>
+    $(document).ready(
+      function() {
+        sgvizler.containerDrawAll();
+      }
+    );
+  </script>
+</head>
+
+<body>
+  <div id="flexcontainer">
+    <h1>Gjesdal</h1>
+
+    <div id="example" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query="
+    PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#>
+    SELECT ?Latitude ?Longitude ?Navn
+    WHERE {
+      ?subject mr:hasLatitude ?Latitude .
+      ?subject mr:hasLongitude ?Longitude .
+      ?subject mr:hasName ?Navn
+    }"
+  data-sgvizler-chart="sgvizler.visualization.Map">
+  <!--  data-sgvizler-chart="sgvizler.visualization.Text"> -->
+    </div>
+  </div>
+</body>
+</html>
