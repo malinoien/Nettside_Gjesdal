@@ -20,3 +20,13 @@ p{
   margin-right: auto;
   background-color: #f4f4f4;
 }
+#checkflex{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f4f4f4;
+}
