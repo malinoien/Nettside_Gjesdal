@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title> Eksempel </title>
+  <meta charset = "UTF-8">
   <link rel="stylesheet" href="stylesheet.css">
+  <script type="text/javascript" src="script.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script type="text/javascript" src="http://mgskjaeveland.github.io/sgvizler/v/0.6/sgvizler.js"></script>
@@ -20,18 +21,35 @@
 <body>
   <div id="flexcontainer">
     <h1>Gjesdal</h1>
+    <div id="checkflex">
+      <input id="overnatting" type="checkbox">Overnatting</input>
+      <input id="skjenkested" type="checkbox">Skjenkested</input>
+      <input id="grillplass" type="checkbox">Grillplass</input>
+      <input id="badeplass" type="checkbox">Badeplass</input>
+      <input id="kirke" type="checkbox">Kirke</input>
+    </div>
+    <div id="checkflex">
+      <input id="fiskeplass" type="checkbox">Fiskeplass</input>
+      <input id="barnehage" type="checkbox">Barnehage</input>
+      <input id="avfallspunkt" type="checkbox">Avfallspunkt</input>
+      <input id="utleielokale" type="checkbox">Utleielokale</input>
+      <input id="skole" type="checkbox">Skole</input>
+    </div>
+    <button type="button" id="søkeknapp">Søk</button>
+    <br>
 
     <div id="example" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query="
     PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#>
-    SELECT ?Latitude ?Longitude ?Navn
+    SELECT ?Latitude ?Longitude ?Name
     WHERE {
       ?subject mr:hasLatitude ?Latitude .
       ?subject mr:hasLongitude ?Longitude .
-      ?subject mr:hasName ?Navn
+      ?subject mr:hasName ?Name .
     }"
-  data-sgvizler-chart="sgvizler.visualization.Map">
-  <!--  data-sgvizler-chart="sgvizler.visualization.Text"> -->
+    data-sgvizler-chart="sgvizler.visualization.Map">
+
+  <!-- data-sgvizler-chart="sgvizler.visualization.Text">    -->
     </div>
   </div>
 </body>
