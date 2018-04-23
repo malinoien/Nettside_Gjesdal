@@ -5,6 +5,7 @@
   <title> Eksempel </title>
   <meta charset = "UTF-8">
   <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <script type="text/javascript" src="script.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -19,26 +20,36 @@
 </head>
 
 <body>
-  <div id="flexcontainer">
-    <h1>Gjesdal</h1>
-    <div id="checkflex">
-      <input id="overnatting" type="checkbox">Overnatting</input>
-      <input id="skjenkested" type="checkbox">Skjenkested</input>
-      <input id="grillplass" type="checkbox">Grillplass</input>
-      <input id="badeplass" type="checkbox">Badeplass</input>
-      <input id="kirke" type="checkbox">Kirke</input>
+  <div id="flexcolumn">
+    <h1>Gjesdal kommune</h1>
+    <div id="flexrow">
+      <div id="flexcolumn">
+        <div><input id="overnatting" type="checkbox">Overnatting</input></div>
+        <div><input id="skjenkested" type="checkbox">Skjenkested</input></div>
+      </div>
+      <div id="flexcolumn">
+        <div><input id="grillplass" type="checkbox">Grillplass</input></div>
+        <div><input id="badeplass" type="checkbox">Badeplass</input></div>
+      </div>
+      <div id="flexcolumn">
+        <div><input id="kirke" type="checkbox">Kirke</input></div>
+        <div><input id="fiskeplass" type="checkbox">Fiskeplass</input></div>
+      </div>
+      <div id="flexcolumn">
+        <div><input id="barnehage" type="checkbox">Barnehage</input></div>
+        <div><input id="avfallspunkt" type="checkbox">Avfallspunkt</input></div>
+      </div>
+      <div id="flexcolumn">
+        <div><input id="utleielokale" type="checkbox">Utleielokale</input></div>
+        <div><input id="skole" type="checkbox">Skole</input></div>
+      </div>
     </div>
-    <div id="checkflex">
-      <input id="fiskeplass" type="checkbox">Fiskeplass</input>
-      <input id="barnehage" type="checkbox">Barnehage</input>
-      <input id="avfallspunkt" type="checkbox">Avfallspunkt</input>
-      <input id="utleielokale" type="checkbox">Utleielokale</input>
-      <input id="skole" type="checkbox">Skole</input>
+    <div id="flexrow">
+      <button type="button" class="button" id="søkeknapp">Søk</button>
+      <button type="button" class="button" id="fjernChecked">Fjern filter</button>
     </div>
-    <button type="button" id="søkeknapp">Søk</button>
-    <br>
 
-    <div id="example" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query="
+    <div id="map" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query="
     PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#>
     SELECT ?Latitude ?Longitude ?Name
@@ -48,8 +59,6 @@
       ?subject mr:hasName ?Name .
     }"
     data-sgvizler-chart="sgvizler.visualization.Map">
-
-  <!-- data-sgvizler-chart="sgvizler.visualization.Text">    -->
     </div>
   </div>
 </body>
