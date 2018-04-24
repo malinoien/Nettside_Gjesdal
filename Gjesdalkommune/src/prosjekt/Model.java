@@ -30,13 +30,6 @@ public class Model {
 			System.out.println(e.getMessage());
 		}
 
-//		ExtendedIterator<Individual> itInd = model.listIndividuals();
-//		ExtendedIterator<OntClass> itCla = model.listClasses();
-//		while (itCla.hasNext()) {
-//			OntClass i = itCla.next();
-//			//if(i.hasSuperClass()) System.out.println(i.getSuperClass());
-//
-//		}
 		
 //	       String prefixes = ""
 //	           + "PREFIX ex: <" + base + "> "

@@ -17,7 +17,7 @@ function sok(){
   if(document.getElementById("overnatting").checked) spørring += " {?subject a mr:Accommodation}";
   if(document.getElementById("grillplass").checked) spørring += " {?subject a mr:BarbequeArea}";
   if(document.getElementById("badeplass").checked) spørring += " {?subject a mr:Beach}";
-  if(document.getElementById("kirke").checked) spørring += " {?subject a mr:Kirke}";
+  if(document.getElementById("kirke").checked) spørring += " {?subject a mr:Church}";
   if(document.getElementById("fiskeplass").checked) spørring += " {?subject a mr:FishingSpot}";
   if(document.getElementById("barnehage").checked) spørring += " {?subject a mr:Preschool}";
   if(document.getElementById("avfallspunkt").checked) spørring += " {?subject a mr:RecyclingPoint}";
