@@ -30,6 +30,8 @@ function sok(){
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("sgvizler.visualization.Map")
           .draw("map");
+
+  console.log(navnlatlon + "SPØRRING: "+ spørring + " slutt: "+  slutt);
   }
 
   function fjernValgteSjekkbokser(){

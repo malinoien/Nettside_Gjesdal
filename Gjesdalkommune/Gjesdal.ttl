@@ -43,16 +43,13 @@ gjesdalontology:58.78273163
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:Byrkjedalstunet
-        a                               owl:NamedIndividual , gjesdalontology:Accommodation , gjesdalontology:Bar ;
-        gjesdalontology:hasCity         "DIRDAL" ;
-        gjesdalontology:hasDescription  "Hotell" ;
-        gjesdalontology:hasLatitude     "58.77985"^^xsd:float , "58.7799"^^xsd:float ;
-        gjesdalontology:hasLongitude    "6.316345"^^xsd:float , "6.316349"^^xsd:float ;
-        gjesdalontology:hasName         "Byrkjedalstunet" ;
-        gjesdalontology:hasPostalCode   4335 ;
-        gjesdalontology:hasStreetName   "Byrkjedalstunet" ;
-        gjesdalontology:hasStreetNumber
-                0 .
+        a                              gjesdalontology:Bar , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "DIRDAL" ;
+        gjesdalontology:hasLatitude    "58.7799"^^xsd:float ;
+        gjesdalontology:hasLongitude   "6.316345"^^xsd:float ;
+        gjesdalontology:hasName        "Byrkjedalstunet" ;
+        gjesdalontology:hasPostalCode  4335 ;
+        gjesdalontology:hasStreetName  "Byrkjedalstunet" .
 
 gjesdalontology:58.72202530
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -141,15 +138,14 @@ gjesdalontology:5.85271601338989
 gjesdalontology:5.85965813
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
-gjesdalontology:Grovika
+gjesdalontology:Giljabakkene-Sving
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
-        gjesdalontology:hasCity         "Ålgård" ;
-        gjesdalontology:hasDescription  "Ligger ved lagerbygget til Gjesdal kommune" ;
-        gjesdalontology:hasLatitude     "58.764317"^^xsd:float ;
-        gjesdalontology:hasLongitude    "5.895614"^^xsd:float ;
-        gjesdalontology:hasName         "Grovika" ;
-        gjesdalontology:hasPostalCode   4330 ;
-        gjesdalontology:hasStreetName   "Øvre Kluge" .
+        gjesdalontology:hasCity         "Dirdal" ;
+        gjesdalontology:hasDescription  "Denne ligge midt i en sving. 3 sving fra Gilja sentrum" ;
+        gjesdalontology:hasLatitude     "58.809242"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.279306"^^xsd:float ;
+        gjesdalontology:hasName         "Giljabakkene - sving" ;
+        gjesdalontology:hasPostalCode   4335 .
 
 gjesdalontology:58.844400
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -161,10 +157,10 @@ gjesdalontology:5.98548499
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:Oltedalsvatnet
-        a                               gjesdalontology:FishingSpot , gjesdalontology:Beach , owl:NamedIndividual ;
-        gjesdalontology:hasDescription  "Privat " , "Fritt fiske langs grunn tilhørende gården Rage. For øvrig kan fiske skje etter avtale med grunneier " ;
-        gjesdalontology:hasLatitude     "58.819035"^^xsd:float , "58.815342"^^xsd:float ;
-        gjesdalontology:hasLongitude    "6.01369"^^xsd:float , "6.0331554"^^xsd:float ;
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Fritt fiske langs grunn tilhørende gården Rage. For øvrig kan fiske skje etter avtale med grunneier " ;
+        gjesdalontology:hasLatitude     "58.815342"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.01369"^^xsd:float ;
         gjesdalontology:hasName         "Oltedalsvatnet" ;
         gjesdalontology:hasStreetName   "Oltedalsvatnet" .
 
@@ -275,6 +271,16 @@ gjesdalontology:DjupavatnetOgDjupatjørn
         gjesdalontology:hasName         "Djupavatnet og Djupatjørn" ;
         gjesdalontology:hasStreetName   "Djupavatnet og Djupatjørn" .
 
+gjesdalontology:LafthusetUtleielokal
+        a                               gjesdalontology:RentalProperty , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Privat" ;
+        gjesdalontology:hasLatitude     "58.83336"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.0550895"^^xsd:float ;
+        gjesdalontology:hasName         "Lafthuset utleielokal" ;
+        gjesdalontology:hasStreetName   "Bygdaveien" ;
+        gjesdalontology:hasStreetNumber
+                186 .
+
 gjesdalontology:58.86512055
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
@@ -286,16 +292,6 @@ gjesdalontology:6.11545704
 
 gjesdalontology:58.77518742
         a       gjesdalontology:Latitude , owl:NamedIndividual .
-
-gjesdalontology:Giljastølen
-        a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
-        gjesdalontology:hasCity         "Dirdal" ;
-        gjesdalontology:hasDescription  "Står ved veien på FV281" , "Ved øverste parkeringsplass på Giljastølen" ;
-        gjesdalontology:hasLatitude     "58.82723"^^xsd:float , "58.832066"^^xsd:float ;
-        gjesdalontology:hasLongitude    "6.280437"^^xsd:float , "6.279245"^^xsd:float ;
-        gjesdalontology:hasName         "Giljastølen" ;
-        gjesdalontology:hasPostalCode   4335 ;
-        gjesdalontology:hasStreetName   "Giljastølveien" .
 
 gjesdalontology:58.72413115
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -545,6 +541,18 @@ gjesdalontology:6.28665654
 gjesdalontology:58.86274944
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
+gjesdalontology:GiljastølenCampingplass
+        a                               owl:NamedIndividual , gjesdalontology:Accommodation ;
+        gjesdalontology:hasCity         "DIRDAL" ;
+        gjesdalontology:hasDescription  "Camping" ;
+        gjesdalontology:hasLatitude     "58.80619"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.2592173"^^xsd:float ;
+        gjesdalontology:hasName         "Giljastølen Campingplass" ;
+        gjesdalontology:hasPostalCode   4335 ;
+        gjesdalontology:hasStreetName   "Giljagarden" ;
+        gjesdalontology:hasStreetNumber
+                1 .
+
 gjesdalontology:ØygardsvatnetBarnehage
         a                              gjesdalontology:Preschool , owl:NamedIndividual ;
         gjesdalontology:hasCity        "ÅLGÅRD" ;
@@ -560,7 +568,7 @@ gjesdalontology:Bar  a   owl:Class ;
         rdfs:subClassOf  gjesdalontology:Place .
 
 gjesdalontology:Uburhedlaren-Gapahuk
-        a                             gjesdalontology:Beach , owl:NamedIndividual ;
+        a                             gjesdalontology:BarbequeArea , owl:NamedIndividual ;
         gjesdalontology:hasLatitude   "58.829983"^^xsd:float ;
         gjesdalontology:hasLongitude  "6.0759945"^^xsd:float ;
         gjesdalontology:hasName       "Uburhedlaren - gapahuk" .
@@ -618,20 +626,15 @@ gjesdalontology:Preschool
 gjesdalontology:58.7687898828773
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
-gjesdalontology:Giljabakkene
-        a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
-        gjesdalontology:hasCity         "Dirdal" ;
-        gjesdalontology:hasDescription  "Denne ligge midt i en sving. 3 sving fra Gilja sentrum" ;
-        gjesdalontology:hasLatitude     "58.809242"^^xsd:float ;
-        gjesdalontology:hasLongitude    "6.279306"^^xsd:float ;
-        gjesdalontology:hasName         "Giljabakkene" ;
-        gjesdalontology:hasPostalCode   4335 .
-
 gjesdalontology:58.82404233
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( gjesdalontology:Accommodation gjesdalontology:Bar gjesdalontology:BarbequeArea gjesdalontology:Beach gjesdalontology:Church gjesdalontology:FishingSpot gjesdalontology:Preschool gjesdalontology:RecyclingPoint gjesdalontology:RentalProperty gjesdalontology:School )
+] .
+
 gjesdalontology:GapahukVedStoreForetjørn
-        a                             gjesdalontology:Beach , owl:NamedIndividual ;
+        a                             gjesdalontology:BarbequeArea , owl:NamedIndividual ;
         gjesdalontology:hasLatitude   "58.761837"^^xsd:float ;
         gjesdalontology:hasLongitude  "6.0644565"^^xsd:float ;
         gjesdalontology:hasName       "Gapahuk ved store Foretjørn" .
@@ -799,7 +802,19 @@ gjesdalontology:58.77354662
 gjesdalontology:58.764316
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
+gjesdalontology:Frafjord-Engelskhuset
+        a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
+        gjesdalontology:hasCity         "Dirdal" ;
+        gjesdalontology:hasDescription  "Ved Engelskhuset" ;
+        gjesdalontology:hasLatitude     "58.84162"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.318134"^^xsd:float ;
+        gjesdalontology:hasName         "Frafjord - Engelskhuset" ;
+        gjesdalontology:hasPostalCode   4335 .
+
 gjesdalontology:58.828036
+        a       gjesdalontology:Latitude , owl:NamedIndividual .
+
+gjesdalontology:58.82725728
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
 gjesdalontology:Maudalsbrekka
@@ -811,11 +826,24 @@ gjesdalontology:Maudalsbrekka
         gjesdalontology:hasName         "Maudalsbrekka" ;
         gjesdalontology:hasPostalCode   4335 .
 
+gjesdalontology:GiljastølenParkering
+        a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
+        gjesdalontology:hasCity         "Dirdal" ;
+        gjesdalontology:hasDescription  "Ved øverste parkeringsplass på Giljastølen" ;
+        gjesdalontology:hasLatitude     "58.832066"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.279245"^^xsd:float ;
+        gjesdalontology:hasName         "Giljastølen Parkering" ;
+        gjesdalontology:hasPostalCode   4335 .
+
 gjesdalontology:5.82627108901655
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
-gjesdalontology:58.82725728
-        a       gjesdalontology:Latitude , owl:NamedIndividual .
+gjesdalontology:FlassavatnetBadeplass
+        a                               gjesdalontology:Beach , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Privat " ;
+        gjesdalontology:hasLatitude     "58.78273"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.872242"^^xsd:float ;
+        gjesdalontology:hasName         "Flassavatnet badeplass" .
 
 gjesdalontology:5.84969799
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -893,6 +921,16 @@ gjesdalontology:HunnedalenParkeringsplass
         gjesdalontology:hasPostalCode   4335 ;
         gjesdalontology:hasStreetName   "FV45" .
 
+gjesdalontology:GiljastølenVedFV281
+        a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
+        gjesdalontology:hasCity         "Dirdal" ;
+        gjesdalontology:hasDescription  "Står ved veien på FV281" ;
+        gjesdalontology:hasLatitude     "58.82723"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.280437"^^xsd:float ;
+        gjesdalontology:hasName         "Giljastølen ved FV281" ;
+        gjesdalontology:hasPostalCode   4335 ;
+        gjesdalontology:hasStreetName   "Giljastølveien" .
+
 gjesdalontology:6.333236
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
@@ -917,6 +955,16 @@ gjesdalontology:Gloppevatnet
 
 gjesdalontology:5.97555769
         a       gjesdalontology:Longitude , owl:NamedIndividual .
+
+gjesdalontology:Grovika-Lagerbygget
+        a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
+        gjesdalontology:hasCity         "Ålgård" ;
+        gjesdalontology:hasDescription  "Ligger ved lagerbygget til Gjesdal kommune" ;
+        gjesdalontology:hasLatitude     "58.764317"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.895614"^^xsd:float ;
+        gjesdalontology:hasName         "Grovika - lagerbygget" ;
+        gjesdalontology:hasPostalCode   4330 ;
+        gjesdalontology:hasStreetName   "Øvre Kluge" .
 
 gjesdalontology:6.34474467
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -1000,11 +1048,10 @@ gjesdalontology:StreetName
         rdfs:subClassOf  gjesdalontology:Address .
 
 gjesdalontology:Edlandshagen-Perlå
-        a                               gjesdalontology:Beach , owl:NamedIndividual ;
-        gjesdalontology:hasDescription  "Offentlig" ;
-        gjesdalontology:hasLatitude     "58.76355"^^xsd:float ;
-        gjesdalontology:hasLongitude    "5.853437"^^xsd:float ;
-        gjesdalontology:hasName         "Edlandshagen - Perlå" .
+        a                             gjesdalontology:BarbequeArea , owl:NamedIndividual ;
+        gjesdalontology:hasLatitude   "58.76355"^^xsd:float ;
+        gjesdalontology:hasLongitude  "5.853437"^^xsd:float ;
+        gjesdalontology:hasName       "Edlandshagen - Perlå" .
 
 gjesdalontology:58.81601486
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -1028,10 +1075,6 @@ gjesdalontology:58.854272
 
 gjesdalontology:58.88472238
         a       gjesdalontology:Latitude , owl:NamedIndividual .
-
-[ a            owl:AllDisjointClasses ;
-  owl:members  ( gjesdalontology:Accommodation gjesdalontology:Bar gjesdalontology:BarbequeArea gjesdalontology:Beach gjesdalontology:Church gjesdalontology:FishingSpot gjesdalontology:Preschool gjesdalontology:RecyclingPoint gjesdalontology:RentalProperty gjesdalontology:School )
-] .
 
 gjesdalontology:58.78221345
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -1097,7 +1140,7 @@ gjesdalontology:6.014329
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:Brekko
-        a                             gjesdalontology:Beach , owl:NamedIndividual ;
+        a                             gjesdalontology:BarbequeArea , owl:NamedIndividual ;
         gjesdalontology:hasLatitude   "58.77399"^^xsd:float ;
         gjesdalontology:hasLongitude  "6.0736523"^^xsd:float ;
         gjesdalontology:hasName       "Brekko " .
@@ -1141,6 +1184,12 @@ gjesdalontology:6.10330894
 gjesdalontology:6.29961499
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
+gjesdalontology:Kyllingstad
+        a                             gjesdalontology:BarbequeArea , owl:NamedIndividual ;
+        gjesdalontology:hasLatitude   "58.724133"^^xsd:float ;
+        gjesdalontology:hasLongitude  "5.975558"^^xsd:float ;
+        gjesdalontology:hasName       "Kyllingstad" .
+
 gjesdalontology:58.76355820
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
@@ -1168,10 +1217,10 @@ gjesdalontology:5.83714644
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:Flassavatnet
-        a                               owl:NamedIndividual , gjesdalontology:Beach , gjesdalontology:FishingSpot ;
-        gjesdalontology:hasDescription  "Fritt fiske langs grunn som hører til gårdene på Ytre Lima. For øvrig kan fiske skje etter avtale med grunneier " , "Privat " ;
-        gjesdalontology:hasLatitude     "58.78273"^^xsd:float , "58.78978"^^xsd:float ;
-        gjesdalontology:hasLongitude    "5.872242"^^xsd:float , "5.868987"^^xsd:float ;
+        a                               gjesdalontology:FishingSpot , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Fritt fiske langs grunn som hører til gårdene på Ytre Lima. For øvrig kan fiske skje etter avtale med grunneier " ;
+        gjesdalontology:hasLatitude     "58.78978"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.868987"^^xsd:float ;
         gjesdalontology:hasName         "Flassavatnet" ;
         gjesdalontology:hasStreetName   "Flassavatnet" .
 
@@ -1225,6 +1274,13 @@ gjesdalontology:58.75968797
 gjesdalontology:5.85010893
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
+gjesdalontology:RaudvigåBadeplass
+        a                               gjesdalontology:Beach , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Privat " ;
+        gjesdalontology:hasLatitude     "58.76833"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.832188"^^xsd:float ;
+        gjesdalontology:hasName         "Raudvigå badeplass" .
+
 gjesdalontology:6.33125115
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
@@ -1255,13 +1311,6 @@ gjesdalontology:SøylandVedYtreKydlandvannet
 
 gjesdalontology:58.7460606594616
         a       gjesdalontology:Latitude , owl:NamedIndividual .
-
-gjesdalontology:Raudvigå
-        a                               gjesdalontology:Beach , owl:NamedIndividual ;
-        gjesdalontology:hasDescription  "Privat " ;
-        gjesdalontology:hasLatitude     "58.76833"^^xsd:float ;
-        gjesdalontology:hasLongitude    "5.832188"^^xsd:float ;
-        gjesdalontology:hasName         "Raudvigå" .
 
 gjesdalontology:5.89335963635906
         a       gjesdalontology:Longitude , owl:NamedIndividual .
@@ -1337,14 +1386,13 @@ gjesdalontology:6.21809288086638
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:Lafthuset
-        a                               owl:NamedIndividual , gjesdalontology:Bar , gjesdalontology:RentalProperty ;
-        gjesdalontology:hasCity         "OLTEDAL" ;
-        gjesdalontology:hasDescription  "Privat" ;
-        gjesdalontology:hasLatitude     "58.83336"^^xsd:float , "58.83344"^^xsd:float ;
-        gjesdalontology:hasLongitude    "6.0550895"^^xsd:float , "6.055014"^^xsd:float ;
-        gjesdalontology:hasName         "Lafthuset" ;
-        gjesdalontology:hasPostalCode   4333 ;
-        gjesdalontology:hasStreetName   "Bygdaveien" ;
+        a                              gjesdalontology:Bar , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "OLTEDAL" ;
+        gjesdalontology:hasLatitude    "58.83344"^^xsd:float ;
+        gjesdalontology:hasLongitude   "6.055014"^^xsd:float ;
+        gjesdalontology:hasName        "Lafthuset" ;
+        gjesdalontology:hasPostalCode  4333 ;
+        gjesdalontology:hasStreetName  "Bygdaveien" ;
         gjesdalontology:hasStreetNumber
                 186 .
 
@@ -1440,11 +1488,28 @@ gjesdalontology:hasLatitude
         rdfs:domain  gjesdalontology:Latitude ;
         rdfs:range   xsd:float .
 
+gjesdalontology:Edlandshagen-PerlåBadeplass
+        a                               gjesdalontology:Beach , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Offentlig" ;
+        gjesdalontology:hasLatitude     "58.76355"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.853437"^^xsd:float ;
+        gjesdalontology:hasName         "Edlandshagen - Perlå badeplass" .
+
 gjesdalontology:5.92062653
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:58.69489297
         a       gjesdalontology:Latitude , owl:NamedIndividual .
+
+gjesdalontology:NevlandVedFV286
+        a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
+        gjesdalontology:hasCity         "Ålgård" ;
+        gjesdalontology:hasDescription  "Ligger i krysset ved FV286 og veien opp til Nevland" ;
+        gjesdalontology:hasLatitude     "58.783424"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.014329"^^xsd:float ;
+        gjesdalontology:hasName         "Nevland ved FV286" ;
+        gjesdalontology:hasPostalCode   4330 ;
+        gjesdalontology:hasStreetName   "FV286" .
 
 gjesdalontology:58.8333953549151
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -1510,7 +1575,7 @@ gjesdalontology:5.95533517
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:TeltplassLilleForetjørn
-        a                             gjesdalontology:Beach , owl:NamedIndividual ;
+        a                             gjesdalontology:BarbequeArea , owl:NamedIndividual ;
         gjesdalontology:hasLatitude   "58.76196"^^xsd:float ;
         gjesdalontology:hasLongitude  "6.0715227"^^xsd:float ;
         gjesdalontology:hasName       "Teltplass lille Foretjørn " .
@@ -1617,6 +1682,13 @@ gjesdalontology:6.191760
 gjesdalontology:58.809242
         a       gjesdalontology:Latitude , owl:NamedIndividual .
 
+gjesdalontology:OltedalsvatnetBadeplass
+        a                               gjesdalontology:Beach , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Privat " ;
+        gjesdalontology:hasLatitude     "58.819035"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.0331554"^^xsd:float ;
+        gjesdalontology:hasName         "Oltedalsvatnet badeplass" .
+
 gjesdalontology:SamhaldOltedal
         a                               gjesdalontology:RentalProperty , owl:NamedIndividual ;
         gjesdalontology:hasDescription  "Privat" ;
@@ -1628,14 +1700,13 @@ gjesdalontology:SamhaldOltedal
                 179 .
 
 gjesdalontology:Westernbyen
-        a                               owl:NamedIndividual , gjesdalontology:Bar , gjesdalontology:RentalProperty ;
-        gjesdalontology:hasCity         "ÅLGÅRD" ;
-        gjesdalontology:hasDescription  "Privat" ;
-        gjesdalontology:hasLatitude     "58.77722"^^xsd:float , "58.77731"^^xsd:float ;
-        gjesdalontology:hasLongitude    "5.847018"^^xsd:float , "5.846974"^^xsd:float ;
-        gjesdalontology:hasName         "Westernbyen" , "Westernbyen " ;
-        gjesdalontology:hasPostalCode   4330 ;
-        gjesdalontology:hasStreetName   "Ålgårdslåtten" ;
+        a                              gjesdalontology:Bar , owl:NamedIndividual ;
+        gjesdalontology:hasCity        "ÅLGÅRD" ;
+        gjesdalontology:hasLatitude    "58.77731"^^xsd:float ;
+        gjesdalontology:hasLongitude   "5.847018"^^xsd:float ;
+        gjesdalontology:hasName        "Westernbyen" ;
+        gjesdalontology:hasPostalCode  4330 ;
+        gjesdalontology:hasStreetName  "Ålgårdslåtten" ;
         gjesdalontology:hasStreetNumber
                 12 .
 
@@ -1692,6 +1763,16 @@ gjesdalontology:58.76357763
 
 gjesdalontology:58.77646969
         a       gjesdalontology:Latitude , owl:NamedIndividual .
+
+gjesdalontology:WesternbyenUtleielokale
+        a                               gjesdalontology:RentalProperty , owl:NamedIndividual ;
+        gjesdalontology:hasDescription  "Privat" ;
+        gjesdalontology:hasLatitude     "58.77722"^^xsd:float ;
+        gjesdalontology:hasLongitude    "5.846974"^^xsd:float ;
+        gjesdalontology:hasName         "Westernbyen utleielokale" ;
+        gjesdalontology:hasStreetName   "Ålgårdslåtten" ;
+        gjesdalontology:hasStreetNumber
+                12 .
 
 gjesdalontology:58.8263879951438
         a       gjesdalontology:Latitude , owl:NamedIndividual .
@@ -1806,9 +1887,6 @@ gjesdalontology:ÅlgårdBaptistkirke
 gjesdalontology:5.90277023
         a       gjesdalontology:Longitude , owl:NamedIndividual .
 
-gjesdalontology:6.37474620
-        a       gjesdalontology:Longitude , owl:NamedIndividual .
-
 gjesdalontology:BærlandBarnehage
         a                               owl:NamedIndividual , gjesdalontology:Preschool ;
         gjesdalontology:hasCity         "ÅLGÅRD" ;
@@ -1821,27 +1899,11 @@ gjesdalontology:BærlandBarnehage
         gjesdalontology:hasStreetNumber
                 6 .
 
-gjesdalontology:Frafjord
-        a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
-        gjesdalontology:hasCity         "Dirdal" ;
-        gjesdalontology:hasDescription  "Ved Engelskhuset" ;
-        gjesdalontology:hasLatitude     "58.84162"^^xsd:float ;
-        gjesdalontology:hasLongitude    "6.318134"^^xsd:float ;
-        gjesdalontology:hasName         "Frafjord" ;
-        gjesdalontology:hasPostalCode   4335 .
+gjesdalontology:6.37474620
+        a       gjesdalontology:Longitude , owl:NamedIndividual .
 
 gjesdalontology:58.7693484485108
         a       gjesdalontology:Latitude , owl:NamedIndividual .
-
-gjesdalontology:Nevland
-        a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
-        gjesdalontology:hasCity         "Ålgård" ;
-        gjesdalontology:hasDescription  "Likker i krysset ved FV286 og veien opp til Nevland" ;
-        gjesdalontology:hasLatitude     "58.783424"^^xsd:float ;
-        gjesdalontology:hasLongitude    "6.014329"^^xsd:float ;
-        gjesdalontology:hasName         "Nevland" ;
-        gjesdalontology:hasPostalCode   4330 ;
-        gjesdalontology:hasStreetName   "FV286" .
 
 gjesdalontology:School
         a                owl:Class ;
@@ -1849,6 +1911,18 @@ gjesdalontology:School
 
 gjesdalontology:58.766954356331
         a       gjesdalontology:Latitude , owl:NamedIndividual .
+
+gjesdalontology:ByrkjedalstunetHotell
+        a                               gjesdalontology:Accommodation , owl:NamedIndividual ;
+        gjesdalontology:hasCity         "DIRDAL" ;
+        gjesdalontology:hasDescription  "Hotell" ;
+        gjesdalontology:hasLatitude     "58.77985"^^xsd:float ;
+        gjesdalontology:hasLongitude    "6.316349"^^xsd:float ;
+        gjesdalontology:hasName         "Byrkjedalstunet hotell" ;
+        gjesdalontology:hasPostalCode   4335 ;
+        gjesdalontology:hasStreetName   "Byrkjedalstunet" ;
+        gjesdalontology:hasStreetNumber
+                0 .
 
 gjesdalontology:hasStreetName
         a            owl:DatatypeProperty ;
