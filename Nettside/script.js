@@ -1,36 +1,99 @@
 window.onload = function(){
-document.getElementById("søkeknapp").addEventListener("click", sok);
-document.getElementById("fjernChecked").addEventListener("click", fjernValgteSjekkbokser);
-console.log("onload");
+  document.getElementById("søkeknapp").addEventListener("click", sok);
+  document.getElementById("fjernChecked").addEventListener("click", fjernValgteSjekkbokser);
+  console.log("onload");
 }
 
 function sok(){
   var prefix = "PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#>";
-  var navnlatlon = "SELECT ?Latitude ?Longitude ?Name WHERE {?subject mr:hasLatitude ?Latitude . ?subject mr:hasLongitude ?Longitude . ?subject mr:hasName ?Name .";
+  var navnlatlon = "SELECT DISTINCT ?Latitude ?Longitude ?Name WHERE {?subject mr:hasLatitude ?Latitude . ?subject mr:hasLongitude ?Longitude . ?subject mr:hasName ?Name .";
   var slutt = "}";
 
   var Q = new sgvizler.Query();
 
   var spørring = "";
-
-  if(document.getElementById("skjenkested").checked) spørring += " {?subject a mr:Bar}";
-  if(document.getElementById("overnatting").checked) spørring += " {?subject a mr:Accommodation}";
-  if(document.getElementById("grillplass").checked) spørring += " {?subject a mr:BarbequeArea}";
-  if(document.getElementById("badeplass").checked) spørring += " {?subject a mr:Beach}";
-  if(document.getElementById("kirke").checked) spørring += " {?subject a mr:Church}";
-  if(document.getElementById("fiskeplass").checked) spørring += " {?subject a mr:FishingSpot}";
-  if(document.getElementById("barnehage").checked) spørring += " {?subject a mr:Preschool}";
-  if(document.getElementById("avfallspunkt").checked) spørring += " {?subject a mr:RecyclingPoint}";
-  if(document.getElementById("utleielokale").checked) spørring += " {?subject a mr:RentalProperty}";
-  if(document.getElementById("skole").checked) spørring += " {?subject a mr:School}";
+  var union = "UNION";
 
 
+var object = [
+  skjenkested = {
+    verdi: false,
+    string: " {?subject a mr:Bar}"
+  },
+  overnatting = {
+    verdi: false,
+    string: " {?subject a mr:Accommodation}"
+  },
+  grillplass = {
+    verdi: false,
+    string: " {?subject a mr:BarbequeArea}"
+  },
+  badeplass = {
+    verdi:  false,
+    string: " {?subject a mr:Beach}"
+  },
+  kirke = {
+    verdi: false,
+    string: " {?subject a mr:Church}"
+  },
+  fiskeplass = {
+    verdi: false,
+    string: " {?subject a mr:FishingSpot}"
+  },
+  barnehage = {
+    verdi: false,
+    string: " {?subject a mr:Preschool}"
+  },
+  avfallspunkt = {
+    verdi: false,
+    string: " {?subject a mr:RecyclingPoint}"
+  },
+  utleielokale = {
+    verdi: false,
+    string: " {?subject a mr:RentalProperty}"
+  },
+  skole = {
+    verdi: false,
+    string: " {?subject a mr:School}"
+  }
+];
+
+  if(document.getElementById("skjenkested").checked) Object.values(object)[0].verdi = true;
+  if(document.getElementById("overnatting").checked) Object.values(object)[1].verdi = true;
+  if(document.getElementById("grillplass").checked) Object.values(object)[2].verdi = true;
+  if(document.getElementById("badeplass").checked) Object.values(object)[3].verdi = true;
+  if(document.getElementById("kirke").checked) Object.values(object)[4].verdi = true;
+  if(document.getElementById("fiskeplass").checked) Object.values(object)[5].verdi = true;
+  if(document.getElementById("barnehage").checked) Object.values(object)[6].verdi = true;
+  if(document.getElementById("avfallspunkt").checked) Object.values(object)[7].verdi = true;
+  if(document.getElementById("utleielokale").checked) Object.values(object)[8].verdi = true;
+  if(document.getElementById("skole").checked) Object.values(object)[9].verdi = true;
+
+
+  var bokser = document.getElementsByClassName("checkbox");
+  var antallBokserChecked = 0;
+  for(var i = 0; i < bokser.length; i++){
+    if(bokser[i].checked){
+    antallBokserChecked ++;
+    }
+  }
+
+  console.log(antallBokserChecked);
+
+  if(antallBokserChecked == 1){
+  }
+  if(antallBokserChecked > 1){
+
+  }
+
+  sjekkBokser(object);
 
   Q.query(prefix + navnlatlon + spørring + slutt)
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("sgvizler.visualization.Map")
           .draw("map");
-  }
+
+  } // end søk
 
   function fjernValgteSjekkbokser(){
     document.getElementById("skjenkested").checked = false;
@@ -44,3 +107,13 @@ function sok(){
     document.getElementById("utleielokale").checked = false;
     document.getElementById("skole").checked = false;
   }
+
+  function sjekkBokser(obj){
+    var stringTabell = [];
+    for(var i = 0; i < obj.length; i++){
+      if (obj[i].verdi == true){
+        stringTabell.push(obj[i].string);
+    }
+  }
+  console.log(stringTabell);
+}

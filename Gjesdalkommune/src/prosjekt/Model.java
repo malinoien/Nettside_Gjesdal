@@ -19,7 +19,7 @@ public class Model {
 
 	public static void main(String[] args) {
 		OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
-		String base = "../Gjesdalkommune/src/prosjekt/ny_onto.owl";
+		String base = "../Gjesdalkommune/src/prosjekt/Ontologi.owl";
 		
 
 		try {
@@ -46,7 +46,7 @@ public class Model {
 		model.write(System.out, "TURTLE");
 		
 		try {
-            model.write(new FileOutputStream("Gjesdal_ny.ttl"), "TURTLE");
+            model.write(new FileOutputStream("Gjesdal.ttl"), "TURTLE");
             System.out.println("yup");
         } catch (Exception e) {
            //  TODO: handle exception
