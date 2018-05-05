@@ -64,6 +64,24 @@
     
 
 
+    <!-- http://schema.org/latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/latitude">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasLatitude"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasLatitude"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/longitude">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasLongitude"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasLongitude"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasCity -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasCity">
@@ -103,6 +121,7 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasName">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <rdfs:domain rdf:resource="http://schema.org/Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -132,6 +151,14 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasStreetNumber">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#StreetNumber"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasName"/>
     </owl:DatatypeProperty>
     
 
