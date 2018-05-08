@@ -2,60 +2,12 @@
 <rdf:RDF xmlns="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl"
      xml:base="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:gjesdalontology="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl">
-        <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasAdress -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasAdress">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasPlace"/>
-        <rdfs:domain rdf:resource="http://schema.org/Place"/>
-        <rdfs:range rdf:resource="http://schema.org/address"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasCoordinates -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasCoordinates">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasPlace"/>
-        <rdfs:domain rdf:resource="http://schema.org/Place"/>
-        <rdfs:domain rdf:resource="http://schema.org/address"/>
-        <rdfs:range rdf:resource="http://schema.org/GeoCoordinates"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasPlace -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasPlace">
-        <rdfs:domain rdf:resource="http://schema.org/GeoCoordinates"/>
-        <rdfs:domain rdf:resource="http://schema.org/address"/>
-        <rdfs:range rdf:resource="http://schema.org/Place"/>
-    </owl:ObjectProperty>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl"/>
     
 
 
@@ -73,7 +25,6 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasCity -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasCity">
-        <rdfs:domain rdf:resource="http://schema.org/addressLocality"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -82,7 +33,6 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasDescription -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasDescription">
-        <rdfs:domain rdf:resource="http://schema.org/Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -91,8 +41,6 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasLatitude -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasLatitude">
-        <owl:equivalentProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
-        <rdfs:domain rdf:resource="http://schema.org/latitude"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -101,8 +49,6 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasLongitude -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasLongitude">
-        <owl:equivalentProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
-        <rdfs:domain rdf:resource="http://schema.org/longitude"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -111,8 +57,6 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasName">
-        <owl:equivalentProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <rdfs:domain rdf:resource="http://schema.org/Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -121,7 +65,6 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasPostalCode -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasPostalCode">
-        <rdfs:domain rdf:resource="http://schema.org/postalCode"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
@@ -130,7 +73,6 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasStreetName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasStreetName">
-        <rdfs:domain rdf:resource="http://schema.org/streetAddress"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -138,30 +80,7 @@
 
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasStreetNumber -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasStreetNumber">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#StreetNumber"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasName"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
-    
-
-
-    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#hasStreetNumber"/>
     
 
 
@@ -224,12 +143,6 @@
     
 
 
-    <!-- http://schema.org/GeoCoordinates -->
-
-    <owl:Class rdf:about="http://schema.org/GeoCoordinates"/>
-    
-
-
     <!-- http://schema.org/Place -->
 
     <owl:Class rdf:about="http://schema.org/Place"/>
@@ -252,52 +165,6 @@
     
 
 
-    <!-- http://schema.org/address -->
-
-    <owl:Class rdf:about="http://schema.org/address"/>
-    
-
-
-    <!-- http://schema.org/addressLocality -->
-
-    <owl:Class rdf:about="http://schema.org/addressLocality">
-        <rdfs:subClassOf rdf:resource="http://schema.org/address"/>
-    </owl:Class>
-    
-
-
-    <!-- http://schema.org/latitude -->
-
-    <owl:Class rdf:about="http://schema.org/latitude">
-        <rdfs:subClassOf rdf:resource="http://schema.org/GeoCoordinates"/>
-    </owl:Class>
-    
-
-
-    <!-- http://schema.org/longitude -->
-
-    <owl:Class rdf:about="http://schema.org/longitude">
-        <rdfs:subClassOf rdf:resource="http://schema.org/GeoCoordinates"/>
-    </owl:Class>
-    
-
-
-    <!-- http://schema.org/postalCode -->
-
-    <owl:Class rdf:about="http://schema.org/postalCode">
-        <rdfs:subClassOf rdf:resource="http://schema.org/address"/>
-    </owl:Class>
-    
-
-
-    <!-- http://schema.org/streetAddress -->
-
-    <owl:Class rdf:about="http://schema.org/streetAddress">
-        <rdfs:subClassOf rdf:resource="http://schema.org/address"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#BarbequeArea -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#BarbequeArea">
@@ -310,14 +177,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint">
         <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#StreetNumber -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#StreetNumber">
-        <rdfs:subClassOf rdf:resource="http://schema.org/address"/>
     </owl:Class>
     
 
@@ -391,9 +250,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Brekko">
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#BarbequeArea"/>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.77399</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0736523</gjesdalontology:hasLongitude>
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brekko </gjesdalontology:hasName>
-        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.77399</wgs84_pos:lat>
-        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0736523</wgs84_pos:long>
     </owl:NamedIndividual>
     
 
@@ -429,26 +288,15 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Byrkjedalstunet -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Byrkjedalstunet">
-        <rdf:type rdf:resource="http://schema.org/BarOrPub"/>
-        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIRDAL</gjesdalontology:hasCity>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.7799</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.316345</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet</gjesdalontology:hasName>
-        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet</gjesdalontology:hasStreetName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#ByrkjedalstunetHotell -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#ByrkjedalstunetHotell">
         <rdf:type rdf:resource="http://schema.org/Accommodation"/>
+        <rdf:type rdf:resource="http://schema.org/BarOrPub"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIRDAL</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hotell</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.77985</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.7799</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.316345</gjesdalontology:hasLongitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.316349</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet hotell</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet</gjesdalontology:hasStreetName>
         <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</gjesdalontology:hasStreetNumber>
@@ -575,22 +423,12 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Edlandshagen-Perlå -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Edlandshagen-Perlå">
-        <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#BarbequeArea"/>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edlandshagen - Perlå</gjesdalontology:hasName>
-        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.76355</wgs84_pos:lat>
-        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.853437</wgs84_pos:long>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Edlandshagen-PerlåBadeplass -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Edlandshagen-PerlåBadeplass">
         <rdf:type rdf:resource="http://schema.org/Beach"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#BarbequeArea"/>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Offentlig</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.76355</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.853437</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edlandshagen - Perlå badeplass</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edlandshagen - Perlå</gjesdalontology:hasName>
     </owl:NamedIndividual>
     
 
@@ -667,24 +505,16 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Flassavatnet -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Flassavatnet">
+        <rdf:type rdf:resource="http://schema.org/Beach"/>
         <rdf:type rdf:resource="http://schema.org/BodyOfWater"/>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fritt fiske langs grunn som hører til gårdene på Ytre Lima. For øvrig kan fiske skje etter avtale med grunneier </gjesdalontology:hasDescription>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.78978</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.868987</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flassavatnet</gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flassavatnet</gjesdalontology:hasStreetName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#FlassavatnetBadeplass -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#FlassavatnetBadeplass">
-        <rdf:type rdf:resource="http://schema.org/Beach"/>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.78273</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.78978</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.868987</gjesdalontology:hasLongitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.872242</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flassavatnet badeplass</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flassavatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flassavatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -702,15 +532,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Frafjord-Engelskhuset -->
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Frafjord -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Frafjord-Engelskhuset">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Frafjord">
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ved Engelskhuset</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.84162</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.318134</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frafjord - Engelskhuset</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frafjord</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
     </owl:NamedIndividual>
     
@@ -785,15 +615,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Giljabakkene-Sving -->
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Giljabakkene -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Giljabakkene-Sving">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Giljabakkene">
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denne ligge midt i en sving. 3 sving fra Gilja sentrum</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.809242</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.279306</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljabakkene - sving</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljabakkene</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
     </owl:NamedIndividual>
     
@@ -813,61 +643,42 @@
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenCamping -->
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Giljastølen -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenCamping">
-        <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
-        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal</gjesdalontology:hasCity>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Campingplass</gjesdalontology:hasDescription>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.82238</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.284303</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Camping</gjesdalontology:hasName>
-        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenCampingplass -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenCampingplass">
-        <rdf:type rdf:resource="http://schema.org/Accommodation"/>
-        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIRDAL</gjesdalontology:hasCity>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camping</gjesdalontology:hasDescription>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.80619</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.2592173</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Campingplass</gjesdalontology:hasName>
-        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljagarden</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</gjesdalontology:hasStreetNumber>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenParkering -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenParkering">
-        <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
-        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal</gjesdalontology:hasCity>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ved øverste parkeringsplass på Giljastølen</gjesdalontology:hasDescription>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.832066</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.279245</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Parkering</gjesdalontology:hasName>
-        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenVedFV281 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenVedFV281">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Giljastølen">
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Står ved veien på FV281</gjesdalontology:hasDescription>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ved øverste parkeringsplass på Giljastølen</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.82723</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.832066</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.279245</gjesdalontology:hasLongitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.280437</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen ved FV281</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølveien</gjesdalontology:hasStreetName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenCamping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenCamping">
+        <rdf:type rdf:resource="http://schema.org/Accommodation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
+        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIRDAL</gjesdalontology:hasCity>
+        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal</gjesdalontology:hasCity>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camping</gjesdalontology:hasDescription>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Campingplass</gjesdalontology:hasDescription>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.80619</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.82238</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.2592173</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.284303</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Camping</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Camping </gjesdalontology:hasName>
+        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljagarden</gjesdalontology:hasStreetName>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1014,15 +825,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Grovika-Lagerbygget -->
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Grovika -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Grovika-Lagerbygget">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Grovika">
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ligger ved lagerbygget til Gjesdal kommune</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.764317</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.895614</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grovika - lagerbygget</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grovika</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øvre Kluge</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
@@ -1320,11 +1131,25 @@
         <rdf:type rdf:resource="http://schema.org/Accommodation"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ÅLGÅRD</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camping</gjesdalontology:hasDescription>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.775745</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.845555</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongeparken Camping </gjesdalontology:hasName>
+        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgårdslåtten</gjesdalontology:hasStreetName>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</gjesdalontology:hasStreetNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#KongeparkenHytteutleie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#KongeparkenHytteutleie">
+        <rdf:type rdf:resource="http://schema.org/Accommodation"/>
+        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ÅLGÅRD</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hytteutleie </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.775745</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.845555</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongeparken Camping</gjesdalontology:hasName>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongeparken Camping </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongeparken Hytteutleie</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgårdslåtten</gjesdalontology:hasStreetName>
         <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</gjesdalontology:hasStreetNumber>
@@ -1359,21 +1184,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Kyllingstad -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Kyllingstad">
-        <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#BarbequeArea"/>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.724133</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.975558</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kyllingstad</gjesdalontology:hasName>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#KyllingstadBadeplass -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#KyllingstadBadeplass">
         <rdf:type rdf:resource="http://schema.org/Beach"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#BarbequeArea"/>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Offentlig</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.724133</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.975558</gjesdalontology:hasLongitude>
@@ -1399,25 +1214,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Lafthuset">
         <rdf:type rdf:resource="http://schema.org/BarOrPub"/>
-        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OLTEDAL</gjesdalontology:hasCity>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.83344</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.055014</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lafthuset</gjesdalontology:hasName>
-        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4333</gjesdalontology:hasPostalCode>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bygdaveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">186</gjesdalontology:hasStreetNumber>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#LafthusetUtleielokal -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#LafthusetUtleielokal">
         <rdf:type rdf:resource="http://schema.org/EventVenue"/>
+        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OLTEDAL</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.83336</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.83344</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.055014</gjesdalontology:hasLongitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0550895</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lafthuset utleielokal</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lafthuset</gjesdalontology:hasName>
+        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4333</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bygdaveien</gjesdalontology:hasStreetName>
         <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">186</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
@@ -1572,15 +1377,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#NevlandVedFV286 -->
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Nevland -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#NevlandVedFV286">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Nevland">
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård</gjesdalontology:hasCity>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ligger i krysset ved FV286 og veien opp til Nevland</gjesdalontology:hasDescription>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Likker i krysset ved FV286 og veien opp til Nevland</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.783424</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.014329</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nevland ved FV286</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nevland</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FV286</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
@@ -1662,24 +1467,16 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Oltedalsvatnet -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Oltedalsvatnet">
+        <rdf:type rdf:resource="http://schema.org/Beach"/>
         <rdf:type rdf:resource="http://schema.org/BodyOfWater"/>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fritt fiske langs grunn tilhørende gården Rage. For øvrig kan fiske skje etter avtale med grunneier </gjesdalontology:hasDescription>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.815342</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.819035</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.01369</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0331554</gjesdalontology:hasLongitude>
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oltedalsvatnet</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oltedalsvatnet</gjesdalontology:hasStreetName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#OltedalsvatnetBadeplass -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#OltedalsvatnetBadeplass">
-        <rdf:type rdf:resource="http://schema.org/Beach"/>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat </gjesdalontology:hasDescription>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.819035</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0331554</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oltedalsvatnet badeplass</gjesdalontology:hasName>
     </owl:NamedIndividual>
     
 
@@ -1697,14 +1494,14 @@
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RaudvigåBadeplass -->
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Raudvigå -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RaudvigåBadeplass">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Raudvigå">
         <rdf:type rdf:resource="http://schema.org/Beach"/>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.76833</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.832188</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raudvigå badeplass</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raudvigå</gjesdalontology:hasName>
     </owl:NamedIndividual>
     
 
@@ -1947,25 +1744,16 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Westernbyen">
         <rdf:type rdf:resource="http://schema.org/BarOrPub"/>
-        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ÅLGÅRD</gjesdalontology:hasCity>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.77731</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.847018</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Westernbyen</gjesdalontology:hasName>
-        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgårdslåtten</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</gjesdalontology:hasStreetNumber>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#WesternbyenUtleielokale -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#WesternbyenUtleielokale">
         <rdf:type rdf:resource="http://schema.org/EventVenue"/>
+        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ÅLGÅRD</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.77722</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.77731</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.846974</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Westernbyen utleielokale</gjesdalontology:hasName>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.847018</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Westernbyen</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Westernbyen </gjesdalontology:hasName>
+        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgårdslåtten</gjesdalontology:hasStreetName>
         <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
@@ -2109,2022 +1897,6 @@
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.90277</gjesdalontology:hasLongitude>
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øystrevatnet </gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øystrevatnet </gjesdalontology:hasStreetName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.82627108901655 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.82627108901655">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.82635590 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.82635590">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.8282693179285 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.8282693179285">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83036068 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83036068">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83218832 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83218832">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83283022019997 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83283022019997">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.833600 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.833600">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83551859 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83551859">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83553461 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83553461">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83714644 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83714644">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83740362 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83740362">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83879467 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.83879467">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84044222 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84044222">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84538371 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84538371">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84555495 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84555495">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84635219 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84635219">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84697391523617 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84697391523617">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84701778 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84701778">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84787692916878 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84787692916878">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84969799 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.84969799">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.85010893 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.85010893">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.85271601338989 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.85271601338989">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.85327748021651 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.85327748021651">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.85343694 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.85343694">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.8546892032774 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.8546892032774">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.85747247976096 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.85747247976096">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.85965813 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.85965813">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.86326494 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.86326494">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.86421713083804 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.86421713083804">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.86527562 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.86527562">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.86719216489615 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.86719216489615">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.86783739240624 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.86783739240624">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.86898712 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.86898712">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.87093754 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.87093754">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.87224200 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.87224200">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.87375173 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.87375173">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.87479161143622 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.87479161143622">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.88559275 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.88559275">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.88975539 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.88975539">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.89335963635906 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.89335963635906">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.89372441 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.89372441">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.895614 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.895614">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.89688779048941 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.89688779048941">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.90277023 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.90277023">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.91104341 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.91104341">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.91649960 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.91649960">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.92062653 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.92062653">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.92268329113457 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.92268329113457">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.92684488 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.92684488">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.92706970 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.92706970">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.93892276 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.93892276">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.94692099 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.94692099">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.95533517 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.95533517">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.96860639 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.96860639">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.97555769 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.97555769">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.98144493 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.98144493">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.981664 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.981664">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.98428955 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.98428955">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.98548499 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#5.98548499">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.677326 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.677326">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.67909318 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.67909318">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.68384730 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.68384730">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.69489297 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.69489297">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.69513994 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.69513994">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.70215547 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.70215547">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.70840859 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.70840859">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.71134432 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.71134432">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.71672702 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.71672702">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.72190656 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.72190656">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.72199594 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.72199594">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.72202530 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.72202530">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.72413115 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.72413115">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.72525881 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.72525881">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.73188297 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.73188297">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.73501779 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.73501779">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.74578469 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.74578469">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7460606594616 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7460606594616">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7523185522319 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7523185522319">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.75702507 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.75702507">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.75968797 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.75968797">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76156069 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76156069">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76183836 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76183836">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76195740 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76195740">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76355133 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76355133">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76355820 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76355820">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76357763 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76357763">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76367899 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76367899">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.764316 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.764316">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7646436644626 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7646436644626">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.764664 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.764664">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7647900682971 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7647900682971">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7656023104864 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7656023104864">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.766954356331 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.766954356331">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7676957404636 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7676957404636">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76785966 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76785966">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76832936 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76832936">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76833406 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76833406">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76860098 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76860098">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7687898828773 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7687898828773">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76906152 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76906152">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76914125 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.76914125">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7693484485108 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7693484485108">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.770545105961 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.770545105961">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77114636 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77114636">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7731534928517 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7731534928517">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7733032634902 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7733032634902">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77334579 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77334579">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.773415751891 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.773415751891">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77354662 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77354662">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77391657 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77391657">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77399128 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77399128">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77468793 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77468793">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77518742 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77518742">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77574580 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77574580">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7757615570867 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7757615570867">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7760260825423 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7760260825423">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77646969 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77646969">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7772223716781 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.7772223716781">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77731111 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77731111">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77829650 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77829650">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77832189 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77832189">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.778422 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.778422">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77878526 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77878526">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77947499 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77947499">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77969308 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77969308">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77980769 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77980769">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77985035 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77985035">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77989775 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.77989775">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.78009764 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.78009764">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.78221345 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.78221345">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.78273163 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.78273163">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.783423 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.783423">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.78392471 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.78392471">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.78433285 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.78433285">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.78977833 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.78977833">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.79712355 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.79712355">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.80619015 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.80619015">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8069757732536 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8069757732536">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8070479440999 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8070479440999">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.809242 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.809242">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.81494953 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.81494953">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.81534380 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.81534380">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8156972959712 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8156972959712">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.81601486 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.81601486">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.81903283 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.81903283">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.822380 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.822380">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82404233 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82404233">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82559308 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82559308">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8263879951438 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8263879951438">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8264797287343 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8264797287343">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.827229 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.827229">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82725728 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82725728">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8273100789728 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8273100789728">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.828036 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.828036">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82878275 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82878275">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82898295 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82898295">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82911513 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82911513">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82998423 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.82998423">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.832064 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.832064">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8333583023131 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8333583023131">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8333953549151 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.8333953549151">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.83343728 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.83343728">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.83795677 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.83795677">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.840581 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.840581">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.841498 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.841498">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.841623 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.841623">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.844400 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.844400">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.84558747 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.84558747">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.854272 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.854272">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.859767 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.859767">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.86274944 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.86274944">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.86512055 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.86512055">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.865420 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.865420">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.87535078 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.87535078">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.87627988 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.87627988">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.87681769 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.87681769">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.877091 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.877091">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.87823162 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.87823162">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.87921472 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.87921472">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.880066 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.880066">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.88039486 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.88039486">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.88472238 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.88472238">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.89087846 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.89087846">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.89566325 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.89566325">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.89582390 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#58.89582390">
-        <rdf:type rdf:resource="http://schema.org/latitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.01369013 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.01369013">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.014329 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.014329">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.01998209 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.01998209">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.02071666 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.02071666">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.02415453 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.02415453">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.02930436 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.02930436">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.03154364 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.03154364">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.03315530 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.03315530">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.03481329190357 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.03481329190357">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.034878756061 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.034878756061">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.03542057861965 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.03542057861965">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.05501407 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.05501407">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.0550896092964 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.0550896092964">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.05663394421152 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.05663394421152">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.06445630 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.06445630">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.06673307 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.06673307">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.07152279 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.07152279">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.07365238 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.07365238">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.07440902 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.07440902">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.07474519 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.07474519">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.07599431 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.07599431">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.09458522 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.09458522">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.10330894 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.10330894">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.10723733 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.10723733">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.11545704 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.11545704">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.19006935 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.19006935">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.191760 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.191760">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.21801125 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.21801125">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.21809288086638 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.21809288086638">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.23848227 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.23848227">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.24397130 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.24397130">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.25381705706305 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.25381705706305">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.25421623586307 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.25421623586307">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.25921738 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.25921738">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.26345362 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.26345362">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.27680830 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.27680830">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.279245 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.279245">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.279306 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.279306">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.280437 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.280437">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.281778 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.281778">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.284303 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.284303">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.28665654 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.28665654">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.288612 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.288612">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.29468813 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.29468813">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.29961499 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.29961499">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.30359015 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.30359015">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.31634519 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.31634519">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.31634885 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.31634885">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.318134 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.318134">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.32292293 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.32292293">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.33125115 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.33125115">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.333236 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.333236">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.34474467 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.34474467">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.345492 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.345492">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.36699683 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.36699683">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.37126191 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.37126191">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.37474620 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.37474620">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.37885258 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.37885258">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.379386 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.379386">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.38358063 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.38358063">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.39899450 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.39899450">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.41371574 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.41371574">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.44710550 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.44710550">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.536638 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.536638">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.563120 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.563120">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.597521 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.597521">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.605116 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#6.605116">
-        <rdf:type rdf:resource="http://schema.org/longitude"/>
     </owl:NamedIndividual>
     
 
