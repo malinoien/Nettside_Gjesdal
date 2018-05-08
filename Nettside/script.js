@@ -1,8 +1,10 @@
 window.onload = function(){
-  document.getElementById("søkeknapp").addEventListener("click", sok);
+  document.getElementById("checkBoxSøk").addEventListener("click", sok);
   document.getElementById("fjernChecked").addEventListener("click", fjernValgteSjekkbokser);
+  document.getElementById("søkeknapp").addEventListener("click",finnNaermeste);
 }
-
+var prefix = "PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX schema: <http://schema.org/> PREFIX f:<http://www.w3.org/2005/xpath-functions/math#>";
+var slutt = "}";
 function sok(){
   var object = [
     skjenkested = {
@@ -47,15 +49,16 @@ function sok(){
     }
   ];
 
-  var prefix = "PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX schema: <http://schema.org/>";
+
   var navn = "SELECT DISTINCT ?Name WHERE {{?subject mr:hasName ?Name} ";
   var navnlatlon = "SELECT DISTINCT ?Latitude ?Longitude ?Name WHERE {?subject mr:hasLatitude ?Latitude . ?subject mr:hasLongitude ?Longitude . ?subject mr:hasName ?Name .";
-  var slutt = "}";
+
 
   var Q = new sgvizler.Query();
   var X = new sgvizler.Query();
 
   settVerdier(object);
+
   var spørring = ozone(object);
 
   Q.query(prefix + navnlatlon + spørring + slutt)
@@ -119,13 +122,8 @@ function fjernValgteSjekkbokser(){
 }
 
 function sjekkBokser(obj){
-  var operator = "";
-  if(document.getElementById("union").checked == true){
-    operator = "UNION";
-  }
-  else {
-    operator = "";
-  }
+  var operator = "UNION";
+
 
   var stringTabell = [];
   for(var i = 0; i < obj.length; i++){
@@ -147,3 +145,50 @@ function sjekkBokser(obj){
 //   antallBokserChecked ++;
 //   }
 // }
+
+
+function finnNaermeste(){
+  var skrevetNavn = document.getElementById("skrevetNavn").value;
+  var dd = document.getElementById("dropDown");
+  var ddValg = dd.options[dd.selectedIndex].value;
+  if(ddValg == "BarbequeArea" || ddValg == "RecyclingPoint"){
+    ddValg = "mr:" + ddValg;
+  }
+  else {
+    ddValg = "schema:" + ddValg;
+  }
+  var where = "WHERE { "
+   + "?førsteSted mr:hasLatitude ?lat1; "
+   +              "mr:hasLongitude ?long1; "
+   +		          "mr:hasName '" + skrevetNavn + "'. "
+   +  "?nærtSted a " + ddValg + ". "
+   +  "?nærtSted mr:hasLatitude ?lat2; "
+   +      	     "mr:hasLongitude ?long2; "
+   +  	         "mr:hasName ?navn2. "
+   +  "BIND (f:pi() AS ?pi)."
+   +  "BIND (?pi/180 AS ?p)."
+   +  "BIND(0.5 - f:cos((?lat2-?lat1)*?p)/2 + f:cos(?lat1*?p)*f:cos(?lat2*?p)*(1-f:cos((?long2-?long1)*?p))/2 AS ?a)."
+   + "BIND(12742 * f:asin(f:sqrt(?a)) as ?distance)"
+  + "} ORDER BY ASC(?distance)";
+
+  var selectKart = "SELECT DISTINCT ?lat2 ?long2 ";
+  var selectListe = "SELECT DISTINCT ?navn2 ?distance ";
+
+  var Q = new sgvizler.Query();
+  var X = new sgvizler.Query();
+
+  Q.query(prefix + selectKart + where)
+          .endpointURL("http://localhost:3030/Gjesdal/query")
+          .chartFunction("sgvizler.visualization.Map")
+          .draw("map");
+
+  X.query(prefix + selectListe + where)
+          .endpointURL("http://localhost:3030/Gjesdal/query")
+          .chartFunction("google.visualization.Table")
+          .draw("list");
+ console.log(selectKart + where);
+ console.log(selectListe + where);
+}
+
+
+// SELECT ?navn2  ?distance

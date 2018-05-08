@@ -288,15 +288,26 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Byrkjedalstunet -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Byrkjedalstunet">
-        <rdf:type rdf:resource="http://schema.org/Accommodation"/>
         <rdf:type rdf:resource="http://schema.org/BarOrPub"/>
+        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIRDAL</gjesdalontology:hasCity>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.7799</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.316345</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet</gjesdalontology:hasName>
+        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet</gjesdalontology:hasStreetName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#ByrkjedalstunetHotell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#ByrkjedalstunetHotell">
+        <rdf:type rdf:resource="http://schema.org/Accommodation"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIRDAL</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hotell</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.77985</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.7799</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.316345</gjesdalontology:hasLongitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.316349</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet hotell</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet</gjesdalontology:hasStreetName>
         <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</gjesdalontology:hasStreetNumber>
@@ -374,7 +385,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal kyrkje </gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hunnedalsvegen</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2270</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">490</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -423,12 +434,22 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Edlandshagen-Perlå -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Edlandshagen-Perlå">
-        <rdf:type rdf:resource="http://schema.org/Beach"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#BarbequeArea"/>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Offentlig</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.76355</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.853437</gjesdalontology:hasLongitude>
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edlandshagen - Perlå</gjesdalontology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Edlandshagen-PerlåBadeplass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Edlandshagen-PerlåBadeplass">
+        <rdf:type rdf:resource="http://schema.org/Beach"/>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Offentlig</gjesdalontology:hasDescription>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.76355</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.853437</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edlandshagen - Perlå badeplass</gjesdalontology:hasName>
     </owl:NamedIndividual>
     
 
@@ -505,16 +526,24 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Flassavatnet -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Flassavatnet">
-        <rdf:type rdf:resource="http://schema.org/Beach"/>
         <rdf:type rdf:resource="http://schema.org/BodyOfWater"/>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fritt fiske langs grunn som hører til gårdene på Ytre Lima. For øvrig kan fiske skje etter avtale med grunneier </gjesdalontology:hasDescription>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat </gjesdalontology:hasDescription>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.78273</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.78978</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.868987</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.872242</gjesdalontology:hasLongitude>
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flassavatnet</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flassavatnet</gjesdalontology:hasStreetName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#FlassavatnetBadeplass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#FlassavatnetBadeplass">
+        <rdf:type rdf:resource="http://schema.org/Beach"/>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat </gjesdalontology:hasDescription>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.78273</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.872242</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flassavatnet badeplass</gjesdalontology:hasName>
     </owl:NamedIndividual>
     
 
@@ -532,15 +561,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Frafjord -->
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Frafjord-Engelskhuset -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Frafjord">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Frafjord-Engelskhuset">
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ved Engelskhuset</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.84162</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.318134</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frafjord</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frafjord - Engelskhuset</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
     </owl:NamedIndividual>
     
@@ -615,15 +644,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Giljabakkene -->
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Giljabakkene-Sving -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Giljabakkene">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Giljabakkene-Sving">
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denne ligge midt i en sving. 3 sving fra Gilja sentrum</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.809242</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.279306</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljabakkene</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljabakkene - sving</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
     </owl:NamedIndividual>
     
@@ -643,42 +672,61 @@
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Giljastølen -->
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenCamping -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Giljastølen">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenCamping">
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal</gjesdalontology:hasCity>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Står ved veien på FV281</gjesdalontology:hasDescription>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ved øverste parkeringsplass på Giljastølen</gjesdalontology:hasDescription>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.82723</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.832066</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.279245</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.280437</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen</gjesdalontology:hasName>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Campingplass</gjesdalontology:hasDescription>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.82238</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.284303</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Camping</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølveien</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenCamping -->
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenCampingplass -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenCamping">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenCampingplass">
         <rdf:type rdf:resource="http://schema.org/Accommodation"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIRDAL</gjesdalontology:hasCity>
-        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camping</gjesdalontology:hasDescription>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Campingplass</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.80619</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.82238</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.2592173</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.284303</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Camping</gjesdalontology:hasName>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Camping </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Campingplass</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljagarden</gjesdalontology:hasStreetName>
         <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</gjesdalontology:hasStreetNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenParkering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenParkering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
+        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal</gjesdalontology:hasCity>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ved øverste parkeringsplass på Giljastølen</gjesdalontology:hasDescription>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.832066</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.279245</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Parkering</gjesdalontology:hasName>
+        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenVedFV281 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#GiljastølenVedFV281">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
+        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal</gjesdalontology:hasCity>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Står ved veien på FV281</gjesdalontology:hasDescription>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.82723</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.280437</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen ved FV281</gjesdalontology:hasName>
+        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølveien</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -825,15 +873,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Grovika -->
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Grovika-Lagerbygget -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Grovika">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Grovika-Lagerbygget">
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård</gjesdalontology:hasCity>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ligger ved lagerbygget til Gjesdal kommune</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.764317</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.895614</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grovika</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grovika - lagerbygget</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øvre Kluge</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
@@ -1133,23 +1181,7 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camping</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.775745</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.845555</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongeparken Camping </gjesdalontology:hasName>
-        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgårdslåtten</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</gjesdalontology:hasStreetNumber>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#KongeparkenHytteutleie -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#KongeparkenHytteutleie">
-        <rdf:type rdf:resource="http://schema.org/Accommodation"/>
-        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ÅLGÅRD</gjesdalontology:hasCity>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hytteutleie </gjesdalontology:hasDescription>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.775745</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.845555</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongeparken Hytteutleie</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongeparken Camping</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgårdslåtten</gjesdalontology:hasStreetName>
         <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</gjesdalontology:hasStreetNumber>
@@ -1184,11 +1216,21 @@
     
 
 
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Kyllingstad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Kyllingstad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#BarbequeArea"/>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.724133</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.975558</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kyllingstad</gjesdalontology:hasName>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#KyllingstadBadeplass -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#KyllingstadBadeplass">
         <rdf:type rdf:resource="http://schema.org/Beach"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#BarbequeArea"/>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Offentlig</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.724133</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.975558</gjesdalontology:hasLongitude>
@@ -1214,15 +1256,25 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Lafthuset">
         <rdf:type rdf:resource="http://schema.org/BarOrPub"/>
-        <rdf:type rdf:resource="http://schema.org/EventVenue"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OLTEDAL</gjesdalontology:hasCity>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat</gjesdalontology:hasDescription>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.83336</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.83344</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.055014</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0550895</gjesdalontology:hasLongitude>
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lafthuset</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4333</gjesdalontology:hasPostalCode>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bygdaveien</gjesdalontology:hasStreetName>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">186</gjesdalontology:hasStreetNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#LafthusetUtleielokal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#LafthusetUtleielokal">
+        <rdf:type rdf:resource="http://schema.org/EventVenue"/>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat</gjesdalontology:hasDescription>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.83336</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0550895</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lafthuset utleielokal</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bygdaveien</gjesdalontology:hasStreetName>
         <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">186</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
@@ -1377,15 +1429,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Nevland -->
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#NevlandVedFV286 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Nevland">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#NevlandVedFV286">
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RecyclingPoint"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård</gjesdalontology:hasCity>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Likker i krysset ved FV286 og veien opp til Nevland</gjesdalontology:hasDescription>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ligger i krysset ved FV286 og veien opp til Nevland</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.783424</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.014329</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nevland</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nevland ved FV286</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FV286</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
@@ -1467,16 +1519,24 @@
     <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Oltedalsvatnet -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Oltedalsvatnet">
-        <rdf:type rdf:resource="http://schema.org/Beach"/>
         <rdf:type rdf:resource="http://schema.org/BodyOfWater"/>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fritt fiske langs grunn tilhørende gården Rage. For øvrig kan fiske skje etter avtale med grunneier </gjesdalontology:hasDescription>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.815342</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.819035</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.01369</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0331554</gjesdalontology:hasLongitude>
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oltedalsvatnet</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oltedalsvatnet</gjesdalontology:hasStreetName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#OltedalsvatnetBadeplass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#OltedalsvatnetBadeplass">
+        <rdf:type rdf:resource="http://schema.org/Beach"/>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat </gjesdalontology:hasDescription>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.819035</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0331554</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oltedalsvatnet badeplass</gjesdalontology:hasName>
     </owl:NamedIndividual>
     
 
@@ -1488,20 +1548,20 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fritt fiske langs grunn tilhørende gården Rage. For øvrig kan fiske skje etter avtale med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.837955</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.115457</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ragsvatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ragsvatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ragsvatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ragsvatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Raudvigå -->
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RaudvigåBadeplass -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Raudvigå">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#RaudvigåBadeplass">
         <rdf:type rdf:resource="http://schema.org/Beach"/>
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.76833</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.832188</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raudvigå</gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raudvigå badeplass</gjesdalontology:hasName>
     </owl:NamedIndividual>
     
 
@@ -1555,8 +1615,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta kontakt med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.694893</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.8897552</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sikvalandsvatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sikvalandsvatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sikvalandsvatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sikvalandsvatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -1611,7 +1671,7 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.765602</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.854689</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stamphuset </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stamphuset</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rettedalen</gjesdalontology:hasStreetName>
         <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
@@ -1652,7 +1712,7 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hytteutleie </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.683846</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.9842896</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Søya hytteutleie </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Søya hytteutleie</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Søyland</gjesdalontology:hasStreetName>
         <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</gjesdalontology:hasStreetNumber>
@@ -1681,7 +1741,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#BarbequeArea"/>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.76196</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0715227</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teltplass lille Foretjørn </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teltplass lille Foretjørn</gjesdalontology:hasName>
     </owl:NamedIndividual>
     
 
@@ -1744,16 +1804,25 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#Westernbyen">
         <rdf:type rdf:resource="http://schema.org/BarOrPub"/>
-        <rdf:type rdf:resource="http://schema.org/EventVenue"/>
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ÅLGÅRD</gjesdalontology:hasCity>
-        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat</gjesdalontology:hasDescription>
-        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.77722</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.77731</gjesdalontology:hasLatitude>
-        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.846974</gjesdalontology:hasLongitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.847018</gjesdalontology:hasLongitude>
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Westernbyen</gjesdalontology:hasName>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Westernbyen </gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgårdslåtten</gjesdalontology:hasStreetName>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</gjesdalontology:hasStreetNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#WesternbyenUtleielokale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#WesternbyenUtleielokale">
+        <rdf:type rdf:resource="http://schema.org/EventVenue"/>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat</gjesdalontology:hasDescription>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.77722</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.846974</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Westernbyen utleielokale</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgårdslåtten</gjesdalontology:hasStreetName>
         <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>

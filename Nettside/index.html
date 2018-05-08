@@ -44,12 +44,28 @@
         </div>
       </div>
       <div class="flexrow">
-        <div><input id="snitt" name="operator" type="radio"> Snitt </input></div>
-        <div><input id="union" name="operator" type="radio"> Union </input></div>
+        <button type="button" class="button" id="checkBoxSøk">Søk</button>
+        <button type="button" class="button" id="fjernChecked">Fjern filter</button>
       </div>
       <div class="flexrow">
-        <button type="button" class="button" id="søkeknapp">Søk</button>
-        <button type="button" class="button" id="fjernChecked">Fjern filter</button>
+        <div>
+          <input id="skrevetNavn" name="operator" type="input" placeholder="Navn"/>
+        </div>
+        <div>
+          <select id="dropDown">
+            <option value="Accommodation">Overnatting</option>
+            <option value="BarbequeArea">Grillplass</option>
+            <option value="Church">Kirke</option>
+            <option value="Preschool">Barnehage</option>
+            <option value="EventVenue">Utlelelokale</option>
+            <option value="BarOrPub">Skjenkested</option>
+            <option value="Beach">Badeplass</option>
+            <option value="BodyOfWater">Fiskeplass</option>
+            <option value="RecyclingPoint">Avfallspunkt</option>
+            <option value="School">Skole</option>
+          </select>
+          <button type="button" id="søkeknapp">SØK</button>
+        </div>
       </div>
 
       <div id="map" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query="
