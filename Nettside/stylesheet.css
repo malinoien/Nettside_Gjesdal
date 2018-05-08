@@ -57,6 +57,12 @@ textarea, input, button{
   border: none;
 }
 
+.tabellOgListe{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 #map{
   height: 800px;
-}

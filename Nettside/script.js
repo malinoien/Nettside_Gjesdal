@@ -157,6 +157,7 @@ function finnNaermeste(){
   else {
     ddValg = "schema:" + ddValg;
   }
+
   var where = "WHERE { "
    + "?førsteSted mr:hasLatitude ?lat1; "
    +              "mr:hasLongitude ?long1; "
@@ -164,15 +165,15 @@ function finnNaermeste(){
    +  "?nærtSted a " + ddValg + ". "
    +  "?nærtSted mr:hasLatitude ?lat2; "
    +      	     "mr:hasLongitude ?long2; "
-   +  	         "mr:hasName ?navn2. "
+   +  	         "mr:hasName ?Navn. "
    +  "BIND (f:pi() AS ?pi)."
    +  "BIND (?pi/180 AS ?p)."
    +  "BIND(0.5 - f:cos((?lat2-?lat1)*?p)/2 + f:cos(?lat1*?p)*f:cos(?lat2*?p)*(1-f:cos((?long2-?long1)*?p))/2 AS ?a)."
-   + "BIND(12742 * f:asin(f:sqrt(?a)) as ?distance)"
+   + "BIND(12742 * f:asin(f:sqrt(?a)) as ?Avstand)"
   + "} ORDER BY ASC(?distance)";
 
   var selectKart = "SELECT DISTINCT ?lat2 ?long2 ";
-  var selectListe = "SELECT DISTINCT ?navn2 ?distance ";
+  var selectListe = "SELECT DISTINCT ?Navn ?Avstand ";
 
   var Q = new sgvizler.Query();
   var X = new sgvizler.Query();
@@ -186,9 +187,4 @@ function finnNaermeste(){
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("google.visualization.Table")
           .draw("list");
- console.log(selectKart + where);
- console.log(selectListe + where);
 }
-
-
-// SELECT ?navn2  ?distance
