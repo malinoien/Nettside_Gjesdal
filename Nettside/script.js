@@ -104,6 +104,7 @@ function fjernValgteSjekkbokser(){
   document.getElementById("avfallspunkt").checked = false;
   document.getElementById("utleielokale").checked = false;
   document.getElementById("skole").checked = false;
+  document.getElementById("list").innerHTML = "";
   spørring = "";
   var Q = new sgvizler.Query();
   var X = new sgvizler.Query();
@@ -111,23 +112,30 @@ function fjernValgteSjekkbokser(){
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("sgvizler.visualization.Map")
           .draw("map");
-
-  X.query("PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> SELECT ?Name WHERE { ?subject mr:hasName ?Name .}")
-          .endpointURL("http://localhost:3030/Gjesdal/query")
-          .chartFunction("sgvizler.visualization.List")
-          .draw("list");
+//  X.query("PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> SELECT ?Name WHERE { ?subject mr:hasName ?Name .}")
+//          .endpointURL("http://localhost:3030/Gjesdal/query")
+//          .chartFunction("sgvizler.visualization.List")
+//          .draw("list");
 }
 
 function sjekkBokser(obj){
-  var union = "UNION";
+  var operator = "";
+  if(document.getElementById("union").checked == true){
+    operator = "UNION";
+  }
+  else {
+    operator = "";
+  }
+
   var stringTabell = [];
   for(var i = 0; i < obj.length; i++){
     if (obj[i].verdi == true){
       stringTabell.push(obj[i].string);
-      stringTabell.push(union);
+      stringTabell.push(operator);
     }
   }
   stringTabell.pop();
+  console.log(stringTabell);
   return stringTabell;
 }
 

@@ -46,7 +46,7 @@ public class Model {
 		model.write(System.out, "TURTLE");
 		
 		try {
-            model.write(new FileOutputStream("Gjesdal.ttl"), "TURTLE");
+            model.write(new FileOutputStream("Malin3.ttl"), "TURTLE");
             System.out.println("yup");
         } catch (Exception e) {
            //  TODO: handle exception

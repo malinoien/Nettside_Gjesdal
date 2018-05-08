@@ -19,31 +19,35 @@
     </script>
   </head>
   <body>
-    <div id="flexcolumn">
+    <div class="flexcolumn">
       <h1>Gjesdal kommune</h1>
-      <div id="flexrow">
-        <div id="flexcolumn">
+      <div class="flexrow">
+        <div class="flexcolumn">
           <div><input id="overnatting" class="checkbox" type="checkbox">Overnatting</input></div>
           <div><input id="skjenkested" class="checkbox" type="checkbox">Skjenkested</input></div>
         </div>
-        <div id="flexcolumn">
+        <div class="flexcolumn">
           <div><input id="grillplass" class="checkbox"  type="checkbox">Grillplass</input></div>
           <div><input id="badeplass" class="checkbox"  type="checkbox">Badeplass</input></div>
         </div>
-        <div id="flexcolumn">
+        <div class="flexcolumn">
           <div><input id="kirke" class="checkbox" type="checkbox">Kirke</input></div>
           <div><input id="fiskeplass" class="checkbox" type="checkbox">Fiskeplass</input></div>
         </div>
-        <div id="flexcolumn">
+        <div class="flexcolumn">
           <div><input id="barnehage" class="checkbox" type="checkbox">Barnehage</input></div>
           <div><input id="avfallspunkt" class="checkbox" type="checkbox">Avfallspunkt</input></div>
         </div>
-        <div id="flexcolumn">
+        <div class="flexcolumn">
           <div><input id="utleielokale" class="checkbox" type="checkbox">Utleielokale</input></div>
           <div><input id="skole" class="checkbox" type="checkbox">Skole</input></div>
         </div>
       </div>
-      <div id="flexrow">
+      <div class="flexrow">
+        <div><input id="snitt" name="operator" type="radio"> Snitt </input></div>
+        <div><input id="union" name="operator" type="radio"> Union </input></div>
+      </div>
+      <div class="flexrow">
         <button type="button" class="button" id="søkeknapp">Søk</button>
         <button type="button" class="button" id="fjernChecked">Fjern filter</button>
       </div>
