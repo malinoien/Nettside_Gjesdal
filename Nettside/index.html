@@ -1,65 +1,67 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title> Eksempel </title>
-  <meta charset = "UTF-8">
-  <link rel="stylesheet" href="stylesheet.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-  <script type="text/javascript" src="http://mgskjaeveland.github.io/sgvizler/v/0.6/sgvizler.js"></script>
-  <script>
-    $(document).ready(
-      function() {
-        sgvizler.containerDrawAll();
-      }
-    );
-  </script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title> Eksempel </title>
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="http://mgskjaeveland.github.io/sgvizler/v/0.6/sgvizler.js"></script>
+    <script>
+      $(document).ready(
+        function() {
+          sgvizler.containerDrawAll();
+        }
+      );
+    </script>
+  </head>
+  <body>
+    <div id="flexcolumn">
+      <h1>Gjesdal kommune</h1>
+      <div id="flexrow">
+        <div id="flexcolumn">
+          <div><input id="overnatting" class="checkbox" type="checkbox">Overnatting</input></div>
+          <div><input id="skjenkested" class="checkbox" type="checkbox">Skjenkested</input></div>
+        </div>
+        <div id="flexcolumn">
+          <div><input id="grillplass" class="checkbox"  type="checkbox">Grillplass</input></div>
+          <div><input id="badeplass" class="checkbox"  type="checkbox">Badeplass</input></div>
+        </div>
+        <div id="flexcolumn">
+          <div><input id="kirke" class="checkbox" type="checkbox">Kirke</input></div>
+          <div><input id="fiskeplass" class="checkbox" type="checkbox">Fiskeplass</input></div>
+        </div>
+        <div id="flexcolumn">
+          <div><input id="barnehage" class="checkbox" type="checkbox">Barnehage</input></div>
+          <div><input id="avfallspunkt" class="checkbox" type="checkbox">Avfallspunkt</input></div>
+        </div>
+        <div id="flexcolumn">
+          <div><input id="utleielokale" class="checkbox" type="checkbox">Utleielokale</input></div>
+          <div><input id="skole" class="checkbox" type="checkbox">Skole</input></div>
+        </div>
+      </div>
+      <div id="flexrow">
+        <button type="button" class="button" id="søkeknapp">Søk</button>
+        <button type="button" class="button" id="fjernChecked">Fjern filter</button>
+      </div>
 
-<body>
-  <div id="flexcolumn">
-    <h1>Gjesdal kommune</h1>
-    <div id="flexrow">
-      <div id="flexcolumn">
-        <div><input id="overnatting" class="checkbox" type="checkbox">Overnatting</input></div>
-        <div><input id="skjenkested" class="checkbox" type="checkbox">Skjenkested</input></div>
+      <div id="map" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query="
+        PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#>
+        SELECT ?Latitude ?Longitude ?Name
+        WHERE {
+          ?subject mr:hasLatitude ?Latitude .
+          ?subject mr:hasLongitude ?Longitude .
+          ?subject mr:hasName ?Name .
+        }"
+        data-sgvizler-chart="sgvizler.visualization.Map">
       </div>
-      <div id="flexcolumn">
-        <div><input id="grillplass" class="checkbox"  type="checkbox">Grillplass</input></div>
-        <div><input id="badeplass" class="checkbox"  type="checkbox">Badeplass</input></div>
-      </div>
-      <div id="flexcolumn">
-        <div><input id="kirke" class="checkbox" type="checkbox">Kirke</input></div>
-        <div><input id="fiskeplass" class="checkbox" type="checkbox">Fiskeplass</input></div>
-      </div>
-      <div id="flexcolumn">
-        <div><input id="barnehage" class="checkbox" type="checkbox">Barnehage</input></div>
-        <div><input id="avfallspunkt" class="checkbox" type="checkbox">Avfallspunkt</input></div>
-      </div>
-      <div id="flexcolumn">
-        <div><input id="utleielokale" class="checkbox" type="checkbox">Utleielokale</input></div>
-        <div><input id="skole" class="checkbox" type="checkbox">Skole</input></div>
+      <div id="list" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query=""
+        data-sgvizler-chart="sgvizler.visualization.List">
       </div>
     </div>
-    <div id="flexrow">
-      <button type="button" class="button" id="søkeknapp">Søk</button>
-      <button type="button" class="button" id="fjernChecked">Fjern filter</button>
-    </div>
-
-    <div id="map" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query="
-    PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#>
-    SELECT ?Latitude ?Longitude ?Name
-    WHERE {
-      ?subject mr:hasLatitude ?Latitude .
-      ?subject mr:hasLongitude ?Longitude .
-      ?subject mr:hasName ?Name .
-    }"
-    data-sgvizler-chart="sgvizler.visualization.Map">
-    </div>
-  </div>
-</body>
+  </body>
 </html>
