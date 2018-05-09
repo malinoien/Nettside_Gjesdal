@@ -3,7 +3,50 @@ window.onload = function(){
   document.getElementById("fjernChecked").addEventListener("click", fjernValgteSjekkbokser);
   document.getElementById("søkeknapp").addEventListener("click",finnNaermeste);
   document.getElementById("egenSpørringKnapp").addEventListener("click", egenSpørring);
+  document.getElementById("finnAlleKnapp").addEventListener("click", finnAlleFunk);
+  document.getElementById("finnNaermesteKnapp").addEventListener("click", finnNaermesteFunk);
+  document.getElementById("egendefSpørringKnapp").addEventListener("click", egendefSpørringFunk);
 }
+
+function finnAlleFunk(){
+  document.getElementById("finnAlleKnapp").classList.add("active");
+  document.getElementById("finnNaermesteKnapp").classList.remove("active");
+  document.getElementById("egendefSpørringKnapp").classList.remove("active");
+  console.log("trykket på knapp 1 ");
+  visEllerSkjul();
+}
+
+function finnNaermesteFunk(){
+  document.getElementById("finnAlleKnapp").classList.remove("active");
+  document.getElementById("finnNaermesteKnapp").classList.add("active");
+  document.getElementById("egendefSpørringKnapp").classList.remove("active");
+  visEllerSkjul();
+}
+
+function egendefSpørringFunk(){
+  document.getElementById("finnAlleKnapp").classList.remove("active");
+  document.getElementById("finnNaermesteKnapp").classList.remove("active");
+  document.getElementById("egendefSpørringKnapp").classList.add("active");
+  visEllerSkjul();
+}
+
+function visEllerSkjul(){
+    document.getElementById("finnAlle").style.display = "none";
+    document.getElementById("finnNaermeste").style.display = "none";
+    document.getElementById("egendefSpørring").style.display = "none";
+    var skalSynes = document.getElementsByClassName("active");
+    if(skalSynes[0].id == "finnAlleKnapp"){
+      document.getElementById("finnAlle").style.display = "flex";
+    }
+    else if(skalSynes[0].id=="finnNaermesteKnapp"){
+      document.getElementById("finnNaermeste").style.display = "flex";
+    }
+    else if(skalSynes[0].id == "egendefSpørringKnapp"){
+      document.getElementById("egendefSpørring").style.display = "flex";
+    }
+    console.log(skalSynes[0].id);
+}
+
 var prefix = "PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX schema: <http://schema.org/> PREFIX f:<http://www.w3.org/2005/xpath-functions/math#>";
 var slutt = "}";
 function sok(){

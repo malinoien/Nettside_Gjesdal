@@ -2,6 +2,7 @@ package prosjekt;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.nio.charset.StandardCharsets;
 
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;

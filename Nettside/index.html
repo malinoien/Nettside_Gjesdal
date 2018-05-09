@@ -2,7 +2,7 @@
 <html lang="EN">
   <head>
     <meta charset="UTF-8">
-    <title> Eksempel </title>
+    <title> Gjesdal </title>
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -20,34 +20,43 @@
   </head>
   <body>
     <div class="flexcolumn">
+
       <h1>Gjesdal kommune</h1>
+      <p id="gjesdal-motto">  - vi strekker oss lenger</p>
       <div class="flexrow">
-        <div class="flexcolumn">
-          <div><input id="overnatting" class="checkbox" type="checkbox">Overnatting</input></div>
-          <div><input id="skjenkested" class="checkbox" type="checkbox">Skjenkested</input></div>
+        <button type="button" name="button" class="bigButton active" id="finnAlleKnapp">Finn alle ..</button>
+        <button type="button" name="button" class="bigButton" id="finnNaermesteKnapp">Finn nærmeste</button>
+        <button type="button" name="button" class="bigButton" id="egendefSpørringKnapp">Egendefinert spørring</button>
+      </div>
+      <div class="flexcolumn" id="finnAlle">
+        <div class="flexrow">
+          <div class="flexcolumn">
+            <div><input id="overnatting" class="checkbox" type="checkbox">Overnatting</input></div>
+            <div><input id="skjenkested" class="checkbox" type="checkbox">Skjenkested</input></div>
+          </div>
+          <div class="flexcolumn">
+            <div><input id="grillplass" class="checkbox"  type="checkbox">Grillplass</input></div>
+            <div><input id="badeplass" class="checkbox"  type="checkbox">Badeplass</input></div>
+          </div>
+          <div class="flexcolumn">
+            <div><input id="kirke" class="checkbox" type="checkbox">Kirke</input></div>
+            <div><input id="fiskeplass" class="checkbox" type="checkbox">Fiskeplass</input></div>
+          </div>
+          <div class="flexcolumn">
+            <div><input id="barnehage" class="checkbox" type="checkbox">Barnehage</input></div>
+            <div><input id="avfallspunkt" class="checkbox" type="checkbox">Avfallspunkt</input></div>
+          </div>
+          <div class="flexcolumn">
+            <div><input id="utleielokale" class="checkbox" type="checkbox">Utleielokale</input></div>
+            <div><input id="skole" class="checkbox" type="checkbox">Skole</input></div>
+          </div>
         </div>
-        <div class="flexcolumn">
-          <div><input id="grillplass" class="checkbox"  type="checkbox">Grillplass</input></div>
-          <div><input id="badeplass" class="checkbox"  type="checkbox">Badeplass</input></div>
-        </div>
-        <div class="flexcolumn">
-          <div><input id="kirke" class="checkbox" type="checkbox">Kirke</input></div>
-          <div><input id="fiskeplass" class="checkbox" type="checkbox">Fiskeplass</input></div>
-        </div>
-        <div class="flexcolumn">
-          <div><input id="barnehage" class="checkbox" type="checkbox">Barnehage</input></div>
-          <div><input id="avfallspunkt" class="checkbox" type="checkbox">Avfallspunkt</input></div>
-        </div>
-        <div class="flexcolumn">
-          <div><input id="utleielokale" class="checkbox" type="checkbox">Utleielokale</input></div>
-          <div><input id="skole" class="checkbox" type="checkbox">Skole</input></div>
+        <div class="flexrow">
+          <button type="button" class="button" id="checkBoxSøk">Søk</button>
+          <button type="button" class="button" id="fjernChecked">Fjern filter</button>
         </div>
       </div>
-      <div class="flexrow">
-        <button type="button" class="button" id="checkBoxSøk">Søk</button>
-        <button type="button" class="button" id="fjernChecked">Fjern filter</button>
-      </div>
-      <div class="flexrow">
+      <div class="flexrow" id="finnNaermeste">
         <div>
           <input id="skrevetNavn" name="operator" type="input" placeholder="Navn"/>
         </div>
@@ -67,7 +76,7 @@
         </div>
         <button type="button" class="button" id="søkeknapp">Søk</button>
       </div>
-      <div class="flexcolumn">
+      <div class="flexcolumn" id="egendefSpørring">
         <div class="høyreStilt">
           <a href="ontologi.html" target="_blank">Ontologi</a>
         </div>
