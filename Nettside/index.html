@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="EN">
   <head>
     <meta charset="UTF-8">
     <title> Eksempel </title>
-    <meta charset = "UTF-8">
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
@@ -51,7 +51,7 @@
         <div>
           <input id="skrevetNavn" name="operator" type="input" placeholder="Navn"/>
         </div>
-        <div>
+        <div class="custom-select">
           <select id="dropDown">
             <option value="Accommodation">Overnatting</option>
             <option value="BarbequeArea">Grillplass</option>
@@ -64,10 +64,16 @@
             <option value="RecyclingPoint">Avfallspunkt</option>
             <option value="School">Skole</option>
           </select>
-          <button type="button" id="søkeknapp">SØK</button>
         </div>
+        <button type="button" class="button" id="søkeknapp">Søk</button>
       </div>
-
+      <div class="flexcolumn">
+        <div class="høyreStilt">
+          <a href="ontologi.html" target="_blank">Ontologi</a>
+        </div>
+        <textarea id="egenSpørring" class="storInput">PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>&#013;PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#>&#013;PREFIX schema: <http://schema.org/>&#013;PREFIX f:<http://www.w3.org/2005/xpath-functions/math#>&#013;&#013;SELECT ?Lat ?Long ?Name&#013;WHERE{&#013; ?subject mr:hasLatitude ?Lat .&#013; ?subject mr:hasLongitude ?Long .&#013; ?subject mr:hasName ?Name .&#013; ?subject a schema:BarOrPub&#013;} </textarea>
+        <button type="button" class="button" id="egenSpørringKnapp">Kjør spørring</button>
+      </div>
       <div id="map" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query="
         PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#>

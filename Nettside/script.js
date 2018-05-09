@@ -2,6 +2,7 @@ window.onload = function(){
   document.getElementById("checkBoxSøk").addEventListener("click", sok);
   document.getElementById("fjernChecked").addEventListener("click", fjernValgteSjekkbokser);
   document.getElementById("søkeknapp").addEventListener("click",finnNaermeste);
+  document.getElementById("egenSpørringKnapp").addEventListener("click", egenSpørring);
 }
 var prefix = "PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX schema: <http://schema.org/> PREFIX f:<http://www.w3.org/2005/xpath-functions/math#>";
 var slutt = "}";
@@ -184,6 +185,22 @@ function finnNaermeste(){
           .draw("map");
 
   X.query(prefix + selectListe + where)
+          .endpointURL("http://localhost:3030/Gjesdal/query")
+          .chartFunction("google.visualization.Table")
+          .draw("list");
+}
+
+function egenSpørring(){
+  var spørring = document.getElementById("egenSpørring").value;
+  console.log(spørring);
+  var Q = new sgvizler.Query();
+  var X = new sgvizler.Query();
+  Q.query(spørring)
+          .endpointURL("http://localhost:3030/Gjesdal/query")
+          .chartFunction("sgvizler.visualization.Map")
+          .draw("map");
+
+  X.query(spørring)
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("google.visualization.Table")
           .draw("list");

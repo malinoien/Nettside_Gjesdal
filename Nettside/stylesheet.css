@@ -5,8 +5,9 @@ body{
 
 h1{
   margin-left: 10%;
-  font-family: 'Open Sans', sans-serif;
-  color: #7a2910;
+  font-family: 'Lobster', cursive;
+  color: #10627a;
+  font-size: 40px;
 }
 
 p{
@@ -57,12 +58,42 @@ textarea, input, button{
   border: none;
 }
 
+.custom-select{
+  position: relative;
+  font-family: "Lato", sans-serif;
+  width: 200px;
+}
+
+.custom-select select{
+  font-size: 16px;
+  color: black;
+  border: 2px solid #10627a;
+  margin-top: 10px;
+  background-color: white;
+  width: 100%;
+}
+
+#skrevetNavn{
+  margin-top: 10px;
+  font-size: 16px;
+  border: 2px solid #10627a;
+}
+
 .tabellOgListe{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+.storInput{
+  height: 200px;
+}
 
+.høyreStilt{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 #map{
   height: 800px;
+}
