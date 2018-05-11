@@ -215,7 +215,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bamsebo barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skogveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4C</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4C</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -227,8 +227,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta kontakt med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.702156</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.8937244</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bastlitjørna </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bastlitjørna </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bastlitjørna</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bastlitjørna</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -240,8 +240,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta kontakt med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.711346</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.019982</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baualivatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baualivatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baualivatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baualivatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -252,7 +252,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#BarbequeArea"/>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.77399</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0736523</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brekko </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brekko</gjesdalontology:hasName>
     </owl:NamedIndividual>
     
 
@@ -267,7 +267,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bruhammaren FUS barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bruhammaren</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -310,7 +310,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet hotell</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Byrkjedalstunet</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -326,7 +326,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bærland barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Djupedalsveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -338,9 +338,9 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kommunalt</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.77576</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.826271</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bærland grendahus </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bærland grendahus</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bekkeleia</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -355,7 +355,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bærland skole</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barliveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -370,7 +370,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kroveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">270</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">270</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -382,10 +382,10 @@
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal</gjesdalontology:hasCity>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.82726</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.190069</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal kyrkje </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal kyrkje</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hunnedalsvegen</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">490</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">490</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -400,7 +400,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirdal skole</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4333</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Krovegen</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">270</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">270</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -425,8 +425,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta kontakt med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.86275</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.2768083</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dybingen </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dybingen </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dybingen</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dybingen</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -487,8 +487,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fritt fiske langs grunn tilhørende Jæren friluftsråd. For øvrig kan fiske skje etter avtale med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.895664</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.4471054</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fidjavatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fidjavatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fidjavatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fidjavatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -503,7 +503,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiskebekk barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiskebekkveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -518,7 +518,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flassabekken barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flassabekkveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -613,7 +613,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frafjord Spa</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øyravegen</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">63</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -639,7 +639,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gilja barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kroveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -665,9 +665,9 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kommunalt</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.80705</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.253817</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gilja bo- og aktivitetssenter </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gilja bo- og aktivitetssenter</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kroveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -697,7 +697,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljastølen Campingplass</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4335</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giljagarden</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -754,7 +754,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gjesdal Gjestgiveri</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opstadveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -769,7 +769,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gjesdal kyrkje</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gjesdalvegen</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">400</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -781,9 +781,9 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.74606</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.9226832</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gjesdal skytterhus </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gjesdal skytterhus</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skurvebakkane</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -798,7 +798,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gjesdal ungdomsskole</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solåsveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -814,7 +814,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gjesdalgjestgiveri</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opstadveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -829,7 +829,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gjestal Kro</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4333</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hunnedalsvegen</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1150</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1150</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -867,8 +867,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta kontakt med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.721905</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0293045</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grasdalvatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grasdalvatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grasdalvatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grasdalvatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -895,8 +895,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta kontakt med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.731884</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.9686065</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hedlesvatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hedlesvatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hedlesvatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hedlesvatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -908,8 +908,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta kontakt med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.890877</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.3788524</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hellradalsvatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hellradalsvatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hellradalsvatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hellradalsvatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -937,7 +937,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hey Honey</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ole Nielsens vei</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -949,8 +949,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta kontakt med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.69514</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.9110436</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Holmaholvatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Holmaholvatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Holmaholvatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Holmaholvatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -1022,7 +1022,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Husafjell barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Åfaret</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1034,8 +1034,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta kontakt med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.722027</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.981445</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Husavatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Husavatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Husavatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Husavatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -1095,7 +1095,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jegerklubben</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skurvebakkane</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1123,7 +1123,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kodlidalen barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Åfaret</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1138,7 +1138,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kollberge familiebarnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skurvegarden</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">67</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1153,7 +1153,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongeparken</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongsgata</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1168,7 +1168,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongeparken - Gjesdal konserthus</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongsgata</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1184,7 +1184,23 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongeparken Camping</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgårdslåtten</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</gjesdalontology:hasStreetNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#KongeparkenHytteutleie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#KongeparkenHytteutleie">
+        <rdf:type rdf:resource="http://schema.org/Accommodation"/>
+        <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ÅLGÅRD</gjesdalontology:hasCity>
+        <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hytteutleie </gjesdalontology:hasDescription>
+        <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.775745</gjesdalontology:hasLatitude>
+        <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.845555</gjesdalontology:hasLongitude>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongeparken Hytteutleie</gjesdalontology:hasName>
+        <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgårdslåtten</gjesdalontology:hasStreetName>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1262,7 +1278,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lafthuset</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4333</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bygdaveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">186</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">186</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1276,7 +1292,7 @@
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0550895</gjesdalontology:hasLongitude>
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lafthuset utleielokal</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bygdaveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">186</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">186</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1301,7 +1317,7 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privat</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.773155</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.8933597</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Limagarden bygdatun </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Limagarden bygdatun</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ytre lima</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
@@ -1327,8 +1343,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fritt fiske langs grunn tilhørende Jæren friluftsråd. For øvrig kan fiske skje etter avtale med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.76368</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.074745</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Litle Foretjørn </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Litle Foretjørn </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Litle Foretjørn</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Litle Foretjørn</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -1343,7 +1359,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lonestar Ålgård</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongsgata</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1395,8 +1411,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fritt fiske langs grunn tilhørende Jæren friluftsråd. For øvrig kan fiske skje etter avtale med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.87535</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.413716</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Månavatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Månavatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Månavatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Månavatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -1424,7 +1440,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nesjane barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ånundskaret</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">98</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">98</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1451,8 +1467,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta kontakt med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.70841</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0207167</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nordåsvatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nordåsvatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nordåsvatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nordåsvatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -1467,7 +1483,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oltedal barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4333</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bygdaveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">54</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1479,10 +1495,10 @@
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oltedal</gjesdalontology:hasCity>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.825592</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0315437</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oltedal kyrkje </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oltedal kyrkje</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4333</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bygdaveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1497,7 +1513,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oltedal skole</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4333</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bygdaveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">56</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1509,9 +1525,9 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kommunalt</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.82731</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0354204</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oltedal bo-og aktivitetssenter </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oltedal bo-og aktivitetssenter</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øvre Ustigbakken</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1576,7 +1592,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rishagen RUS barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiolveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1603,7 +1619,7 @@
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.056634</gjesdalontology:hasLongitude>
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samhald  Oltedal</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bygdaveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">179</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">179</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1644,7 +1660,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solås barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solåsveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">49</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1659,7 +1675,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solås skole</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Åfaret</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1673,7 +1689,7 @@
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.854689</gjesdalontology:hasLongitude>
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stamphuset</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rettedalen</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1715,7 +1731,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Søya hytteutleie</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Søyland</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1756,7 +1772,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Great Wall</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kongsgata</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1795,7 +1811,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Værtshuset Ålgård</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sandnesveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1810,7 +1826,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Westernbyen</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgårdslåtten</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1824,7 +1840,7 @@
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.846974</gjesdalontology:hasLongitude>
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Westernbyen utleielokale</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgårdslåtten</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1836,8 +1852,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta kontakt med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.679092</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.985485</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ytre Kydlandsvatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ytre Kydlandsvatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ytre Kydlandsvatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ytre Kydlandsvatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -1849,10 +1865,10 @@
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård</gjesdalontology:hasCity>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.763557</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.850109</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård Baptistkirke </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård Baptistkirke</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emmausveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1864,10 +1880,10 @@
         <gjesdalontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård</gjesdalontology:hasCity>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.769142</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.8453836</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård gamle kirke </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård gamle kirke</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kyrkjeveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">36</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1882,7 +1898,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård kirke</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kyrkjeveien</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1897,7 +1913,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård skole</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rettedalen</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1909,9 +1925,9 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kommunalt</gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.767696</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.847877</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård bo- og aktivitetssenter </gjesdalontology:hasName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ålgård bo- og aktivitetssenter</gjesdalontology:hasName>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ole Nielsens vei</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1936,8 +1952,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta kontakt med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.763577</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.830361</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øygardsvatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øygardsvatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øygardsvatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øygardsvatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 
@@ -1952,7 +1968,7 @@
         <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øygardsvatnet barnehage</gjesdalontology:hasName>
         <gjesdalontology:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4330</gjesdalontology:hasPostalCode>
         <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ånundskaret</gjesdalontology:hasStreetName>
-        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</gjesdalontology:hasStreetNumber>
+        <gjesdalontology:hasStreetNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">96</gjesdalontology:hasStreetNumber>
     </owl:NamedIndividual>
     
 
@@ -1964,8 +1980,8 @@
         <gjesdalontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta kontakt med grunneier </gjesdalontology:hasDescription>
         <gjesdalontology:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.73502</gjesdalontology:hasLatitude>
         <gjesdalontology:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.90277</gjesdalontology:hasLongitude>
-        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øystrevatnet </gjesdalontology:hasName>
-        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øystrevatnet </gjesdalontology:hasStreetName>
+        <gjesdalontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øystrevatnet</gjesdalontology:hasName>
+        <gjesdalontology:hasStreetName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Øystrevatnet</gjesdalontology:hasStreetName>
     </owl:NamedIndividual>
     
 

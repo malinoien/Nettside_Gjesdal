@@ -12,8 +12,8 @@ function finnAlleFunk(){
   document.getElementById("finnAlleKnapp").classList.add("active");
   document.getElementById("finnNaermesteKnapp").classList.remove("active");
   document.getElementById("egendefSpørringKnapp").classList.remove("active");
-  console.log("trykket på knapp 1 ");
   visEllerSkjul();
+  fjernValgteSjekkbokser();
 }
 
 function finnNaermesteFunk(){
@@ -21,6 +21,7 @@ function finnNaermesteFunk(){
   document.getElementById("finnNaermesteKnapp").classList.add("active");
   document.getElementById("egendefSpørringKnapp").classList.remove("active");
   visEllerSkjul();
+  fjernValgteSjekkbokser();
 }
 
 function egendefSpørringFunk(){
@@ -28,6 +29,7 @@ function egendefSpørringFunk(){
   document.getElementById("finnNaermesteKnapp").classList.remove("active");
   document.getElementById("egendefSpørringKnapp").classList.add("active");
   visEllerSkjul();
+  fjernValgteSjekkbokser();
 }
 
 function visEllerSkjul(){
@@ -44,7 +46,7 @@ function visEllerSkjul(){
     else if(skalSynes[0].id == "egendefSpørringKnapp"){
       document.getElementById("egendefSpørring").style.display = "flex";
     }
-    console.log(skalSynes[0].id);
+
 }
 
 var prefix = "PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX schema: <http://schema.org/> PREFIX f:<http://www.w3.org/2005/xpath-functions/math#>";
@@ -95,7 +97,7 @@ function sok(){
 
 
   var navn = "SELECT DISTINCT ?Name WHERE {{?subject mr:hasName ?Name} ";
-  var navnlatlon = "SELECT DISTINCT ?Latitude ?Longitude ?Name WHERE {?subject mr:hasLatitude ?Latitude . ?subject mr:hasLongitude ?Longitude . ?subject mr:hasName ?Name .";
+  var navnlatlon = "SELECT DISTINCT ?Latitude ?Longitude ?Name ?Description WHERE {?subject mr:hasLatitude ?Latitude . ?subject mr:hasLongitude ?Longitude . ?subject mr:hasName ?Name . OPTIONAL {?subject mr:hasDescription ?Description }.";
 
 
   var Q = new sgvizler.Query();
@@ -203,14 +205,15 @@ function finnNaermeste(){
    +  "?nærtSted mr:hasLatitude ?lat2; "
    +      	     "mr:hasLongitude ?long2; "
    +  	         "mr:hasName ?Navn. "
+   +  "OPTIONAL{?nærtSted mr:hasDescription ?Beskrivelse}"
    +  "BIND (f:pi() AS ?pi)."
    +  "BIND (?pi/180 AS ?p)."
    +  "BIND(0.5 - f:cos((?lat2-?lat1)*?p)/2 + f:cos(?lat1*?p)*f:cos(?lat2*?p)*(1-f:cos((?long2-?long1)*?p))/2 AS ?a)."
    + "BIND(12742 * f:asin(f:sqrt(?a)) as ?Avstand)"
   + "} ORDER BY ASC(?distance)";
 
-  var selectKart = "SELECT DISTINCT ?lat2 ?long2 ";
-  var selectListe = "SELECT DISTINCT ?Navn ?Avstand ";
+  var selectKart = "SELECT DISTINCT ?lat2 ?long2 ?Navn ?Beskrivelse";
+  var selectListe = "SELECT DISTINCT ?Navn ?Avstand ?Beskrivelse";
 
   var Q = new sgvizler.Query();
   var X = new sgvizler.Query();
