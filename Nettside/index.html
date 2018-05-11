@@ -56,25 +56,28 @@
           <button type="button" class="button" id="fjernChecked">Fjern filter</button>
         </div>
       </div>
-      <div class="flexrow" id="finnNaermeste">
-        <div>
-          <input id="skrevetNavn" name="operator" type="input" placeholder="Navn"/>
+      <div class="flexcolumn" id="finnNaermeste">
+        <p>Skriv inn navnet på et av stedene i Gjesdal. Det kan være en kirke, en skole, en badeplass, eller noe annet. Velg deretter hvilke steder du vil finne som er i nærheten av stedet du valgte.</p>
+        <div class="flexrow">
+          <div>
+            <input id="skrevetNavn" name="operator" type="input" placeholder="Navn"/>
+          </div>
+          <div class="custom-select">
+            <select id="dropDown">
+              <option value="Accommodation">Overnatting</option>
+              <option value="BarbequeArea">Grillplass</option>
+              <option value="Church">Kirke</option>
+              <option value="Preschool">Barnehage</option>
+              <option value="EventVenue">Utlelelokale</option>
+              <option value="BarOrPub">Skjenkested</option>
+              <option value="Beach">Badeplass</option>
+              <option value="BodyOfWater">Fiskeplass</option>
+              <option value="RecyclingPoint">Avfallspunkt</option>
+              <option value="School">Skole</option>
+            </select>
+          </div>
+          <button type="button" class="button" id="søkeknapp">Søk</button>
         </div>
-        <div class="custom-select">
-          <select id="dropDown">
-            <option value="Accommodation">Overnatting</option>
-            <option value="BarbequeArea">Grillplass</option>
-            <option value="Church">Kirke</option>
-            <option value="Preschool">Barnehage</option>
-            <option value="EventVenue">Utlelelokale</option>
-            <option value="BarOrPub">Skjenkested</option>
-            <option value="Beach">Badeplass</option>
-            <option value="BodyOfWater">Fiskeplass</option>
-            <option value="RecyclingPoint">Avfallspunkt</option>
-            <option value="School">Skole</option>
-          </select>
-        </div>
-        <button type="button" class="button" id="søkeknapp">Søk</button>
       </div>
       <div class="flexcolumn" id="egendefSpørring">
         <div class="høyreStilt">
@@ -83,19 +86,23 @@
         <textarea id="egenSpørring" class="storInput">PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>&#013;PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#>&#013;PREFIX schema: <http://schema.org/>&#013;PREFIX f:<http://www.w3.org/2005/xpath-functions/math#>&#013;&#013;SELECT ?Lat ?Long ?Name&#013;WHERE{&#013; ?subject mr:hasLatitude ?Lat .&#013; ?subject mr:hasLongitude ?Long .&#013; ?subject mr:hasName ?Name .&#013; ?subject a schema:BarOrPub&#013;} </textarea>
         <button type="button" class="button" id="egenSpørringKnapp">Kjør spørring</button>
       </div>
-      <div id="map" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query="
-        PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#>
-        SELECT ?Latitude ?Longitude ?Name
-        WHERE {
-          ?subject mr:hasLatitude ?Latitude .
-          ?subject mr:hasLongitude ?Longitude .
-          ?subject mr:hasName ?Name .
-        }"
-        data-sgvizler-chart="sgvizler.visualization.Map">
-      </div>
-      <div class="tabellOgListe" id="list" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query=""
-        data-sgvizler-chart="sgvizler.visualization.List">
+      <div class="flexrow">
+        <div id="map" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query="
+          PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+          PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#>
+          SELECT ?Latitude ?Longitude ?Name
+          WHERE {
+            ?subject mr:hasLatitude ?Latitude .
+            ?subject mr:hasLongitude ?Longitude .
+            ?subject mr:hasName ?Name .
+          }"
+          data-sgvizler-chart="sgvizler.visualization.Map">
+        </div>
+        <div id="resultatPresentasjon">
+          <div class="tabellOgListe" id="list" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query=""
+            data-sgvizler-chart="sgvizler.visualization.List">
+          </div>
+        </div>
       </div>
     </div>
   </body>

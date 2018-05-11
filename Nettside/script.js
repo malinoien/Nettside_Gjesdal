@@ -114,6 +114,7 @@ function sok(){
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("sgvizler.visualization.List")
           .draw("list");
+  gjørResSynlig(true);
 }
 
 function ozone(object){
@@ -163,6 +164,7 @@ function fjernValgteSjekkbokser(){
 //          .endpointURL("http://localhost:3030/Gjesdal/query")
 //          .chartFunction("sgvizler.visualization.List")
 //          .draw("list");
+  gjørResSynlig(false);
 }
 
 function sjekkBokser(obj){
@@ -180,15 +182,6 @@ function sjekkBokser(obj){
   console.log(stringTabell);
   return stringTabell;
 }
-
-//TELLE CHECKBOXER
-// var bokser = document.getElementsByClassName("checkbox");
-// var antallBokserChecked = 0;
-// for(var i = 0; i < bokser.length; i++){
-//   if(bokser[i].checked){
-//   antallBokserChecked ++;
-//   }
-// }
 
 
 function finnNaermeste(){
@@ -231,6 +224,7 @@ function finnNaermeste(){
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("google.visualization.Table")
           .draw("list");
+  gjørResSynlig(true);
 }
 
 function egenSpørring(){
@@ -247,4 +241,14 @@ function egenSpørring(){
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("google.visualization.Table")
           .draw("list");
+  gjørResSynlig(true);
+}
+
+function gjørResSynlig(tf){
+  if(tf){
+    document.getElementById("resultatPresentasjon").style.display = "initial";
+    console.log("gjør synlig");
+  }else{
+    document.getElementById("resultatPresentasjon").style.display = "none";
+  }
 }

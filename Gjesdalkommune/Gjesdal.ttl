@@ -45,6 +45,10 @@ gjesdalontology:Madlandsvatnet
 
 :       a       owl:Ontology .
 
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( <http://schema.org/Accommodation> <http://schema.org/BarOrPub> <http://schema.org/Beach> <http://schema.org/BodyOfWater> <http://schema.org/Church> <http://schema.org/EventVenue> <http://schema.org/Preschool> <http://schema.org/School> gjesdalontology:BarbequeArea gjesdalontology:RecyclingPoint )
+] .
+
 <http://schema.org/Place>
         a       owl:Class .
 
@@ -1002,10 +1006,6 @@ gjesdalontology:HunnedalenParkeringsplassVedGaudøynå
 gjesdalontology:hasLatitude
         a           owl:DatatypeProperty ;
         rdfs:range  xsd:float .
-
-[ a            owl:AllDisjointClasses ;
-  owl:members  ( <http://schema.org/Accommodation> <http://schema.org/BarOrPub> <http://schema.org/Beach> <http://schema.org/BodyOfWater> <http://schema.org/Church> <http://schema.org/EventVenue> <http://schema.org/Preschool> <http://schema.org/School> gjesdalontology:BarbequeArea gjesdalontology:RecyclingPoint )
-] .
 
 gjesdalontology:Kringlelitjørn
         a                               <http://schema.org/BodyOfWater> , owl:NamedIndividual ;
