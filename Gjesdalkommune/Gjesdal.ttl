@@ -203,6 +203,8 @@ gjesdalontology:Hellravatnet
 
 gjesdalontology:OltedalKyrkje
         a                              <http://schema.org/Church> , owl:NamedIndividual ;
+        <http://dbpedia.org/ontology/#Abstract>
+                "Oltedal Church (Norwegian: Oltedal kirke) is a parish church in Gjesdal municipality in Rogaland county, Norway. It is located in the village of Oltedal. The church is part of the Gjesdal parish in the Jæren deanery in the Diocese of Stavanger. The white, concrete church was built in 2002 by the architect Olav Urstad. The church was consecrated on 10 February 2002." ;
         gjesdalontology:hasCity        "Oltedal" ;
         gjesdalontology:hasLatitude    "58.825592"^^xsd:float ;
         gjesdalontology:hasLongitude   "6.0315437"^^xsd:float ;
@@ -387,6 +389,8 @@ gjesdalontology:hasStreetName
 
 gjesdalontology:ÅlgårdKirke
         a                              <http://schema.org/Church> , owl:NamedIndividual ;
+        <http://dbpedia.org/ontology/#Abstract>
+                "Ålgård Church (Norwegian: Ålgård kirke) is a parish church in Gjesdal municipality in Rogaland county, Norway. It is located in the village of Ålgård. The church is part of the Ålgård parish in the Jæren deanery in the Diocese of Stavanger. The church was built in 2015 to replace the Old Ålgård Church which was then too small for the congregation. The church was consecrated on 15 March 2015 by the Bishop Erling Johan Pettersen. The 1,800 square metres (19,000 sq ft) church was built at a cost of NOK 54.5 million. On the upper floor is the sanctuary, vestry, two larger meeting rooms, and a smaller room. There is room for 430 people in the sanctuary, but the large doors in the back can be opened up to the entry hall and adjoining rooms, giving the church a maximum capacity of 600. A 12.5-metre (41 ft) high altarpiece designed by Tor Lindrupsen stands at the front of the church. On the lower floor is the 180-square-metre (1,900 sq ft) kitchen, dining hall, church offices, seminar rooms, utility rooms, and closets." ;
         gjesdalontology:hasCity        "Ålgård" ;
         gjesdalontology:hasLatitude    "58.7686"^^xsd:float ;
         gjesdalontology:hasLongitude   "5.846352"^^xsd:float ;
@@ -490,6 +494,8 @@ gjesdalontology:KollbergeFamiliebarnehage
 
 gjesdalontology:Edlandsvatnet
         a                               <http://schema.org/BodyOfWater> , owl:NamedIndividual ;
+        <http://dbpedia.org/ontology/#Abstract>
+                "Edlandsvatnet is a lake in the municipality of Gjesdal in Rogaland county, Norway. The 2.11-square-kilometre (0.81 sq mi) lake lies just south of the large village of Ålgård, immediately southwest of the lake Limavatnet. The European route E39 highway runs along the northern shore of the lake. The lake empties into the river Figgjoelva on the northwestern end of the lake. The lake has many brown trout in it." ;
         gjesdalontology:hasDescription  "Fritt fiske langs grunn tilhørende Lima gårdene. Langs vannet for øvrig kan fiske skje etter avtale med grunneier " ;
         gjesdalontology:hasLatitude     "58.761562"^^xsd:float ;
         gjesdalontology:hasLongitude    "5.8737516"^^xsd:float ;
@@ -535,6 +541,8 @@ gjesdalontology:GjesdalUngdomsskole
 
 gjesdalontology:Flassavatnet
         a                               <http://schema.org/BodyOfWater> , owl:NamedIndividual ;
+        <http://dbpedia.org/ontology/#Abstract>
+                "Flassavatnet is a lake in Rogaland county, Norway. The lake lies on the border of the municipalities of Gjesdal and Sandnes. The 0.9243-square-kilometre (0.3569 sq mi) lake sits about 1 kilometre (0.62 mi) north of the large village of Ålgård, not far north of the lakes Edlandsvatnet and Limavatnet. The lake is a reservoir with a small dam on the southern edge of the lake. The water level is kept at about 177 metres (581 ft) above sea level. The reservoir holds about 900,000 cubic metres (730 acre·ft; 1,200,000 cu yd)." ;
         gjesdalontology:hasDescription  "Fritt fiske langs grunn som hører til gårdene på Ytre Lima. For øvrig kan fiske skje etter avtale med grunneier " ;
         gjesdalontology:hasLatitude     "58.78978"^^xsd:float ;
         gjesdalontology:hasLongitude    "5.868987"^^xsd:float ;
@@ -604,10 +612,6 @@ gjesdalontology:Gloppevatnet
         gjesdalontology:hasLongitude    "6.1072373"^^xsd:float ;
         gjesdalontology:hasName         "Gloppevatnet" ;
         gjesdalontology:hasStreetName   "Gloppevatnet" .
-
-[ a            owl:AllDisjointClasses ;
-  owl:members  ( <http://schema.org/Accommodation> <http://schema.org/BarOrPub> <http://schema.org/Beach> <http://schema.org/BodyOfWater> <http://schema.org/Church> <http://schema.org/EventVenue> <http://schema.org/Preschool> <http://schema.org/School> gjesdalontology:BarbequeArea gjesdalontology:RecyclingPoint )
-] .
 
 gjesdalontology:FrafjordBedehus
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
@@ -741,7 +745,9 @@ gjesdalontology:Byrkjedalstunet
         gjesdalontology:hasStreetName  "Byrkjedalstunet" .
 
 gjesdalontology:DirdalKyrkje
-        a                              <http://schema.org/Church> , owl:NamedIndividual ;
+        a                              owl:NamedIndividual , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/#Abstract>
+                "Dirdal Church (Norwegian: Dirdal kirke) is a parish church in Gjesdal municipality in Rogaland county, Norway. It is located in the village of Dirdal. The church is part of the Gjesdal parish in the Jæren deanery in the Diocese of Stavanger. The white, wooden church was built in 1903. The church seats about 175 people." ;
         gjesdalontology:hasCity        "Dirdal" ;
         gjesdalontology:hasLatitude    "58.82726"^^xsd:float ;
         gjesdalontology:hasLongitude   "6.190069"^^xsd:float ;
@@ -798,6 +804,8 @@ gjesdalontology:Mjåvatnet
 
 gjesdalontology:ÅlgårdGamleKirke
         a                              <http://schema.org/Church> , owl:NamedIndividual ;
+        <http://dbpedia.org/ontology/#Abstract>
+                "Old Ålgård Church (Norwegian: Ålgård gamle kirke) is a historic parish church in Gjesdal municipality in Rogaland county, Norway. It is located in the village of Ålgård. The church is part of the Ålgård parish in the Jæren deanery in the Diocese of Stavanger. The white, wooden church was built in 1917 in an art nouveau style by the architect Ole Stein. The church, which seats about 250 people, was consecrated on 11 May 1917 by the Bishop Bernt Støylen. The church cost about NOK 29,000 to build. After 98 years in use, the church became too small for the congregation and it was replaced in 2015 by the new Ålgård Church, located directly across the street. The old church is no longer used for regular services, but it can be used for special occasions such as weddings." ;
         gjesdalontology:hasCity        "Ålgård" ;
         gjesdalontology:hasLatitude    "58.769142"^^xsd:float ;
         gjesdalontology:hasLongitude   "5.8453836"^^xsd:float ;
@@ -936,6 +944,8 @@ gjesdalontology:ØygardsvatnetBarnehage
 
 gjesdalontology:Limavatnet
         a                               <http://schema.org/BodyOfWater> , owl:NamedIndividual ;
+        <http://dbpedia.org/ontology/#Abstract>
+                "Limavatnet is a lake in the municipality of Gjesdal in Rogaland county, Norway. The 1.73 km2 (0.67 sq mi) lake lies between the villages of Ålgård and Gjesdal. On the western end of the lake, the European route E39 highway crosses the lake on the Vaula Bridge. The lake Edlandsvatnet lies immediately to the west of the bridge." ;
         gjesdalontology:hasDescription  "Fritt fiske langs grunn tilhørende Ytre Lima gårdene. Langs vannet for øvrig kan fiske skje etter avtale med grunneier " ;
         gjesdalontology:hasLatitude     "58.779694"^^xsd:float ;
         gjesdalontology:hasLongitude    "5.9270697"^^xsd:float ;
@@ -1019,6 +1029,10 @@ gjesdalontology:hasLatitude
         a           owl:DatatypeProperty ;
         rdfs:range  xsd:float .
 
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( <http://schema.org/Accommodation> <http://schema.org/BarOrPub> <http://schema.org/Beach> <http://schema.org/BodyOfWater> <http://schema.org/Church> <http://schema.org/EventVenue> <http://schema.org/Preschool> <http://schema.org/School> gjesdalontology:BarbequeArea gjesdalontology:RecyclingPoint )
+] .
+
 gjesdalontology:Kringlelitjørn
         a                               <http://schema.org/BodyOfWater> , owl:NamedIndividual ;
         gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
@@ -1062,6 +1076,8 @@ gjesdalontology:Øygardsvatnet
 
 gjesdalontology:Kongeparken
         a                              <http://schema.org/BarOrPub> , owl:NamedIndividual ;
+        <http://dbpedia.org/ontology/#Abstract>
+                "Kongeparken (lit. The King's park) is an amusement park in the village Ålgård, near Stavanger, Norway. Kongeparken is the biggest amusement park in the southwest of Norway and Rogaland's biggest tourist attraction. The park offers over 50 different rides and adventures for the entire family and has been awarded several times for good service and innovative attractions." ;
         gjesdalontology:hasCity        "ÅLGÅRD" ;
         gjesdalontology:hasLatitude    "58.778786"^^xsd:float ;
         gjesdalontology:hasLongitude   "5.840442"^^xsd:float ;
@@ -1070,6 +1086,10 @@ gjesdalontology:Kongeparken
         gjesdalontology:hasStreetName  "Kongsgata" ;
         gjesdalontology:hasStreetNumber
                 "20" .
+
+gjesdalontology:Gjesdal
+        <http://dbpedia.org/ontology/#Abstract>
+                "Gjesdal is a municipality in Rogaland county, Norway. It is located in the traditional district of Jæren. The administrative centre of the municipality is the village of Ålgård. Other villages in Gjesdal include Dirdal, Frafjord, Gilja, Gjesdal, and Oltedal. The 618-square-kilometre (239 sq mi) municipality lies about 25 kilometres (16 mi) to the southwest of the city of Stavanger in southwestern Norway. The European route E39 highway runs through the western side of the municipality. On the east side of the municipality, the Frafjord Tunnel connects the Frafjord valley with the rest of the municipality." .
 
 gjesdalontology:Månavatnet
         a                               <http://schema.org/BodyOfWater> , owl:NamedIndividual ;
@@ -1103,6 +1123,8 @@ gjesdalontology:TeltplassLilleForetjørn
 
 gjesdalontology:Oltedalsvatnet
         a                               <http://schema.org/BodyOfWater> , owl:NamedIndividual ;
+        <http://dbpedia.org/ontology/#Abstract>
+                "Oltedalsvatnet is a lake in the municipality of Gjesdal in Rogaland county, Norway. The 3.12-square-kilometre (1.20 sq mi) lake lies just south of the village of Oltedal. It is a reservoir along the river Oltedalsåna that is used to store water for the Oltedal Hydroelectric Power Station. The lake sits at an elevation of 101.5 to 112.5 metres (333 to 369 ft) and it holds about 28,800,000 cubic metres (23,300 acre·ft; 37,700,000 cu yd)." ;
         gjesdalontology:hasDescription  "Fritt fiske langs grunn tilhørende gården Rage. For øvrig kan fiske skje etter avtale med grunneier " ;
         gjesdalontology:hasLatitude     "58.815342"^^xsd:float ;
         gjesdalontology:hasLongitude    "6.01369"^^xsd:float ;
@@ -1197,7 +1219,9 @@ gjesdalontology:Byrkjedalslonå
         gjesdalontology:hasStreetName   "Byrkjedalslonå" .
 
 gjesdalontology:GjesdalKyrkje
-        a                              <http://schema.org/Church> , owl:NamedIndividual ;
+        a                              owl:NamedIndividual , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/#Abstract>
+                "Gjesdal Church (Norwegian: Gjesdal kirke) is a parish church in Gjesdal municipality in Rogaland county, Norway. It is located in the village of Gjesdal. The church is part of the Gjesdal parish in the Jæren deanery in the Diocese of Stavanger. There has been a church here since the 1300s. The present church is likely the fourth church building in Gjesdal. The white, wooden church was built in 1848 using plans by the architect Hans Linstow. The church seats about 450 people." ;
         gjesdalontology:hasCity        "Ålgård" ;
         gjesdalontology:hasLatitude    "58.77355"^^xsd:float ;
         gjesdalontology:hasLongitude   "5.946921"^^xsd:float ;

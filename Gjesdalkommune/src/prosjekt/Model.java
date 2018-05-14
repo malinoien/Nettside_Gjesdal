@@ -40,8 +40,8 @@ public class Model {
 		String oltKirkAbstract = DBpedia.getAbstract("<http://dbpedia.org/resource/Oltedal_Church>");
 		String gjesKrikAbstract =DBpedia.getAbstract("<http://dbpedia.org/resource/Gjesdal_Church>");
 		String dirKirkAbst = DBpedia.getAbstract("<http://dbpedia.org/resource/Dirdal_Church>");
-		String aalgKirkAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Ã…lgÃ¥rd_Church>");
-		String aalgGamKirkAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Old_Ã…lgÃ¥rd_Church>");
+		String aalgKirkAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Ålgård_Church>");
+		String aalgGamKirkAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Old_Ålgård_Church>");
 		String limaVannetAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Limavatnet>");	
 		String kongeparkenAbs=  DBpedia.getAbstract("<http://dbpedia.org/resource/Kongeparken>");
 		String oltVannAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Oltedalsvatnet>");
@@ -54,18 +54,17 @@ public class Model {
 	          + "PREFIX dbo: <http://dbpedia.org/ontology/#>";
 	    
 	    String insertdata = "INSERT DATA{"
-							+"    mr:Gjesdal dbo:Abstract \""+gjesdalAbstract+"\"."
-	    						+"    mr:OltedalKyrkje dbo:Abstract \""+oltKirkAbstract+"\"."
-	    						+"    mr:GjesdalKyrkje dbo:Abstract \""+gjesKrikAbstract+"\"."
-	    						+"    mr:DirdalKyrkje dbo:Abstract \""+dirKirkAbst+"\"."
-	    						+"    mr:Ã…lgÃ¥rdKirke dbo:Abstract \""+aalgKirkAbs+"\"."
-	    						+"    mr:Ã…lgÃ¥rdGamleKirke dbo:Abstract \""+aalgGamKirkAbs+"\"."
-	    						+"    mr:Limavatnet dbo:Abstract \""+limaVannetAbs+"\"."
-	    						+"    mr:Kongeparken dbo:Abstract \""+kongeparkenAbs+"\"."
-	    						+"    mr:Oltedalsvatnet dbo:Abstract \""+oltVannAbs+"\"."
-	    						+"    mr:Edlandsvatnet dbo:Abstract \""+edlaVannAbs+"\"."
-	    						+"    mr:Flassavatnet dbo:Abstract \""+flassVannAbs+"\"."
-	    						+"    mr:Gjesdal mr:hasName \"Gjesdal kommune\"."
+							+"    mr:Gjesdal dbo:Abstract \"" + gjesdalAbstract + "\"."
+	    						+"    mr:OltedalKyrkje dbo:Abstract \"" + oltKirkAbstract + "\"."
+	    						+"    mr:GjesdalKyrkje dbo:Abstract \"" + gjesKrikAbstract + "\"."
+	    						+"    mr:DirdalKyrkje dbo:Abstract \"" + dirKirkAbst + "\"."
+	    						+"    mr:ÅlgårdKirke dbo:Abstract \"" + aalgKirkAbs + "\"."
+	    						+"    mr:ÅlgårdGamleKirke dbo:Abstract \"" + aalgGamKirkAbs + "\"."
+	    						+"    mr:Limavatnet dbo:Abstract \"" + limaVannetAbs + "\"."
+	    						+"    mr:Kongeparken dbo:Abstract \"" + kongeparkenAbs + "\"."
+	    						+"    mr:Oltedalsvatnet dbo:Abstract \"" + oltVannAbs + "\"."
+	    						+"    mr:Edlandsvatnet dbo:Abstract \"" + edlaVannAbs + "\"."
+	    						+"    mr:Flassavatnet dbo:Abstract \"" + flassVannAbs + "\"."
 	    						+"}";
 	    
 	    UpdateAction.parseExecute(prefixes+insertdata, model);
