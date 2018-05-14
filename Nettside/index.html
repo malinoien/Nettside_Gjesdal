@@ -20,10 +20,23 @@
     </script>
   </head>
   <body>
-    <div class="flexcolumn">
 
-      <p class="overskrift">Gjesdal kommune</p>
-      <p id="gjesdal-motto">  - vi strekker oss lenger</p>
+    <div class="flexcolumn">
+      <p class="overskrift">Gjesdal</p>
+      <br>
+        <div id="gjesdalInformasjon"
+          data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query"
+          data-sgvizler-query="
+          PREFIX ww: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+          PREFIX mr: <http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#>
+          PREFIX dbo: <http://dbpedia.org/ontology/#>
+          SELECT ?Informasjon
+          WHERE{
+            ?subject mr:hasName 'Gjesdal kommune' .
+            ?subject dbo:Abstract ?Informasjon
+          }"
+          data-sgvizler-chart="sgvizler.visualization.Text">>
+      </div>
       <div class="flexrow">
         <button type="button" name="button" class="bigButton active" id="finnAlleKnapp">Finn alle ..</button>
         <button type="button" name="button" class="bigButton" id="finnNaermesteKnapp">Finn nærmeste</button>
@@ -106,10 +119,17 @@
           data-sgvizler-chart="sgvizler.visualization.Map">
         </div>
         <div id="resultatPresentasjon">
-          <div class="tabellOgListe" id="list" data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query" data-sgvizler-query=""
+          <div class="tabellOgListe" id="list"
+            data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query"
+            data-sgvizler-query=""
             data-sgvizler-chart="sgvizler.visualization.List">
           </div>
         </div>
+      </div>
+      <div id="ekstraInformasjon" class="flexrow"
+        data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query"
+        data-sgvizler-query=""
+        data-sgvizler-chart="sgvizler.visualization.Table">
       </div>
     </div>
   </body>

@@ -212,11 +212,12 @@ function finnNaermeste(){
    + "BIND(12742 * f:asin(f:sqrt(?a)) as ?Avstand)"
   + "} ORDER BY ASC(?distance)";
 
-  var selectKart = "SELECT DISTINCT ?lat2 ?long2 ?Navn ?Beskrivelse";
-  var selectListe = "SELECT DISTINCT ?Navn ?Avstand ?Beskrivelse";
+  var selectKart = "SELECT DISTINCT ?lat2 ?long2 ?Navn ?Beskrivelse ";
+  var selectListe = "SELECT DISTINCT ?Navn ?Avstand ?Beskrivelse ";
 
   var Q = new sgvizler.Query();
   var X = new sgvizler.Query();
+  var Z = new sgvizler.Query();
 
   Q.query(prefix + selectKart + where)
           .endpointURL("http://localhost:3030/Gjesdal/query")
@@ -227,6 +228,16 @@ function finnNaermeste(){
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("google.visualization.Table")
           .draw("list");
+
+  document.getElementById("ekstraInformasjon").innerHTML = "";
+
+  var informasjon = "PREFIX ww: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr: <http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX dbo: <http://dbpedia.org/ontology/#> PREFIX schema: <http://schema.org/> SELECT ?Navn ?Informasjon WHERE{ ?subject dbo:Abstract ?Informasjon; mr:hasName ?Navn; a " + ddValg + " . }";
+  console.log(informasjon);
+  Z.query(informasjon)
+          .endpointURL("http://localhost:3030/Gjesdal/query")
+          .chartFunction("google.visualization.Table")
+          .draw("ekstraInformasjon");
+
   gjørResSynlig(true);
 }
 
@@ -251,7 +262,8 @@ function gjørResSynlig(tf){
   if(tf){
     document.getElementById("resultatPresentasjon").style.display = "initial";
     console.log("gjør synlig");
-  }else{
+  }
+  else{
     document.getElementById("resultatPresentasjon").style.display = "none";
   }
 }
