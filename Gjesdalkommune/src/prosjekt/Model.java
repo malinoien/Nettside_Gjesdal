@@ -64,7 +64,8 @@ public class Model {
 	    						+"    mr:Kongeparken dbo:Abstract \""+kongeparkenAbs+"\"."
 	    						+"    mr:Oltedalsvatnet dbo:Abstract \""+oltVannAbs+"\"."
 	    						+"    mr:Edlandsvatnet dbo:Abstract \""+edlaVannAbs+"\"."
-	    						+"    mr:Flassavatne dbo:Abstract \""+flassVannAbs+"\"."
+	    						+"    mr:Flassavatnet dbo:Abstract \""+flassVannAbs+"\"."
+	    						+"    mr:Gjesdal mr:hasName \"Gjesdal kommune\"."
 	    						+"}";
 	    
 	    UpdateAction.parseExecute(prefixes+insertdata, model);
