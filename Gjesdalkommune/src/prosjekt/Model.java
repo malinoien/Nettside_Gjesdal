@@ -2,6 +2,7 @@ package prosjekt;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.sql.PreparedStatement;
 
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntModelSpec;
@@ -18,7 +19,7 @@ public class Model {
 		upDateModelWithDBpediaAbstract();
 		model.write(System.out, "TURTLE");
 		
-		//writeOntToFile();
+		writeOntToFile();
 	
 	}
 	
@@ -34,26 +35,40 @@ public class Model {
 	}
 	
 	private static void upDateModelWithDBpediaAbstract() {
-		String gjesdal = "<http://dbpedia.org/resource/Gjesdal>";
-		String oltedalKirke ="<http://dbpedia.org/resource/Oltedal_Church>";
-
 		
-		String gjesdalAbstract = DBpedia.getAbstract(gjesdal);
-		String oltKirkAbstract = DBpedia.getAbstract(oltedalKirke);
+		String gjesdalAbstract = DBpedia.getAbstract("<http://dbpedia.org/resource/Gjesdal>");
+		String oltKirkAbstract = DBpedia.getAbstract("<http://dbpedia.org/resource/Oltedal_Church>");
+		String gjesKrikAbstract =DBpedia.getAbstract("<http://dbpedia.org/resource/Gjesdal_Church>");
+		String dirKirkAbst = DBpedia.getAbstract("<http://dbpedia.org/resource/Dirdal_Church>");
+		String aalgKirkAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Ålgård_Church>");
+		String aalgGamKirkAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Old_Ålgård_Church>");
+		String limaVannetAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Limavatnet>");	
+		String kongeparkenAbs=  DBpedia.getAbstract("<http://dbpedia.org/resource/Kongeparken>");
+		String oltVannAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Oltedalsvatnet>");
+		String edlaVannAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Edlandsvatnet>");
+		String flassVannAbs= DBpedia.getAbstract("<http://dbpedia.org/resource/Flassavatnet>");
+		String gjesdalontology = "<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#>";
 		
-		//System.out.println(gjesdalAbstract);
-		//System.out.println(oltKirkAbstract);
-		
-		String base = "http://ex.org/info216#";
 	    String prefixes = ""
-	          + "PREFIX mr: <" + base + "> "
-	          + "PREFIX db: <http://dbpedia.org/>";
-	      
-	    UpdateAction.parseExecute(prefixes
-	          + "INSERT DATA {"
-	         // + "    mr:gjesdal db:Abstract"+ gjesdalAbstract+" . "
-	          + "    mr:OltedalKyrkje db:Abstract " + oltKirkAbstract +". "
-	          + "}", model);
+	          + "PREFIX mr: " + gjesdalontology + ""
+	          + "PREFIX dbo: <http://dbpedia.org/ontology/#>";
+	    
+	    String insertdata = "INSERT DATA{"
+							+"    mr:Gjesdal dbo:Abstract \""+gjesdalAbstract+"\"."
+	    						+"    mr:OltedalKyrkje dbo:Abstract \""+oltKirkAbstract+"\"."
+	    						+"    mr:GjesdalKyrkje dbo:Abstract \""+gjesKrikAbstract+"\"."
+	    						+"    mr:DirdalKyrkje dbo:Abstract \""+dirKirkAbst+"\"."
+	    						+"    mr:ÅlgårdKirke dbo:Abstract \""+aalgKirkAbs+"\"."
+	    						+"    mr:ÅlgårdGamleKirke dbo:Abstract \""+aalgGamKirkAbs+"\"."
+	    						+"    mr:Limavatnet dbo:Abstract \""+limaVannetAbs+"\"."
+	    						+"    mr:Kongeparken dbo:Abstract \""+kongeparkenAbs+"\"."
+	    						+"    mr:Oltedalsvatnet dbo:Abstract \""+oltVannAbs+"\"."
+	    						+"    mr:Edlandsvatnet dbo:Abstract \""+edlaVannAbs+"\"."
+	    						+"    mr:Flassavatne dbo:Abstract \""+flassVannAbs+"\"."
+	    						+"}";
+	    
+	    UpdateAction.parseExecute(prefixes+insertdata, model);
+	    
 
 	     model.getWriter("TURTLE").write(model, System.out, "base");
 		
