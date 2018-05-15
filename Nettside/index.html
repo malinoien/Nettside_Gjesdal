@@ -22,7 +22,7 @@
   <body>
 
     <div class="flexcolumn">
-      <p class="overskrift">Gjesdal</p>
+      <p class="overskrift">Gjesdal kommune</p>
       <br>
         <div id="gjesdalInformasjon"
           data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query"
@@ -38,7 +38,7 @@
           data-sgvizler-chart="sgvizler.visualization.Text">
       </div>
       <div class="flexrow">
-        <button type="button" name="button" class="bigButton active" id="finnAlleKnapp">Finn alle ..</button>
+        <button type="button" name="button" class="bigButton active" id="finnAlleKnapp">Filtrer etter datasett</button>
         <button type="button" name="button" class="bigButton" id="finnNaermesteKnapp">Finn nærmeste</button>
         <button type="button" name="button" class="bigButton" id="egendefSpørringKnapp">Egendefinert spørring</button>
       </div>
@@ -83,7 +83,7 @@
               <option value="BarbequeArea">Grillplass</option>
               <option value="Church">Kirke</option>
               <option value="Preschool">Barnehage</option>
-              <option value="EventVenue">Utlelelokale</option>
+              <option value="EventVenue">Utleielokale</option>
               <option value="BarOrPub">Skjenkested</option>
               <option value="Beach">Badeplass</option>
               <option value="BodyOfWater">Fiskeplass</option>
@@ -129,7 +129,8 @@
       <div id="ekstraInformasjon" class="flexrow"
         data-sgvizler-endpoint="http://localhost:3030/Gjesdal/query"
         data-sgvizler-query=""
-        data-sgvizler-chart="sgvizler.visualization.Table">
+        data-sgvizler-chart="sgvizler.visualization.Text"
+        data-sgvizler-chart-options=cellSep=": ">
       </div>
     </div>
   </body>

@@ -1,3 +1,6 @@
+/**
+** Kjøres når siden lastes inn. Gir knappene funksjoner.
+**/
 window.onload = function(){
   document.getElementById("checkBoxSøk").addEventListener("click", sok);
   document.getElementById("fjernChecked").addEventListener("click", fjernValgteSjekkbokser);
@@ -8,6 +11,13 @@ window.onload = function(){
   document.getElementById("egendefSpørringKnapp").addEventListener("click", egendefSpørringFunk);
 }
 
+/**
+** Legger til en klasse til den delen av siden hvor brukeren kan finne alle
+** plassene i Gjesdal under de forskjellige kategoriene. Denne klassen
+** har en egenskap i CSS-dokumentet som gjør at den delen av siden som skal
+** være synlig vises. På de sidene som ikke skal vises, fjernes klassen.
+** Gjelder også får finnNaermesteFunk() og egendefSpørringFunk().
+**/
 function finnAlleFunk(){
   document.getElementById("finnAlleKnapp").classList.add("active");
   document.getElementById("finnNaermesteKnapp").classList.remove("active");
@@ -32,6 +42,10 @@ function egendefSpørringFunk(){
   fjernValgteSjekkbokser();
 }
 
+/**
+** Skjuler alle "boksene" med for forskjellige spørringsfunksjonene. Finner
+** så hvilken boks som skal vises ved å se hvilken boks som har klassen "active".
+**/
 function visEllerSkjul(){
     document.getElementById("finnAlle").style.display = "none";
     document.getElementById("finnNaermeste").style.display = "none";
@@ -46,13 +60,20 @@ function visEllerSkjul(){
     else if(skalSynes[0].id == "egendefSpørringKnapp"){
       document.getElementById("egendefSpørring").style.display = "flex";
     }
-
 }
 
+//Prefix og sluttparantes vi bruker i alle spørringsfunksjonene
 var prefix = "PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX schema: <http://schema.org/> PREFIX f:<http://www.w3.org/2005/xpath-functions/math#>";
 var slutt = "}";
+
+/**
+** Lager en tabell med ett objekt for hvert datasett. Gir initielt alle objektene
+** en string med en spørring som (satt sammen med prefix og select) vil returnere
+** alle stedene i det datasettet. Gir også alle en verdi usann. Brukeren kan
+** få ut alle stedene i ett eller flere datasett.
+**/
 function sok(){
-  var object = [
+  var steder = [
     skjenkested = {
       verdi: false,
       string: " {?subject a schema:BarOrPub} "
@@ -95,33 +116,51 @@ function sok(){
     }
   ];
 
-
+  //
   var navn = "SELECT DISTINCT ?Name WHERE {{?subject mr:hasName ?Name} ";
   var navnlatlon = "SELECT DISTINCT ?Latitude ?Longitude ?Name ?Description WHERE {?subject mr:hasLatitude ?Latitude . ?subject mr:hasLongitude ?Longitude . ?subject mr:hasName ?Name . OPTIONAL {?subject mr:hasDescription ?Description }.";
-
 
   var Q = new sgvizler.Query();
   var X = new sgvizler.Query();
 
-  settVerdier(object);
+  settVerdier(steder);
 
-  var spørring = ozone(object);
+  var spørring = lagTempSpørring(steder);
 
+  //Pusler sammen prefix og spørring slik at resultatet vil vises på kartet
   Q.query(prefix + navnlatlon + spørring + slutt)
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("sgvizler.visualization.Map")
           .draw("map");
 
+//Viser resultatet i en liste
   X.query(prefix + navn + spørring + slutt)
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("sgvizler.visualization.List")
           .draw("list");
+  //Sjekker om noen av datasettene vi har ekstra informasjon (fra DBpedia) om
+  // er krysset av, og hvis så, legg til // OPTIMIZE:
+  var ekstraInfoOm = ""
+  if(steder.skjenkested == true){
+    ekstraInfoOm +="schema:BarOrPub ";
+  }
+  if(steder.kirke == true){
+    ekstraInfoOm +="schema:Church ";
+  }
+  if(steder.Fiskeplass == true){
+    ekstraInfoOm +="schema:BodyOfWater ";
+  }
+
+  ekstraInfo(ekstraInfoOm);
   gjørResSynlig(true);
 }
 
-function ozone(object){
+/**
+** Lager en tom tabell. Går gjennom tabellen med steder.
+**/
+function lagTempSpørring(steder){
   var temp = [];
-  temp = sjekkBokser(object);
+  temp = sjekkBokser(steder);
   var tempSpørring = "";
   for(var j = 0; j < temp.length; j++){
     tempSpørring += temp[j];
@@ -130,19 +169,25 @@ function ozone(object){
   return tempSpørring;
 }
 
-function settVerdier(object){
-  if(document.getElementById("skjenkested").checked) Object.values(object)[0].verdi = true;
-  if(document.getElementById("overnatting").checked) Object.values(object)[1].verdi = true;
-  if(document.getElementById("grillplass").checked) Object.values(object)[2].verdi = true;
-  if(document.getElementById("badeplass").checked) Object.values(object)[3].verdi = true;
-  if(document.getElementById("kirke").checked) Object.values(object)[4].verdi = true;
-  if(document.getElementById("fiskeplass").checked) Object.values(object)[5].verdi = true;
-  if(document.getElementById("barnehage").checked) Object.values(object)[6].verdi = true;
-  if(document.getElementById("avfallspunkt").checked) Object.values(object)[7].verdi = true;
-  if(document.getElementById("utleielokale").checked) Object.values(object)[8].verdi = true;
-  if(document.getElementById("skole").checked) Object.values(object)[9].verdi = true;
+/**
+**
+**/
+function settVerdier(steder){
+  if(document.getElementById("skjenkested").checked) Object.values(steder)[0].verdi = true;
+  if(document.getElementById("overnatting").checked) Object.values(steder)[1].verdi = true;
+  if(document.getElementById("grillplass").checked) Object.values(steder)[2].verdi = true;
+  if(document.getElementById("badeplass").checked) Object.values(steder)[3].verdi = true;
+  if(document.getElementById("kirke").checked) Object.values(steder)[4].verdi = true;
+  if(document.getElementById("fiskeplass").checked) Object.values(steder)[5].verdi = true;
+  if(document.getElementById("barnehage").checked) Object.values(steder)[6].verdi = true;
+  if(document.getElementById("avfallspunkt").checked) Object.values(steder)[7].verdi = true;
+  if(document.getElementById("utleielokale").checked) Object.values(steder)[8].verdi = true;
+  if(document.getElementById("skole").checked) Object.values(steder)[9].verdi = true;
 }
 
+/**
+**
+**/
 function fjernValgteSjekkbokser(){
   document.getElementById("skjenkested").checked = false;
   document.getElementById("overnatting").checked = false;
@@ -162,18 +207,16 @@ function fjernValgteSjekkbokser(){
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("sgvizler.visualization.Map")
           .draw("map");
-//  X.query("PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> SELECT ?Name WHERE { ?subject mr:hasName ?Name .}")
-//          .endpointURL("http://localhost:3030/Gjesdal/query")
-//          .chartFunction("sgvizler.visualization.List")
-//          .draw("list");
   gjørResSynlig(false);
 }
 
+/**
+**
+**/
 function sjekkBokser(obj){
   var operator = "UNION";
-
-
   var stringTabell = [];
+
   for(var i = 0; i < obj.length; i++){
     if (obj[i].verdi == true){
       stringTabell.push(obj[i].string);
@@ -185,7 +228,9 @@ function sjekkBokser(obj){
   return stringTabell;
 }
 
-
+/**
+**
+**/
 function finnNaermeste(){
   var skrevetNavn = document.getElementById("skrevetNavn").value;
   var dd = document.getElementById("dropDown");
@@ -217,7 +262,7 @@ function finnNaermeste(){
 
   var Q = new sgvizler.Query();
   var X = new sgvizler.Query();
-  var Z = new sgvizler.Query();
+
 
   Q.query(prefix + selectKart + where)
           .endpointURL("http://localhost:3030/Gjesdal/query")
@@ -231,16 +276,14 @@ function finnNaermeste(){
 
   document.getElementById("ekstraInformasjon").innerHTML = "";
 
-  var informasjon = "PREFIX ww: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr: <http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX dbo: <http://dbpedia.org/ontology/#> PREFIX schema: <http://schema.org/> SELECT ?Navn ?Informasjon WHERE{ ?subject dbo:Abstract ?Informasjon; mr:hasName ?Navn; a " + ddValg + " . }";
-  console.log(informasjon);
-  Z.query(informasjon)
-          .endpointURL("http://localhost:3030/Gjesdal/query")
-          .chartFunction("google.visualization.Table")
-          .draw("ekstraInformasjon");
+  ekstraInfo(ddValg);
 
   gjørResSynlig(true);
 }
 
+/**
+**
+**/
 function egenSpørring(){
   var spørring = document.getElementById("egenSpørring").value;
   console.log(spørring);
@@ -258,12 +301,31 @@ function egenSpørring(){
   gjørResSynlig(true);
 }
 
+/**
+**
+**/
 function gjørResSynlig(tf){
   if(tf){
     document.getElementById("resultatPresentasjon").style.display = "initial";
-    console.log("gjør synlig");
+    document.getElementById("ekstraInformasjon").style.display = "initial";
   }
   else{
     document.getElementById("resultatPresentasjon").style.display = "none";
+    document.getElementById("ekstraInformasjon").style.display = "initial";
   }
+}
+
+function ekstraInfo(DataSett){
+  var Z = new sgvizler.Query();
+  var stederTab = DataSett.split(" ");
+  var SubjectADatasett =""
+  for(var i = 0; i<stederTab.length; i++){
+    console.log(stederTab[i]);
+    SubjectADatasett += " ?subject a " + stederTab[i];
+  }
+  var informasjon = "PREFIX ww: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr: <http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX dbo: <http://dbpedia.org/ontology/#> PREFIX schema: <http://schema.org/> SELECT ?Navn ?Informasjon WHERE{ ?subject dbo:Abstract ?Informasjon. ?subject mr:hasName ?Navn." + SubjectADatasett + " . }";
+  Z.query(informasjon)
+          .endpointURL("http://localhost:3030/Gjesdal/query")
+          .chartFunction("sgvizler.visualization.Text")
+          .draw("ekstraInformasjon");
 }

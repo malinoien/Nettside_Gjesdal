@@ -65,6 +65,7 @@ public class Model {
 	    						+"    mr:Oltedalsvatnet dbo:Abstract \"" + oltVannAbs + "\"."
 	    						+"    mr:Edlandsvatnet dbo:Abstract \"" + edlaVannAbs + "\"."
 	    						+"    mr:Flassavatnet dbo:Abstract \"" + flassVannAbs + "\"."
+	    						+"    mr:Gjesdal mr:hasName \"Gjesdal kommune\" "
 	    						+"}";
 	    
 	    UpdateAction.parseExecute(prefixes+insertdata, model);

@@ -921,6 +921,10 @@ gjesdalontology:hasName
         a           owl:DatatypeProperty ;
         rdfs:range  xsd:string .
 
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( <http://schema.org/Accommodation> <http://schema.org/BarOrPub> <http://schema.org/Beach> <http://schema.org/BodyOfWater> <http://schema.org/Church> <http://schema.org/EventVenue> <http://schema.org/Preschool> <http://schema.org/School> gjesdalontology:BarbequeArea gjesdalontology:RecyclingPoint )
+] .
+
 gjesdalontology:HytterenovasjonHunnedalenVedTverrånå
         a                               gjesdalontology:RecyclingPoint , owl:NamedIndividual ;
         gjesdalontology:hasCity         "Dirdal" ;
@@ -1029,10 +1033,6 @@ gjesdalontology:hasLatitude
         a           owl:DatatypeProperty ;
         rdfs:range  xsd:float .
 
-[ a            owl:AllDisjointClasses ;
-  owl:members  ( <http://schema.org/Accommodation> <http://schema.org/BarOrPub> <http://schema.org/Beach> <http://schema.org/BodyOfWater> <http://schema.org/Church> <http://schema.org/EventVenue> <http://schema.org/Preschool> <http://schema.org/School> gjesdalontology:BarbequeArea gjesdalontology:RecyclingPoint )
-] .
-
 gjesdalontology:Kringlelitjørn
         a                               <http://schema.org/BodyOfWater> , owl:NamedIndividual ;
         gjesdalontology:hasDescription  "Ta kontakt med grunneier " ;
@@ -1089,7 +1089,8 @@ gjesdalontology:Kongeparken
 
 gjesdalontology:Gjesdal
         <http://dbpedia.org/ontology/#Abstract>
-                "Gjesdal is a municipality in Rogaland county, Norway. It is located in the traditional district of Jæren. The administrative centre of the municipality is the village of Ålgård. Other villages in Gjesdal include Dirdal, Frafjord, Gilja, Gjesdal, and Oltedal. The 618-square-kilometre (239 sq mi) municipality lies about 25 kilometres (16 mi) to the southwest of the city of Stavanger in southwestern Norway. The European route E39 highway runs through the western side of the municipality. On the east side of the municipality, the Frafjord Tunnel connects the Frafjord valley with the rest of the municipality." .
+                "Gjesdal is a municipality in Rogaland county, Norway. It is located in the traditional district of Jæren. The administrative centre of the municipality is the village of Ålgård. Other villages in Gjesdal include Dirdal, Frafjord, Gilja, Gjesdal, and Oltedal. The 618-square-kilometre (239 sq mi) municipality lies about 25 kilometres (16 mi) to the southwest of the city of Stavanger in southwestern Norway. The European route E39 highway runs through the western side of the municipality. On the east side of the municipality, the Frafjord Tunnel connects the Frafjord valley with the rest of the municipality." ;
+        gjesdalontology:hasName  "Gjesdal kommune" .
 
 gjesdalontology:Månavatnet
         a                               <http://schema.org/BodyOfWater> , owl:NamedIndividual ;
