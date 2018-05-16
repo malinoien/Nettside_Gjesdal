@@ -1,6 +1,6 @@
-/**
-** Kjøres når siden lastes inn. Gir knappene funksjoner.
-**/
+/*
+* Kjøres når siden lastes inn. Gir knappene funksjoner.
+*/
 window.onload = function(){
   document.getElementById("checkBoxSøk").addEventListener("click", sok);
   document.getElementById("fjernChecked").addEventListener("click", fjernValgteSjekkbokser);
@@ -11,13 +11,13 @@ window.onload = function(){
   document.getElementById("egendefSpørringKnapp").addEventListener("click", egendefSpørringFunk);
 }
 
-/**
-** Legger til en klasse til den delen av siden hvor brukeren kan finne alle
-** plassene i Gjesdal under de forskjellige kategoriene. Denne klassen
-** har en egenskap i CSS-dokumentet som gjør at den delen av siden som skal
-** være synlig vises. På de sidene som ikke skal vises, fjernes klassen.
-** Gjelder også får finnNaermesteFunk() og egendefSpørringFunk().
-**/
+/*
+* Legger til en klasse til den delen av siden hvor brukeren kan finne alle
+* plassene i Gjesdal under de forskjellige kategoriene. Denne klassen
+* har en egenskap i CSS-dokumentet som gjør at den delen av siden som skal
+* være synlig vises. På de sidene som ikke skal vises, fjernes klassen.
+* Gjelder også får finnNaermesteFunk() og egendefSpørringFunk().
+*/
 function finnAlleFunk(){
   document.getElementById("finnAlleKnapp").classList.add("active");
   document.getElementById("finnNaermesteKnapp").classList.remove("active");
@@ -42,10 +42,10 @@ function egendefSpørringFunk(){
   fjernValgteSjekkbokser();
 }
 
-/**
-** Skjuler alle "boksene" med for forskjellige spørringsfunksjonene. Finner
-** så hvilken boks som skal vises ved å se hvilken boks som har klassen "active".
-**/
+/*
+* Skjuler alle "boksene" med for forskjellige spørringsfunksjonene. Finner
+* så hvilken boks som skal vises ved å se hvilken boks som har klassen "active".
+*/
 function visEllerSkjul(){
     document.getElementById("finnAlle").style.display = "none";
     document.getElementById("finnNaermeste").style.display = "none";
@@ -66,12 +66,12 @@ function visEllerSkjul(){
 var prefix = "PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX schema: <http://schema.org/> PREFIX f:<http://www.w3.org/2005/xpath-functions/math#>";
 var slutt = "}";
 
-/**
-** Lager en tabell med ett objekt for hvert datasett. Gir initielt alle objektene
-** en string med en spørring som (satt sammen med prefix og select) vil returnere
-** alle stedene i det datasettet. Gir også alle en verdi usann. Brukeren kan
-** få ut alle stedene i ett eller flere datasett.
-**/
+/*
+* Lager en tabell med ett objekt for hvert datasett. Gir initielt alle objektene
+* en string med en spørring som (satt sammen med prefix og select) vil returnere
+* alle stedene i det datasettet. Gir også alle en verdi usann. Brukeren kan
+* få ut alle stedene i ett eller flere datasett.
+*/
 function sok(){
   var steder = [
     skjenkested = {
@@ -157,9 +157,9 @@ function sok(){
   gjørResSynlig(true);
 }
 
-/**
-** Lager en tom tabell. Går gjennom tabellen med steder.
-**/
+/*
+* Lager en tom tabell. Går gjennom tabellen med steder.
+*/
 function lagTempSpørring(steder){
   var temp = [];
   temp = sjekkBokser(steder);
@@ -171,10 +171,10 @@ function lagTempSpørring(steder){
   return tempSpørring;
 }
 
-/**
-** Sjekker hvilke checkbokser som er krysset av, og setter verdien på objektet
-** i tabellen til å være sann om boksen er krysset av.
-**/
+/*
+* Sjekker hvilke checkbokser som er krysset av, og setter verdien på objektet
+* i tabellen til å være sann om boksen er krysset av.
+*/
 function settVerdier(steder){
   if(document.getElementById("skjenkested").checked) Object.values(steder)[0].verdi = true;
   if(document.getElementById("overnatting").checked) Object.values(steder)[1].verdi = true;
@@ -188,9 +188,9 @@ function settVerdier(steder){
   if(document.getElementById("skole").checked) Object.values(steder)[9].verdi = true;
 }
 
-/**
-** Resetter søk. Setter alle veridene til objektene i tabellen til å være usann.
-**/
+/*
+* Resetter søk. Setter alle veridene til objektene i tabellen til å være usann.
+*/
 function fjernValgteSjekkbokser(){
   document.getElementById("skjenkested").checked = false;
   document.getElementById("overnatting").checked = false;
@@ -213,11 +213,14 @@ function fjernValgteSjekkbokser(){
   gjørResSynlig(false);
 }
 
-/**
-** Tar inn tabellen med objekter. Ser hvilke som har verdien "sann". Legger til
-** spørringsattributten til de objektene med verdi "sann" i en ny tabell i tillegg
-** til "UNION" etter alle. 
-**/
+/*
+* Tar inn tabellen med objekter. Ser hvilke som har verdien "sann". Legger til
+* spørringsattributten til de objektene med verdi "sann" i en ny tabell i tillegg
+* til "UNION" etter alle. Fjerner det siste objektet i tabellen ("UNION"), slik
+* at tabellen inneholder en gyldig spørring.
+*
+* Returnerer en tabell som inneholder en spørring
+*/
 function sjekkBokser(obj){
   var operator = "UNION";
   var stringTabell = [];
@@ -233,9 +236,13 @@ function sjekkBokser(obj){
   return stringTabell;
 }
 
-/**
-**
-**/
+/*
+* Funksjon for å finne avtanden fra et brukervalgt sted til alle steder av en
+* klasse (grillplass, fiskeplass osv.). Sjekker om klassen brukeren har valgt
+* er en Grillplass eller et Returpunkt for å legge til riktig prefix.
+* Oppdaterer spørringene til div-elementene som kjører Sqvizler slik at brukeren
+* får se resultatet av søket.
+*/
 function finnNaermeste(){
   var skrevetNavn = document.getElementById("skrevetNavn").value;
   var dd = document.getElementById("dropDown");
@@ -280,15 +287,15 @@ function finnNaermeste(){
           .draw("list");
 
   document.getElementById("ekstraInformasjon").innerHTML = "";
-
   ekstraInfo(ddValg);
-
   gjørResSynlig(true);
 }
 
-/**
-**
-**/
+/*
+* Tar en input fra HTML-siden og legger spørringen til i div-elementet som
+* kjører Sgvizler. Brukeren får se resultatet av spørringen sin på kart og i
+* liste.
+*/
 function egenSpørring(){
   var spørring = document.getElementById("egenSpørring").value;
   console.log(spørring);
@@ -306,9 +313,10 @@ function egenSpørring(){
   gjørResSynlig(true);
 }
 
-/**
-**
-**/
+/*
+* Hvis sann, gjør Sgvizler-tabellen og Sqvizler-tekstboksen synlig. Hvis usann
+* skjul dem.
+*/
 function gjørResSynlig(tf){
   if(tf){
     document.getElementById("resultatPresentasjon").style.display = "initial";
@@ -316,19 +324,21 @@ function gjørResSynlig(tf){
   }
   else{
     document.getElementById("resultatPresentasjon").style.display = "none";
-    document.getElementById("ekstraInformasjon").style.display = "initial";
+    document.getElementById("ekstraInformasjon").style.display = "none";
   }
 }
 
-function ekstraInfo(DataSett){
-  var Z = new sgvizler.Query();
-  var stederTab = DataSett.split(" ");
-  var SubjectADatasett =""
-  for(var i = 0; i<stederTab.length; i++){
-    console.log(stederTab[i]);
+/*
+* Sjekker om // OPTIMIZE:
+*/
+function ekstraInfo(Datasett){
+  var stederTab = Datasett.split(" ");
+  var SubjectADatasett = ""
+  for(var i = 0; i < stederTab.length; i++){
     SubjectADatasett += " ?subject a " + stederTab[i];
   }
   var informasjon = "PREFIX ww: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr: <http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX dbo: <http://dbpedia.org/ontology/#> PREFIX schema: <http://schema.org/> SELECT ?Navn ?Informasjon WHERE{ ?subject dbo:Abstract ?Informasjon. ?subject mr:hasName ?Navn." + SubjectADatasett + " . }";
+  var Z = new sgvizler.Query();
   Z.query(informasjon)
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("sgvizler.visualization.Text")
