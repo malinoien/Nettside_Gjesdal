@@ -8,13 +8,11 @@ import org.apache.jena.query.ResultSet;
 import org.apache.jena.vocabulary.RDFS;
 
 public class DBpedia {
-	public static void main (String args[]) {
-		String gjesdal = "<http://dbpedia.org/resource/Oltedal_Church>";
-		String gjesdalAbstract = getAbstract(gjesdal);
-		System.out.println(gjesdalAbstract);
-	}
-
-	
+	/*
+	 * Denne funskjonen tar inn et parameter String resource som må være en 
+	 * link til en DBpedia-ressurs. Funkjsonen returnerer resursens dbo:abstract
+	 * som en string. 
+	 */
 	public static String getAbstract(String resource) {
 		Dataset dataset = DatasetFactory.create();
 		ResultSet table = QueryExecutionFactory.create(""

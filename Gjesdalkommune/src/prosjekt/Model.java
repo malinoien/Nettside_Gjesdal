@@ -2,7 +2,6 @@ package prosjekt;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.sql.PreparedStatement;
 
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntModelSpec;
@@ -11,6 +10,8 @@ import org.apache.jena.update.UpdateAction;
 
 public class Model {
 	static OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
+	
+	//Dette er stien til ontologien vi lagde i Protegé
 	static String base = "../Gjesdalkommune/src/prosjekt/Ontologi.owl";
 
 	public static void main(String[] args) {
@@ -22,7 +23,10 @@ public class Model {
 		writeOntToFile();
 	
 	}
-	
+	/*
+	 *  Denne funksjonen henter ontologien ved å bruke stringen base, somm er en sti til ontologien
+	 * og lagrer den i OntModellen model. 
+	 */
 	private static void getOntology() {
 		try {
 			FileInputStream input = new FileInputStream(base);
@@ -33,15 +37,19 @@ public class Model {
 		}
 		
 	}
-	
+	/*
+	 * Denne funksjonen bruker klassen DBpedia og metoden getAbstract for å 
+	 * hente DBpedias Abstract-verdi til de forskjellige stedene som vi fant i DBpedia
+	 * før vi putter de inn i modellen vår. 
+	*/
 	private static void upDateModelWithDBpediaAbstract() {
 		
 		String gjesdalAbstract = DBpedia.getAbstract("<http://dbpedia.org/resource/Gjesdal>");
 		String oltKirkAbstract = DBpedia.getAbstract("<http://dbpedia.org/resource/Oltedal_Church>");
 		String gjesKrikAbstract =DBpedia.getAbstract("<http://dbpedia.org/resource/Gjesdal_Church>");
 		String dirKirkAbst = DBpedia.getAbstract("<http://dbpedia.org/resource/Dirdal_Church>");
-		String aalgKirkAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/�lg�rd_Church>");
-		String aalgGamKirkAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Old_�lg�rd_Church>");
+		String aalgKirkAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Ålgård_Church>");
+		String aalgGamKirkAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Old_Ålgård_Church>");
 		String limaVannetAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Limavatnet>");	
 		String kongeparkenAbs=  DBpedia.getAbstract("<http://dbpedia.org/resource/Kongeparken>");
 		String oltVannAbs = DBpedia.getAbstract("<http://dbpedia.org/resource/Oltedalsvatnet>");
@@ -58,8 +66,8 @@ public class Model {
 	    						+"    mr:OltedalKyrkje dbo:Abstract \"" + oltKirkAbstract + "\"."
 	    						+"    mr:GjesdalKyrkje dbo:Abstract \"" + gjesKrikAbstract + "\"."
 	    						+"    mr:DirdalKyrkje dbo:Abstract \"" + dirKirkAbst + "\"."
-	    						+"    mr:�lg�rdKirke dbo:Abstract \"" + aalgKirkAbs + "\"."
-	    						+"    mr:�lg�rdGamleKirke dbo:Abstract \"" + aalgGamKirkAbs + "\"."
+	    						+"    mr:ÅlgårdKirke dbo:Abstract \"" + aalgKirkAbs + "\"."
+	    						+"    mr:ÅlgårdGamleKirke dbo:Abstract \"" + aalgGamKirkAbs + "\"."
 	    						+"    mr:Limavatnet dbo:Abstract \"" + limaVannetAbs + "\"."
 	    						+"    mr:Kongeparken dbo:Abstract \"" + kongeparkenAbs + "\"."
 	    						+"    mr:Oltedalsvatnet dbo:Abstract \"" + oltVannAbs + "\"."
@@ -74,6 +82,11 @@ public class Model {
 	     model.getWriter("TURTLE").write(model, System.out, "base");
 		
 	}
+	
+	/*
+	 * Denne funksjonen skriver modellen til en ny fil med navn
+	 *  Gjesdal.ttl i TURTLE format
+	 */
 	
 	private static void writeOntToFile() {
 		try {
