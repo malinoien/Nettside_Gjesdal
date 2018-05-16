@@ -146,17 +146,24 @@ function sok(){
     sender inn i funksjonen extraInfo
   */
   var ekstraInfoOm = "";
+  var abstractFinnes = false;
   if(document.getElementById("skjenkested").checked){
     ekstraInfoOm +="schema:BarOrPub ";
+    abstractFinnes = true;
   }
   if(document.getElementById("kirke").checked){
     ekstraInfoOm +="schema:Church ";
+    abstractFinnes = true;
   }
   if(document.getElementById("fiskeplass").checked){
     ekstraInfoOm +="schema:BodyOfWater ";
+    abstractFinnes = true;
   }
 
-  ekstraInfo(ekstraInfoOm);
+  if(abstractFinnes){
+    ekstraInfo(ekstraInfoOm);
+  }
+
   gjørResSynlig(true);
 }
 
@@ -268,11 +275,15 @@ function finnNaermeste(){
    +  "BIND (f:pi() AS ?pi)."
    +  "BIND (?pi/180 AS ?p)."
    +  "BIND(0.5 - f:cos((?lat2-?lat1)*?p)/2 + f:cos(?lat1*?p)*f:cos(?lat2*?p)*(1-f:cos((?long2-?long1)*?p))/2 AS ?a)."
-   + "BIND(12742 * f:asin(f:sqrt(?a)) as ?Avstand)"
-  + "} ORDER BY ASC(?distance)";
+   + "BIND(12742 * f:asin(f:sqrt(?a)) as ?b)"
+   + "BIND (xsd:string(?b) AS ?ab) . "
+   + "BIND (substr(?ab, 0, 6) AS ?abc). "
+   + "BIND (xsd:double(?abc) AS ?Avstand). "
+  + "} ORDER BY ASC(?Avstand)";
+
 
   var selectKart = "SELECT DISTINCT ?lat2 ?long2 ?Navn ?Beskrivelse ";
-  var selectListe = "SELECT DISTINCT ?Navn ?Avstand ?Beskrivelse ";
+  var selectListe = "SELECT DISTINCT ?Navn (?Avstand AS ?Avstand_i_km) ?Beskrivelse ";
 
   var Q = new sgvizler.Query();
   var X = new sgvizler.Query();
@@ -327,6 +338,7 @@ function gjørResSynlig(tf){
   else{
     document.getElementById("resultatPresentasjon").style.display = "none";
     document.getElementById("ekstraInformasjon").style.display = "none";
+    document.getElementById("ekstraInformasjon").innerHTML = "";
   }
 }
 
