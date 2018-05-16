@@ -62,7 +62,7 @@ function visEllerSkjul(){
     }
 }
 
-//Prefix og sluttparantes vi bruker i alle spørringsfunksjonene
+//Prefix og sluttparantes vi bruker i de fleste spørringsfunksjonene
 var prefix = "PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr:<http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX schema: <http://schema.org/> PREFIX f:<http://www.w3.org/2005/xpath-functions/math#>";
 var slutt = "}";
 
@@ -116,8 +116,9 @@ function sok(){
     }
   ];
 
-  //
+  //Spørring for å finne plasser som har et navn
   var navn = "SELECT DISTINCT ?Name WHERE {{?subject mr:hasName ?Name} ";
+  //Spørring for å finne plasser som har latitude, longitide og navn
   var navnlatlon = "SELECT DISTINCT ?Latitude ?Longitude ?Name ?Description WHERE {?subject mr:hasLatitude ?Latitude . ?subject mr:hasLongitude ?Longitude . ?subject mr:hasName ?Name . OPTIONAL {?subject mr:hasDescription ?Description }.";
 
   var Q = new sgvizler.Query();
@@ -138,6 +139,7 @@ function sok(){
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("sgvizler.visualization.List")
           .draw("list");
+
   //Sjekker om noen av datasettene vi har ekstra informasjon (fra DBpedia) om
   // er krysset av, og hvis så, legg til // OPTIMIZE:
   var ekstraInfoOm = ""
@@ -170,7 +172,8 @@ function lagTempSpørring(steder){
 }
 
 /**
-**
+** Sjekker hvilke checkbokser som er krysset av, og setter verdien på objektet
+** i tabellen til å være sann om boksen er krysset av.
 **/
 function settVerdier(steder){
   if(document.getElementById("skjenkested").checked) Object.values(steder)[0].verdi = true;
@@ -186,7 +189,7 @@ function settVerdier(steder){
 }
 
 /**
-**
+** Resetter søk. Setter alle veridene til objektene i tabellen til å være usann.
 **/
 function fjernValgteSjekkbokser(){
   document.getElementById("skjenkested").checked = false;
@@ -211,7 +214,9 @@ function fjernValgteSjekkbokser(){
 }
 
 /**
-**
+** Tar inn tabellen med objekter. Ser hvilke som har verdien "sann". Legger til
+** spørringsattributten til de objektene med verdi "sann" i en ny tabell i tillegg
+** til "UNION" etter alle. 
 **/
 function sjekkBokser(obj){
   var operator = "UNION";
