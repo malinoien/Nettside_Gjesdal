@@ -114,13 +114,15 @@ textarea, input, button{
   margin-top: 10px;
   background-color: white;
   width: 100%;
+  color: #10627a;
 }
 
 #skrevetNavn{
   margin-top: 10px;
   font-size: 16px;
-  /*border: 2px solid #10627a;*/
+  border: 1px solid #10627a;
   outline: none;
+  color: #10627a;
 }
 
 

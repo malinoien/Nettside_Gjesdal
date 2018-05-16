@@ -1,5 +1,5 @@
 /*
-* Kjøres når siden lastes inn. Gir knappene funksjoner.
+  Kjøres når siden lastes inn. Gir knappene funksjoner.
 */
 window.onload = function(){
   document.getElementById("checkBoxSøk").addEventListener("click", sok);
@@ -12,11 +12,11 @@ window.onload = function(){
 }
 
 /*
-* Legger til en klasse til den delen av siden hvor brukeren kan finne alle
-* plassene i Gjesdal under de forskjellige kategoriene. Denne klassen
-* har en egenskap i CSS-dokumentet som gjør at den delen av siden som skal
-* være synlig vises. På de sidene som ikke skal vises, fjernes klassen.
-* Gjelder også får finnNaermesteFunk() og egendefSpørringFunk().
+  Legger til en klasse til den delen av siden hvor brukeren kan finne alle
+  plassene i Gjesdal under de forskjellige kategoriene. Denne klassen
+  har en egenskap i CSS-dokumentet som gjør at den delen av siden som skal
+  være synlig vises. På de sidene som ikke skal vises, fjernes klassen.
+  Gjelder også får finnNaermesteFunk() og egendefSpørringFunk().
 */
 function finnAlleFunk(){
   document.getElementById("finnAlleKnapp").classList.add("active");
@@ -43,8 +43,8 @@ function egendefSpørringFunk(){
 }
 
 /*
-* Skjuler alle "boksene" med for forskjellige spørringsfunksjonene. Finner
-* så hvilken boks som skal vises ved å se hvilken boks som har klassen "active".
+  Skjuler alle "boksene" med for forskjellige spørringsfunksjonene. Finner
+  så hvilken boks som skal vises ved å se hvilken boks som har klassen "active".
 */
 function visEllerSkjul(){
     document.getElementById("finnAlle").style.display = "none";
@@ -67,10 +67,10 @@ var prefix = "PREFIX ww:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr:
 var slutt = "}";
 
 /*
-* Lager en tabell med ett objekt for hvert datasett. Gir initielt alle objektene
-* en string med en spørring som (satt sammen med prefix og select) vil returnere
-* alle stedene i det datasettet. Gir også alle en verdi usann. Brukeren kan
-* få ut alle stedene i ett eller flere datasett.
+  Lager en tabell med ett objekt for hvert datasett. Gir initielt alle objektene
+  en string med en spørring som (satt sammen med prefix og select) vil returnere
+  alle stedene i det datasettet. Gir også alle en verdi usann. Brukeren kan
+  få ut alle stedene i ett eller flere datasett.
 */
 function sok(){
   var steder = [
@@ -140,16 +140,19 @@ function sok(){
           .chartFunction("sgvizler.visualization.List")
           .draw("list");
 
-  //Sjekker om noen av datasettene vi har ekstra informasjon (fra DBpedia) om
-  // er krysset av, og hvis så, legg til // OPTIMIZE:
-  var ekstraInfoOm = ""
-  if(steder.skjenkested == true){
+  /*
+    Sjekker om noen av datasettene vi har ekstra informasjon (fra DBpedia) om
+    er krysset av, og hvis de er det legger vi det til i en String, som vi
+    sender inn i funksjonen extraInfo
+  */
+  var ekstraInfoOm = "";
+  if(document.getElementById("skjenkested").checked){
     ekstraInfoOm +="schema:BarOrPub ";
   }
-  if(steder.kirke == true){
+  if(document.getElementById("kirke").checked){
     ekstraInfoOm +="schema:Church ";
   }
-  if(steder.Fiskeplass == true){
+  if(document.getElementById("fiskeplass").checked){
     ekstraInfoOm +="schema:BodyOfWater ";
   }
 
@@ -158,7 +161,8 @@ function sok(){
 }
 
 /*
-* Lager en tom tabell. Går gjennom tabellen med steder.
+  Lager en tom tabell. Kjører sjekkBokser på steder og lagrer resultatet
+  i den nye tabellen. Gjør tabellen om til en string og returnerer stringen.
 */
 function lagTempSpørring(steder){
   var temp = [];
@@ -167,13 +171,12 @@ function lagTempSpørring(steder){
   for(var j = 0; j < temp.length; j++){
     tempSpørring += temp[j];
   }
-  console.log("Spørring: ", tempSpørring);
   return tempSpørring;
 }
 
 /*
-* Sjekker hvilke checkbokser som er krysset av, og setter verdien på objektet
-* i tabellen til å være sann om boksen er krysset av.
+  Sjekker hvilke checkbokser som er krysset av, og setter verdien på objektet
+  i tabellen til å være sann om boksen er krysset av.
 */
 function settVerdier(steder){
   if(document.getElementById("skjenkested").checked) Object.values(steder)[0].verdi = true;
@@ -189,7 +192,7 @@ function settVerdier(steder){
 }
 
 /*
-* Resetter søk. Setter alle veridene til objektene i tabellen til å være usann.
+  Resetter søk. Setter alle veridene til objektene i tabellen til å være usann.
 */
 function fjernValgteSjekkbokser(){
   document.getElementById("skjenkested").checked = false;
@@ -214,12 +217,11 @@ function fjernValgteSjekkbokser(){
 }
 
 /*
-* Tar inn tabellen med objekter. Ser hvilke som har verdien "sann". Legger til
-* spørringsattributten til de objektene med verdi "sann" i en ny tabell i tillegg
-* til "UNION" etter alle. Fjerner det siste objektet i tabellen ("UNION"), slik
-* at tabellen inneholder en gyldig spørring.
-*
-* Returnerer en tabell som inneholder en spørring
+  Tar inn tabellen med objekter. Ser hvilke som har verdien "sann". Legger til
+  spørringsattributten til de objektene med verdi "sann" i en ny tabell i tillegg
+  til "UNION" etter alle. Fjerner det siste objektet i tabellen ("UNION"), slik
+  at tabellen inneholder en gyldig spørring.
+  Returnerer en tabell som inneholder en spørring
 */
 function sjekkBokser(obj){
   var operator = "UNION";
@@ -237,21 +239,21 @@ function sjekkBokser(obj){
 }
 
 /*
-* Funksjon for å finne avtanden fra et brukervalgt sted til alle steder av en
-* klasse (grillplass, fiskeplass osv.). Sjekker om klassen brukeren har valgt
-* er en Grillplass eller et Returpunkt for å legge til riktig prefix.
-* Oppdaterer spørringene til div-elementene som kjører Sqvizler slik at brukeren
-* får se resultatet av søket.
+  Funksjon for å finne avtanden fra et brukervalgt sted til alle steder av en
+  klasse (grillplass, fiskeplass osv.). Sjekker om klassen brukeren har valgt
+  er en Grillplass eller et Returpunkt for å legge til riktig prefix.
+  Oppdaterer spørringene til div-elementene som kjører Sqvizler slik at brukeren
+  får se resultatet av søket.
 */
 function finnNaermeste(){
   var skrevetNavn = document.getElementById("skrevetNavn").value;
   var dd = document.getElementById("dropDown");
   var ddValg = dd.options[dd.selectedIndex].value;
   if(ddValg == "BarbequeArea" || ddValg == "RecyclingPoint"){
-    ddValg = "mr:" + ddValg;
+    ddValg = "mr:" + ddValg +" ";
   }
   else {
-    ddValg = "schema:" + ddValg;
+    ddValg = "schema:" + ddValg +" ";
   }
 
   var where = "WHERE { "
@@ -292,9 +294,9 @@ function finnNaermeste(){
 }
 
 /*
-* Tar en input fra HTML-siden og legger spørringen til i div-elementet som
-* kjører Sgvizler. Brukeren får se resultatet av spørringen sin på kart og i
-* liste.
+  Tar en input fra HTML-siden og legger spørringen til i div-elementet som
+  kjører Sgvizler. Brukeren får se resultatet av spørringen sin på kart og i
+  liste.
 */
 function egenSpørring(){
   var spørring = document.getElementById("egenSpørring").value;
@@ -314,8 +316,8 @@ function egenSpørring(){
 }
 
 /*
-* Hvis sann, gjør Sgvizler-tabellen og Sqvizler-tekstboksen synlig. Hvis usann
-* skjul dem.
+  Hvis sann, gjør Sgvizler-tabellen og Sqvizler-tekstboksen synlig. Hvis usann
+  skjul dem.
 */
 function gjørResSynlig(tf){
   if(tf){
@@ -329,15 +331,19 @@ function gjørResSynlig(tf){
 }
 
 /*
-* Sjekker om // OPTIMIZE:
+  Sjekker om parameteret består av flere enn én plass ved å splitte det
+  ved hvert mellomrom. For hver ekstra plass legger man til UNION mellom de,
+  slik at spørringen henter ut informasjon om alle stedene vi har krysset av.
 */
 function ekstraInfo(Datasett){
   var stederTab = Datasett.split(" ");
-  var SubjectADatasett = ""
-  for(var i = 0; i < stederTab.length; i++){
+  var SubjectADatasett = "";
+  for(var i = 0; i < stederTab.length - 1; i++){
     SubjectADatasett += " ?subject a " + stederTab[i];
+    if(stederTab[i + 2] != undefined ) SubjectADatasett += "} UNION {";
   }
-  var informasjon = "PREFIX ww: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr: <http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX dbo: <http://dbpedia.org/ontology/#> PREFIX schema: <http://schema.org/> SELECT ?Navn ?Informasjon WHERE{ ?subject dbo:Abstract ?Informasjon. ?subject mr:hasName ?Navn." + SubjectADatasett + " . }";
+  var informasjon = "PREFIX ww: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX mr: <http://www.semanticweb.org/marte/ontologies/2018/2/gjesdalontology.owl#> PREFIX dbo: <http://dbpedia.org/ontology/#> PREFIX schema: <http://schema.org/> SELECT ?Navn ?Informasjon WHERE{ ?subject dbo:Abstract ?Informasjon. ?subject mr:hasName ?Navn. {" + SubjectADatasett + "} . }";
+  console.log(informasjon);
   var Z = new sgvizler.Query();
   Z.query(informasjon)
           .endpointURL("http://localhost:3030/Gjesdal/query")
