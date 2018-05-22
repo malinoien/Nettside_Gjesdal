@@ -9,6 +9,7 @@ window.onload = function(){
   document.getElementById("finnAlleKnapp").addEventListener("click", finnAlleFunk);
   document.getElementById("finnNaermesteKnapp").addEventListener("click", finnNaermesteFunk);
   document.getElementById("egendefSpørringKnapp").addEventListener("click", egendefSpørringFunk);
+  document.getElementById("reset").addEventListener("click", fjernValgteSjekkbokser);
 }
 
 /*
@@ -163,8 +164,8 @@ function sok(){
   if(abstractFinnes){
     ekstraInfo(ekstraInfoOm);
   }
-
-  gjørResSynlig(true);
+  gjørElementSynlig(document.getElementById("resultatPresentasjon"));
+  gjørElementSynlig(document.getElementById("ekstraInformasjon"));
 }
 
 /*
@@ -212,6 +213,7 @@ function fjernValgteSjekkbokser(){
   document.getElementById("avfallspunkt").checked = false;
   document.getElementById("utleielokale").checked = false;
   document.getElementById("skole").checked = false;
+  document.getElementById("velgTabell").checked = false;
   document.getElementById("list").innerHTML = "";
   spørring = "";
   var Q = new sgvizler.Query();
@@ -220,7 +222,13 @@ function fjernValgteSjekkbokser(){
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("sgvizler.visualization.Map")
           .draw("map");
-  gjørResSynlig(false);
+  X.query("")
+          .endpointURL("http://localhost:3030/Gjesdal/query")
+          .chartFunction("sgvizler.visualization.Table")
+          .draw("table");
+  gjørElementSynlig(document.getElementById("map"));
+  gjørElementUsynlig(document.getElementById("resultatPresentasjon"));
+  gjørElementUsynlig(document.getElementById("ekstraInformasjon"));
 }
 
 /*
@@ -301,46 +309,49 @@ function finnNaermeste(){
 
   document.getElementById("ekstraInformasjon").innerHTML = "";
   ekstraInfo(ddValg);
-  gjørResSynlig(true);
+  gjørElementSynlig(document.getElementById("resultatPresentasjon"));
+  gjørElementSynlig(document.getElementById("ekstraInformasjon"));
 }
 
 /*
   Tar en input fra HTML-siden og legger spørringen til i div-elementet som
-  kjører Sgvizler. Brukeren får se resultatet av spørringen sin på kart og i
-  liste.
+  kjører Sgvizler. Brukeren får se resultatet av spørringen sin på kart og/eller
+  i tabell.
 */
 function egenSpørring(){
   var spørring = document.getElementById("egenSpørring").value;
-  console.log(spørring);
-  var Q = new sgvizler.Query();
-  var X = new sgvizler.Query();
-  Q.query(spørring)
-          .endpointURL("http://localhost:3030/Gjesdal/query")
-          .chartFunction("sgvizler.visualization.Map")
-          .draw("map");
+  var kart = document.getElementById("map");
+  var tabell = document.getElementById("resultatPresentasjon");
 
-  X.query(spørring)
+  gjørElementUsynlig(kart);
+  gjørElementUsynlig(tabell);
+
+  if(document.getElementById("velgKart").checked){
+    var Q = new sgvizler.Query();
+    Q.query(spørring)
+            .endpointURL("http://localhost:3030/Gjesdal/query")
+            .chartFunction("sgvizler.visualization.Map")
+            .draw("map");
+    gjørElementSynlig(document.getElementById("map"));
+  }
+
+  if(document.getElementById("velgTabell").checked){
+    var X = new sgvizler.Query();
+    X.query(spørring)
           .endpointURL("http://localhost:3030/Gjesdal/query")
           .chartFunction("google.visualization.Table")
           .draw("list");
-  gjørResSynlig(true);
+    gjørElementSynlig(document.getElementById("resultatPresentasjon"));
+  }
 }
 
-/*
-  Hvis sann, gjør Sgvizler-tabellen og Sqvizler-tekstboksen synlig. Hvis usann
-  skjul dem.
-*/
-function gjørResSynlig(tf){
-  if(tf){
-    document.getElementById("resultatPresentasjon").style.display = "initial";
-    document.getElementById("ekstraInformasjon").style.display = "initial";
-  }
-  else{
-    document.getElementById("resultatPresentasjon").style.display = "none";
-    document.getElementById("ekstraInformasjon").style.display = "none";
-    document.getElementById("ekstraInformasjon").innerHTML = "";
-  }
+function gjørElementSynlig(element){
+  element.style.display = "initial";
 }
+function gjørElementUsynlig(element){
+  element.style.display = "none";
+}
+
 
 /*
   Sjekker om parameteret består av flere enn én plass ved å splitte det
